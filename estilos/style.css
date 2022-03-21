@@ -319,13 +319,179 @@ margin-top: 10px;
 
 /*FIN DE TOUR DATES-------------------------*/
 /* ----RESPONSIVE INDEX Y TOURDATES */
- @media screen and (max-width: 320px){
+@media screen and (max-width: 320px){
+.container {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:  0.4fr 0.1fr  0.1fr 0.1fr 0.9fr 0.1fr ;
+grid-template-areas:
+ "navegacion"
+"sectionbio"
+"sectionbio"
+"albums"
+"tours "
+"footer "
+}
+.navegacion { grid-area: navegacion; }
+.sectionbio { grid-area: sectionbio; }
+.albums{ grid-area: albums; }
+.tours { grid-area: tours; }
+.footer { grid-area: footer; }
+
+*{
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+}
+.navegacion flex{
+display: flex;
+flex-wrap: wrap;
+ 
+}
+.barras{
+display: block;
+margin:10px 110px;
+font-size:80px;
+}
+.navegacion{
+width:100%;
+height:6rem;
+display: block;
+
+}
+header img{
+margin-bottom: 10px;
+height: 5rem;
+}
+        
+.nav{
+width: 50%;
+height: 2rem;
+}
+ul{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: whitesmoke;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+.menu ul li{
+    display: block;
+    margin:40px 0;
+    line-height: 40px;
+    }
+    .menu ul li a{
+    font-size: 50px;
+    display: block;
+    }
+    li a:hover, li a.active{
+    background: none;
+    
+    }
+    #check:checked~ ul{
+    left: 0;
+    }
+    .sectionbio{
+    width: 100%;
+    height: 100rem;
+    margin-top: 10px;
+    }
+    .textoprincipal h2{
+    margin-left:0.1px;
+    width:14rem;
+    font-size:20px;
+    }
+    .textoprincipal p{
+    overflow-y: hidden;
+    width:14rem;
+    height: 100rem;
+    padding:0;
+    text-align:left;
+    font-size:20px;
+    line-height:45px;
+    }
+    .textoprincipal{
+        overflow-y:hidden;
+    height: 90rem;
+    width:70%;
+    margin-left:0.8rem;
+    }
+    .albums{
+    background-color: #ffd60a;
+    height: 50rem;
+    width:100%;
+    margin-top:20px;
+    display: block;
+    }
+    .columnaalbum{
+    width: 100rem;
+    padding: 0;
+    margin: 0;
+    }
+    .columnaalbum img {
+    display: block;
+    width: 40rem;
+    height: 20rem;
+    }
+    .more{
+display: block;
+margin-top: 2rem;
+margin-right: 15rem;
+width: 20rem;
+height: 20rem;
+font-size: 30px;
+line-height: 75px;
+}  
+.columnaalbum h2{
+font-size: 30px;
+}
+    
+/* ------ */
+.tourindex__item{
+text-align: left;
+font-size: 20px;
+height: 5rem;
+width: 15rem;
+}
+.tours h1{
+font-size: 25px;
+}
+.moretour{
+margin-left: 1px;
+width: 15rem;
+}
+
+
+ footer{
+    width: 100%;
+    height: 22rem;
+    background-color: red;
+    margin-top: 10px;
+
+}
+.registrofooter{
+    height: 15rem;
+    margin: 0;
+}
+.redes{
+padding: 25px;
+position: relative;
+left: 10px;
+margin: 0;
+width: 230px;
+height: 16rem;
+    }
+.redes a{
+    margin: 0;
+} 
+}
+@media screen and (max-width: 480px){
     .container {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  0.5fr 0.1fr  0.1fr 0.1fr 0.1fr 0.1fr ;
+    grid-template-rows:   0.4fr 0.10fr  1fr 0.9fr 0.1fr 0.01fr ;
     grid-template-areas:
     "navegacion"
-    "sectionbio"
     "sectionbio"
     "albums"
     "tours "
@@ -336,117 +502,144 @@ margin-top: 10px;
     .albums{ grid-area: albums; }
     .tours { grid-area: tours; }
     .footer { grid-area: footer; }
-
-*{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-    .navegacion flex{
-    display: flex;
-    flex-wrap: wrap;
-    
-    }
-    .barras{
-    display: block;
-    margin:20px 100px;
-    font-size:80px;
-    }
-    .navegacion{
-    width:100%;
-    height:10rem;
-    display: block;
-    
-    }
-        
-    .nav{
-    width: 50%;
-    height: 2rem;
-    
-    }
-    ul{
-        position: absolute;
-        width: 100%;
-        height: 60%;
-        background-color: whitesmoke;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    
-    .menu ul li{
-        display: block;
-        margin:40px 0;
-        line-height: 40px;
-    }
-    .menu ul li a{
-        font-size: 50px;
-        display: block;
-    }
-    li a:hover, li a.active{
-        background: none;
-        
-    
-    }
-    #check:checked~ ul{
-        left: 0;
-        
-    }
-    .sectionbio{
-    width: 100%;
-    height: 95rem;
-    margin-top: -10px;
-    }
-    .textoprincipal h2{
-    margin-left:0.1px;
-    width:14rem;
-    font-size:20px;
- 
-    }
-    .textoprincipal p{
-    overflow-y: hidden;
-    width:14rem;
-    padding:0;
-    text-align:left;
-    font-size:20px;
-    line-height:45px;
-    }
-    .textoprincipal{
-        height: 88rem;
-        width:70%;
-        margin-left:0.8rem;
-    }
-    .albums{
-        background-color: #ffd60a;
-        height: 80rem;
-        width:100%;
-        margin-top:20px;
-        display: block;
-
-    }
-    .columnaalbum{
-        width: 100rem;
-        padding: 0;
+    *{
+        overflow-x: hidden;
         margin: 0;
-    }
-    /* .flex{
+        padding: 0;
+        }
+        .navegacion flex{
         display: flex;
-    }*/
-     .columnaalbum img {
+        flex-wrap: wrap;
+        
+        }
+        .barras{
+            
         display: block;
-        width: 40rem;
-        height: 20rem;
-    }
-    .more{
-display: block;
-margin-top: 2rem;
-margin-right: 15rem;
-width: 20rem;
-height: 20rem;
-font-size: 30px;
-line-height: 75px;
-    }  
-    .columnaalbum h2{
-        font-size: 30px;
-    }
-    } 
+        margin:10px 10px;
+        font-size:80px;
+        }
+        .navegacion{
+        width:100%;
+        height:6rem;
+        display: block;
+        
+        }
+        header img{
+        margin-bottom: 10px;
+        height: 5rem;
+        }
+                
+        .nav{
+        width: 50%;
+        height: 2rem;
+        }
+        ul{
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            background-color: whitesmoke;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            }
+        .menu ul li{
+            display: block;
+            margin:40px 0;
+            line-height: 40px;
+            }
+            .menu ul li a{
+            font-size: 50px;
+            display: block;
+            }
+            li a:hover, li a.active{
+            background: none;
+            
+            }
+            #check:checked~ ul{
+            left: 0;
+            }
+            .sectionbio{
+                height: 50rem;
+            }
+            .textoprincipal{
+            overflow-y:hidden;
+            height: 44rem;
+            width:75%;
+            margin:0.9rem;
+            font-size: 16px;
+            line-height: 30px;
+            /* margin-top: 30px; */
+            }
+            .textoprincipal h2{
+                margin-bottom: 30px;
+                margin-left:15px;
+                text-align: center;
+                width:14rem;
+                font-size:20px;
+                }
+                .albums{
+                    background-color: #ffd60a;
+                    height: 50rem;
+                    width:100%;
+                    margin-top:20px;
+                    display: block;
+                    }
+                    .columnaalbum{
+                    width: 100rem;
+                    padding: 0;
+                    margin: 0;
+                    }
+                    .columnaalbum img {
+                    display: block;
+                    width: 40rem;
+                    height: 20rem;
+                    }
+                    .more{
+                display: block;
+                margin-top: 2rem;
+                margin-right: 15rem;
+                width: 20rem;
+                height: 20rem;
+                font-size: 30px;
+                line-height: 75px;
+                }  
+                .columnaalbum h2{
+                font-size: 30px;
+                }
+                .tourindex__item{
+                    text-align: left;
+                    font-size: 20px;
+                    height: 5rem;
+                    width: 15rem;
+                    }
+                    .tours h1{
+                    font-size: 25px;
+                    }
+                    .moretour{
+                    margin-left: 1px;
+                    width: 15rem;
+                    }
+                    footer{
+                        width: 100%;
+                        height: 22rem;
+                        background-color: red;
+                        margin-top: 10px;
+                    
+                    }
+                    .registrofooter{
+                        height: 15rem;
+                        margin: 0;
+                    }
+                    .redes{
+                    padding: 25px;
+                    position: relative;
+                    left: 10px;
+                    margin: 0;
+                    width: 230px;
+                    height: 16rem;
+                        }
+                    .redes a{
+                        margin: 0;
+                    } 
+
+}
