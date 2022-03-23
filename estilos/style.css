@@ -60,12 +60,12 @@ height: 200px;
 text-align: center;
 width: 100%;
 }
-.nav:hover{
+/* .nav:hover{
 height: 2rem;
 width: 6rem;
 text-align: center;
 background-color: red;
-} 
+}  */
 .menu li{
 font-size: 20px;
 margin-left: 4%;
@@ -295,12 +295,12 @@ grid-template-areas:
     text-align: center;
     width: 100%;
     }
-    .navtour:hover{
+    /* .navtour:hover{
     height: 5rem;
     width: 8rem;
     text-align: center;
     background-color: #d00000;
-    } 
+    }  */
     .menutour li{
     font-size: 20px;
     margin-left: 4%;
@@ -443,99 +443,83 @@ width: 60%;
 height: 2rem;
 }
 .barras{ 
-    display: block;
-    margin:10px 10px;
-    font-size:80px;
-    }
+display: block;
+margin:10px 10px;
+font-size:80px;
+}
 ul{
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    background-color: #d00000;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    }
+position: absolute;
+width: 100%;
+height: 60%;
+background-color: #d00000;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
 .menu ul li{
-    display: block;
-    margin:40px 0;
-    line-height: 40px;
-    }
-    .menu ul li a{
-    font-size: 20px;
-    display: block;
-    }
-    li a:hover, li a.active{
-    background: none;
-    
-    }
-    #check:checked~ ul{
-    left: 0;
-    }
-    .sectionbio{
-        height: 40rem;
-        margin-top: 10px;
-    }
-    .textoprincipal h2{
-        margin-bottom: 10px;
-        margin-left:15px;
-        text-align: center;
-        width:14rem;
-        font-size:20px;
-        }
-    .textoprincipal{
-    overflow-y:hidden;
-    height: 38rem;
-    width:90%;
-    padding-left: 1px;
-    margin-top: -20px;
-    margin-left: 1px;
-    text-align:center;
-    }
-    .textoprincipal p{
-    font-size: 17px;
-    line-height: 30px;
-    padding-right: 1px;
-    }
-    .albums{
-        background-color: #d00000;
-        height: 50rem;
-        width:100%;
-        margin-top:20px;
-        margin-left: 0;
-        display: block;
-        }
-        .columnaalbum{
-        width: 100rem;
-        padding: 0;
-        margin: 0;
-        }
-        /* .columnaalbum img {
-        display: block;
-        width: 40rem;
-        height: 20rem;
-        } */
-         .more{
-             box-shadow: -1px -4px 2px 4px black;
-            margin-top: 5rem;
-            height: 40rem;
-            font-size: 20px;
-            margin-left: 5px;
-            background-color: #d00000;
-             /*
-        display: block;
-        
-        margin-right: 15rem;
-        width: 20rem;
-        height: 20rem;
-        
-        line-height: 75px
-        */
-        }   
-        .columnaalbum h2{
-        font-size: 30px;
-        }
-    
+display: block;
+margin:40px 0;
+line-height: 40px;
+}
+.menu ul li a{
+font-size: 20px;
+display: block;
+}
+li a:hover, li a.active{
+background: none;
+}
+#check:checked~ ul{
+left: 0;
+}
+.sectionbio{
+height: 40rem;
+margin-top: 10px;
+}
+.textoprincipal h2{
+margin-bottom: 10px;
+margin-left:15px;
+text-align: center;
+width:14rem;
+font-size:20px;
+}
+.textoprincipal{
+overflow-y:hidden;
+height: 38rem;
+width:90%;
+padding-left: 1px;
+margin-top: -20px;
+margin-left: 1px;
+text-align:center;
+}
+.textoprincipal p{
+font-size: 17px;
+line-height: 30px;
+padding-right: 1px;
+}
+.albums{
+background-color: #d00000;
+height: 50rem;
+width:100%;
+margin-top:20px;
+margin-left: 0;
+display: block;
+}
+.columnaalbum{
+width: 100rem;
+padding: 0;
+margin: 0;
+}
+.more{
+box-shadow: -1px -4px 2px 4px black;
+margin-top: 5rem;
+height: 40rem;
+font-size: 20px;
+margin-left: 5px;
+background-color: #d00000;
+}   
+.columnaalbum h2{
+font-size: 30px;
+}
 /* ------ */
 .tourindex__item{
 text-align: left;
@@ -551,15 +535,14 @@ margin-left: 1px;
 width: 15rem;
 }
 footer{
-    width: 100%;
-    height: 22rem;
-    background-color: #d00000;
-    margin-top: 10px;
-
+width: 100%;
+height: 22rem;
+background-color: #d00000;
+margin-top: 10px;
 }
 .registrofooter{
-    height: 15rem;
-    margin: 0;
+height: 15rem;
+margin: 0;
 }
 .redes{
 padding: 25px;
@@ -568,175 +551,163 @@ left: 10px;
 margin: 0;
 width: 230px;
 height: 16rem;
-    }
+}
 .redes a{
-    margin: 0;
+margin: 0;
 } 
 }
 @media screen and (min-width:321px) and (max-width: 480px){
-    .container {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:   0.4fr 0.10fr  1fr 0.9fr 0.1fr 0.01fr ;
-    grid-template-areas:
-    "navegacion"
-    "sectionbio"
-    "albums"
-    "tours "
-    "footer "
-    }
+.container {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:   0.4fr 0.10fr  1fr 0.9fr 0.1fr 0.01fr ;
+grid-template-areas:
+"navegacion"
+"sectionbio"
+"albums"
+"tours "
+"footer "
+}
     .navegacion { grid-area: navegacion; }
     .sectionbio { grid-area: sectionbio; }
     .albums{ grid-area: albums; }
     .tours { grid-area: tours; }
     .footer { grid-area: footer; }
-    *{
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        }
-        .navegacion flex{
-        display: flex;
-        flex-wrap: wrap;
-        
-        }
-        
-        .navegacion{
-        width:100%;
-        height:6rem;
-        display: block;
-        
-        }
-        .header img{
-        margin-bottom: 15px;
-        height: 12rem; 
-        }
-        
-        .nav{
-        width: 50%;
-        height: 2rem;
-        }
-        .barras{ 
-            display: block;
-            margin:10px 10px;
-            font-size:80px;
-            }
-        ul{
-            position: absolute;
-            width: 100%;
-            height: 60%;
-            background-color: #d00000;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            }
-        .menu ul li{
-            display: block;
-            margin:40px 0;
-            line-height: 40px;
-            }
-            .menu ul li a{
-            font-size: 20px;
-            display: block;
-            }
-            li a:hover, li a.active{
-            background: none;
-            
-            }
-            #check:checked~ ul{
-            left: 0;
-            }
-            .sectionbio{
-                height: 40rem;
-                margin-top: 10px;
-            }
-            .textoprincipal{
-            overflow-y:hidden;
-            height: 35rem;
-            width:90%;
-            padding-left: 1px;
-            margin-top: -20px;
-            margin-left: 1px;
-            text-align:center;
-            }
-            .textoprincipal p{
-            font-size: 17px;
-            line-height: 30px;
-            padding-right: 1px;
-            }
-            .textoprincipal h2{
-            margin-bottom: 10px;
-            margin-left:15px;
-            text-align: center;
-            width:14rem;
-            font-size:20px;
-            }
-            .albums{
-            background-color: #d00000;
-            height: 50rem;
-            width:100%;
-            margin-top:20px;
-            margin-left: 0;
-            display: block;
-            }
-            /* .columnaalbum{
-            background-color: #f2e9e4;
-            width: 100rem;
-            padding: 0;
-            margin: 0;
-            } */
-            .columnaalbum img {
-            display: block;
-            width: 48rem;
-            height: 30rem;
-            } 
-            .more{
-            padding: 0;
-            display: block;
-            width: 22rem;
-            height: 30rem;
-            font-size: 30px;
-            line-height: 45px;
-            }   
-            .columnaalbum h2{
-            font-size: 30px;
-            }
-            .tourindex__item{
-            text-align: center;
-            font-size: 20px;
-            height: 5rem;
-            width: 15rem;
-            }
-            .tours h1{
-            font-size: 25px;
-            }
-            .moretour{
-            margin-left: 1px;
-            width: 15rem;
-            }
-            footer{
-            width: 100%;
-            height: 22rem;
-            background-color: #d00000;
-            margin-top: 10px;
-            }
-            .registrofooter{
-            height: 15rem;
-            margin: 0;
-            }
-            .redes{
-            padding: 25px;
-            position: relative;
-            left: 10px;
-            margin: 0;
-            width: 230px;
-            height: 16rem;
-            }
-            .redes a{
-            margin: 0;
-            } 
-
+*{
+overflow-x: hidden;
+margin: 0;
+padding: 0;
 }
- @media screen and (min-width: 481px) and (max-width: 768px){
+.navegacion flex{
+display: flex;
+flex-wrap: wrap;
+}
+.navegacion{
+width:100%;
+height:6rem;
+display: block;
+}
+.header img{
+margin-bottom: 15px;
+height: 12rem; 
+}
+.nav{
+width: 50%;
+height: 2rem;
+}
+.barras{ 
+display: block;
+margin:10px 10px;
+font-size:80px;
+}
+ul{
+position: absolute;
+width: 100%;
+height: 60%;
+background-color: #d00000;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+.menu ul li{
+display: block;
+margin:40px 0;
+line-height: 40px;
+}
+.menu ul li a{
+font-size: 20px;
+display: block;
+}
+li a:hover, li a.active{
+background: none;
+}
+#check:checked~ ul{
+left: 0;
+}
+.sectionbio{
+height: 40rem;
+margin-top: 10px;
+    }
+.textoprincipal{
+overflow-y:hidden;
+height: 35rem;
+width:90%;
+padding-left: 1px;
+margin-top: -20px;
+margin-left: 1px;
+text-align:center;
+}
+.textoprincipal p{
+font-size: 17px;
+line-height: 30px;
+padding-right: 1px;
+}
+.textoprincipal h2{
+margin-bottom: 10px;
+margin-left:15px;
+text-align: center;
+width:14rem;
+font-size:20px;
+        }
+.albums{
+background-color: #d00000;
+height: 50rem;
+width:100%;
+margin-top:20px;
+margin-left: 0;
+display: block;
+}
+.columnaalbum img {
+display: block;
+width: 48rem;
+height: 30rem;
+} 
+.more{
+padding: 0;
+display: block;
+width: 22rem;
+height: 30rem;
+font-size: 30px;
+line-height: 45px;
+}   
+.columnaalbum h2{
+font-size: 30px;
+}
+.tourindex__item{
+text-align: center;
+font-size: 20px;
+height: 5rem;
+width: 15rem;
+}
+.tours h1{
+font-size: 25px;
+}
+.moretour{
+margin-left: 1px;
+width: 15rem;
+}
+footer{
+width: 100%;
+height: 22rem;
+background-color: #d00000;
+margin-top: 10px;
+}
+.registrofooter{
+height: 15rem;
+margin: 0;
+}
+.redes{
+padding: 25px;
+position: relative;
+left: 10px;
+margin: 0;
+width: 230px;
+height: 16rem;
+}
+.redes a{
+margin: 0;
+} 
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
 .container {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:   0.4fr 2fr  1fr 0.9fr 0.1fr 0.01fr ;
@@ -753,298 +724,292 @@ grid-template-areas:
 .tours { grid-area: tours; }
 .footer { grid-area: footer; }
 
- .barras{      
-    display: block;
-    margin:50px 20px;
-    font-size:80px;
-    } 
-    .navegacion{
-    width:100%;
-    height:16rem;
-    display: block;
-    
-    }
-    .header img{
-    margin-bottom: 5px;
-    height: 40rem;  
-    }
-    
-    .nav{
-    width: 100%;
-    height: 4rem;
-    font-size: 20px;
-    }
-    .nav a{
-        font-size: 40px;
-        height: 50px;
-    }
-     ul{
-        position: absolute;
-        width: 100%;
-        height: 40rem;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-    .menu ul li{
-        display: block;
-        margin:40px 0;
-        line-height: 40px;
-        font-size: 150px;
-        }
-        .menu ul li a{
-        font-size: 40px;
-        display: block;
-        }
-        li a:hover, li a.active{
-        background: none;
-        
-        }
-        #check:checked~ ul{
-        left: 0;
-        } 
-        .sectionbio{
-            height: 100rem;
-            margin-top: 10px;
-        }
-     .textoprincipal{
-    overflow-y:hidden;
-    height: 90rem;
-    width:90%;
-    margin:0.9rem;
-    font-size: 60px;
-    line-height: 80px;
-    margin-top: 10px;
-    }
-    .textoprincipal h2{
-    margin-bottom: 30px;
-    margin-left:355px;
-    text-align: center;
-    width:20rem;
-    font-size:50px;
-    } 
-    .albums{
-        margin-top: -50px;
-   }
-   .more{
-    font-size: 60px;
-    margin-top: 90px;
-    height: 40rem;
-    width: 35rem;
-   }
-   .tours{
-    margin-top: -180px;
-    height:50rem;
- }
- .tourindex{
-     height: 60rem;
-     margin-bottom:10px;
- }
+.barras{      
+display: block;
+margin:50px 20px;
+font-size:80px;
+} 
+.navegacion{
+width:100%;
+height:16rem;
+display: block;  
+}
+.header img{
+margin-bottom: 5px;
+height: 40rem;  
+}
+.nav{
+width: 100%;
+height: 4rem;
+font-size: 20px;
+}
+.nav a{
+font-size: 40px;
+height: 50px;
+}
+ul{
+position: absolute;
+width: 100%;
+height: 40rem;
+background-color: #d00000;
+left: -100%;
+    -align: center;
+transition: all .5s;
+}
+.menu ul li{
+display: block;
+margin:40px 0;
+line-height: 40px;
+font-size: 150px;
+}
+.menu ul li a{
+font-size: 40px;
+display: block;
+}
+li a:hover, li a.active{
+background: none; 
+}
+#check:checked~ ul{
+left: 0;
+} 
+.sectionbio{
+height: 100rem;
+margin-top: 10px;
+}
+.textoprincipal{
+overflow-y:hidden;
+height: 90rem;
+width:90%;
+margin:0.9rem;
+font-size: 60px;
+line-height: 80px;
+margin-top: 10px;
+}
+.textoprincipal h2{
+margin-bottom: 30px;
+margin-left:355px;
+text-align: center;
+width:20rem;
+font-size:50px;
+} 
+.albums{
+margin-top: -50px;
+}
+.more{
+font-size: 60px;
+margin-top: 90px;
+height: 40rem;
+width: 35rem;
+}
+.tours{
+ margin-top: -180px;
+height:50rem;
+}
+.tourindex{
+height: 60rem;
+margin-bottom:10px;
+}
 .tourindex__item{
-    font-size: 48px;
-    width:80rem;
-    padding: 0;
-    padding-top:63px;
-    
+font-size: 48px;
+width:80rem;
+padding: 0;
+padding-top:63px;
 }
 .registrofooter{
-    width: 25rem;
-    height: 15rem;
-    font-size: 20px;
+width: 25rem;
+height: 15rem;
+font-size: 20px;
 }
 .registrofooter input{
-   height: 2rem;
+    height: 2rem;
 }
 } 
 @media screen and (min-width:769px) and (max-width: 1024px){
-
 nav li a{
     font-size: 40px;
 }
 .textoprincipal{
-    width: 50rem;
-    height: 42rem;
-    margin-left:170px;
+width: 50rem;
+height: 42rem;
+margin-left:170px;
 }
 .more{
-    margin-left: 20px;
-    width: 40rem;
-    height: 30rem;
-    font-size: 45px;
+margin-left: 20px;
+width: 40rem;
+height: 30rem;
+font-size: 45px;
 }
 .tourindex__item{
-    font-size: 35px;
-    height: 6.7rem;
+font-size: 35px;
+height: 6.7rem;
 }
-    .moretour{
-        margin-top:5px;
-    }
-    .registrofooter{
-        width: 20rem;
-    }
+.moretour{
+margin-top:5px;
+}
+.registrofooter{
+    width: 20rem;
+}
 }
 @media screen and (min-width:240px) and (max-width: 320px){
-    .containertour {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:   0.36fr  2fr 0.24fr;
-    grid-template-areas:
-    "navegaciontour"
-    "secciontour"
-    "footertour "
-    }
-    .navegaciontour {grid-area: navegaciontour;}
-    .secciontour { grid-area: secciontour; }
-    .footertour { grid-area: footertour; }
+.containertour {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:   0.36fr  2fr 0.24fr;
+grid-template-areas:
+"navegaciontour"
+"secciontour"
+"footertour "
+}
+.navegaciontour {grid-area: navegaciontour;}
+.secciontour { grid-area: secciontour; }
+.footertour { grid-area: footertour; }
+
+.containertour{
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+ }
+.headertour img{
+ object-fit: cover;
+}
+.navegaciontour flex{
+display: flex;
+}
+.navegaciontour{
+width:100%;
+height:25rem;
+display: block;
+}
+.navegaciontour__titulo{
+ font-size: 20px;
+ margin-left:-1px;
+}
+.navtour{
+width: 50%;
+height: 2rem;
+margin-left:-21px;
+}
+.barrastour{ 
+display: block;
+margin:10px 20px;
+font-size:50px;
+}
+.headertour ul{
+position: absolute;
+width: 78%;
+height: 62%;
+background-color: #d00000;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+.menutour ul li{
+display: block;
+margin:50px 0;
+}
+.headertour ul li a{
+margin-top: 5px;
+font-size: 20px;
+display: block; 
+}
+li a:hover, li a.active{
+background: none;
+} 
+#check:checked~ ul{
+left: 0;
+}
+.secciontour{
+margin-bottom: 1rem;
+} 
+.secciontour h1{
+height: 8rem;
+}
+.secciontour span{
+display: block;    
+}
+.secciontour__fechas{
+width: 90%;
+font-size: 18px;
+}
+.tourboton{
+font-size: 15px;
+margin-top:12px;
+}
+.footertour{ 
+background-color: #d00000;
+height: 17rem;
+width: 100%;
+margin-top: 1.5rem;
+box-shadow: -5px -5px 5px  18px #d00000; 
+}
+.flex{
+display: flex;
+}
+.footertour img{
+display: inline-block;
+width: 2rem;
+border: 2px solid black; 
+border-radius: 8px;
+padding: 5px;
+}
+.redestour a{
+display:block;
+justify-content: center;
+align-items: center;
+margin-left: 1rem;
+margin-top: 1rem;
+}  
+.registrofootertour{
+margin: 0;
+opacity: 0.9;
+background-color: #ffd60a;
+width: 12rem;
+height: 14rem;
+padding: 1rem;
+}
+.registrofootertour input{
+display: inline-block;
+font-family:  'Hubballi', cursive;
+height: 15px;
+margin: 0;
+border-radius: 10%;
+background-color: #d8dee9;
+}
+#copyrighttour{
+font-size:20px;
+margin-left: 30rem;
+margin-top: 2rem;
+width: 40rem;
+text-align: center;
+ }
+}
+@media screen and (min-width:321px) and (max-width: 480px){
+.containertour {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:   0.40fr  2fr 0.24fr;
+grid-template-areas:
+"navegaciontour"
+"secciontour"
+"footertour "
+}
+.navegaciontour {grid-area: navegaciontour;}
+.secciontour { grid-area: secciontour; }
+.footertour { grid-area: footertour; }
     
-    .containertour{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    }
-    .headertour img{
-    object-fit: cover;
-    }
-    .navegaciontour flex{
-    display: flex;
-    }
-    .navegaciontour{
-    width:100%;
-    height:25rem;
-    display: block;
-    }
-    .navegaciontour__titulo{
-    font-size: 20px;
-    margin-left:-1px;
-    }
-    .navtour{
-    width: 50%;
-    height: 2rem;
-    margin-left:-21px;
-    }
-    
-    .barrastour{ 
-    display: block;
-    margin:10px 20px;
-    font-size:50px;
-    }
-    .headertour ul{
-    position: absolute;
-    width: 78%;
-    height: 62%;
-    background-color: #d00000;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    }
-    .menutour ul li{
-    display: block;
-    margin:50px 0;
-    }
-    .headertour ul li a{
-    margin-top: 5px;
-    font-size: 20px;
-    display: block; 
-    }
-    li a:hover, li a.active{
-    background: none;
-    } 
-    #check:checked~ ul{
-    left: 0;
-    }
-    .secciontour{
-    margin-bottom: 1rem;
-    } 
-    .secciontour h1{
-    height: 8rem;
-    }
-    .secciontour span{
-    display: block;    
-    }
-    .secciontour__fechas{
-    width: 90%;
-    font-size: 18px;
-    }
-    .tourboton{
-    font-size: 15px;
-    margin-top:12px;
-    }
-    .footertour{ 
-    background-color: #d00000;
-    height: 17rem;
-    width: 100%;
-    margin-top: 1.5rem;
-    box-shadow: -5px -5px 5px  18px #d00000; 
-    }
-    .flex{
-    display: flex;
-    }
-    .footertour img{
-    display: inline-block;
-    width: 2rem;
-    border: 2px solid black; 
-    border-radius: 8px;
-    padding: 5px;
-    }
-    .redestour a{
-    display:block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    }  
-    .registrofootertour{
-    margin: 0;
-    opacity: 0.9;
-    background-color: #ffd60a;
-    width: 12rem;
-    height: 14rem;
-    padding: 1rem;
-    }
-    .registrofootertour input{
-    display: inline-block;
-    font-family:  'Hubballi', cursive;
-    height: 15px;
-    margin: 0;
-    border-radius: 10%;
-    background-color: #d8dee9;
-    }
-    #copyrighttour{
-    font-size:20px;
-    margin-left: 30rem;
-    margin-top: 2rem;
-    width: 40rem;
-    text-align: center;
-    }
-    }
-    @media screen and (min-width:321px) and (max-width: 480px){
-    .containertour {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:   0.40fr  2fr 0.24fr;
-    grid-template-areas:
-    "navegaciontour"
-    "secciontour"
-    "footertour "
-    }
-    .navegaciontour {grid-area: navegaciontour;}
-    .secciontour { grid-area: secciontour; }
-    .footertour { grid-area: footertour; }
-    
-    .containertour{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    }
-    .headertour img{
-    object-fit: cover;
-    }
-    .navegaciontour flex{
-    display: flex;
-    }
-    .navegaciontour{
-    width:100%;
-    height:25rem;
-    display: block;
+.containertour{
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+}
+.headertour img{
+object-fit: cover;
+}
+.navegaciontour flex{
+display: flex;
+}
+.navegaciontour{
+width:100%;
+height:25rem;
+display: block;
 }
 .navegaciontour__titulo{
 font-size: 20px;
@@ -1070,37 +1035,180 @@ text-align: center;
 transition: all .5s;
 }
 .menutour ul li{
-    display: block;
-    margin:50px 0;
-    }
-    .headertour ul li a{
-    margin-top: 5px;
-    font-size: 20px;
-    display: block;
-    }
-    li a:hover, li a.active{
-    background: none;
-    } 
-    #check:checked~ ul{
-    left: 0;
-    }
-    .secciontour{
-    margin-bottom: 1rem;
-    } 
-    .secciontour h1{
-    height: 8rem;
-    }
-    .secciontour span{
-    display: block;
+display: block;
+margin:50px 0;
+}
+.headertour ul li a{
+margin-top: 5px;
+font-size: 20px;
+display: block;
+}
+li a:hover, li a.active{
+background: none;
+} 
+#check:checked~ ul{
+left: 0;
+}
+.secciontour{
+margin-bottom: 1rem;
+} 
+.secciontour h1{
+height: 8rem;
+}
+.secciontour span{
+display: block;
+}
+.secciontour__fechas{
+height:auto;
+width: 90%;
+font-size: 18px;
+}
+.tourboton{
+font-size: 15px;
+margin-top:12px;
+}
+.footertour{ 
+background-color: #d00000;
+height: 17rem;
+width: 100%;
+margin-top: 1.5rem;
+box-shadow: -5px -5px 5px  18px #d00000; 
+}
+.flex{
+display: flex;
+}
+.footertour img{
+display: inline-block;
+width: 2rem;
+border: 2px solid black; 
+border-radius: 8px;
+padding: 5px;
+}
+.redestour a{
+display:inline-block;
+justify-content: center;
+align-items: center;
+margin-left: 2rem;
+margin-top: 0;
+}  
+.registrofootertour{
+margin: 0;
+opacity: 0.9;
+background-color: #ffd60a;
+width: 28rem;
+height: 15rem;
+}
+.registrofootertour input{  
+display: inline-block;
+font-family:  'Hubballi', cursive;
+height: 15px;
+margin: 0;
+border-radius: 10%;
+background-color: #d8dee9;
+}
+#copyrighttour{
+font-size:20px;
+margin-left: 30rem;
+margin-top: 2rem;
+width: 40rem;
+text-align: center;
+}
+}
+@media screen and (min-width:481px) and (max-width: 1024px){
+.containertour {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:   0.40fr  2fr 0.25fr;
+grid-template-areas:
+"navegaciontour"
+"secciontour"
+"footertour "
+}
+.navegaciontour {grid-area: navegaciontour;}
+.secciontour { grid-area: secciontour; }
+.footertour { grid-area: footertour; }
+    
+.containertour{
+overflow-x: hidden; 
+margin: 0;
+padding: 0; 
+ }
+.headertour img{
+object-fit: cover;
+width: 100%;
+}
+.navegaciontour flex{
+display: flex;
+}
+.navegaciontour{
+width:100%;
+height:26rem;
+display: block;
+}
+.navegaciontour__titulo{
+font-size: 20px;
+ margin-left:-1px;
+}
+.navtour{
+width: 50%;
+height: 2rem;
+margin-left:-21px;
+}
+.barrastour{ 
+display: block;
+margin:10px 220px;
+font-size:50px;
+}
+.headertour ul{
+position: absolute;
+width: 55%;
+height: 65%;
+background-color: #d00000;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+.menutour ul li{
+display: block;
+margin:50px 0;
+}
+.headertour ul li a{
+margin-top: 5px;
+ width: 60%;
+font-size: 35px;
+display: block; 
+}
+li a:hover, li a.active{
+background: none;
+} 
+#check:checked~ ul{
+left: 0;
+}
+.tours{
+margin-bottom: 10px;
+height: auto;
+}
+.secciontour h1{
+height: 8rem;
+margin-top: 2px;
+margin-left: -205px;
+}
+.secciontour span{
+display: inline-block;
+    text-align: center;
+    width: 40%;
     }
     .secciontour__fechas{
+    padding: 10px;
+    margin-top: 10px;
     height:auto;
-    width: 90%;
-    font-size: 18px;
+    width: 25rem;
+    font-size: 20px;
     }
     .tourboton{
     font-size: 15px;
     margin-top:12px;
+    margin-left: 135px;
+    display: block;
     }
     .footertour{ 
     background-color: #d00000;
@@ -1112,6 +1220,9 @@ transition: all .5s;
     .flex{
     display: flex;
     }
+    .footertour{
+    margin-top: 30px;
+    }
     .footertour img{
     display: inline-block;
     width: 2rem;
@@ -1119,235 +1230,29 @@ transition: all .5s;
     border-radius: 8px;
     padding: 5px;
     }
-    .redestour a{
-    display:inline-block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
-    margin-top: 0;
-    }  
     .registrofootertour{
-    margin: 0;
-    opacity: 0.9;
-    background-color: #ffd60a;
-    width: 28rem;
-    height: 15rem;
-    }
-    .registrofootertour input{  
-    display: inline-block;
-    font-family:  'Hubballi', cursive;
-    height: 15px;
-    margin: 0;
-    border-radius: 10%;
-    background-color: #d8dee9;
-    }
-    #copyrighttour{
-    font-size:20px;
-    margin-left: 30rem;
-    margin-top: 2rem;
-    width: 40rem;
-    text-align: center;
-    }
-}
-@media screen and (min-width:481px) and (max-width: 768px){
-    .containertour {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:   0.40fr  2fr 0.25fr;
-    grid-template-areas:
-    "navegaciontour"
-    "secciontour"
-    "footertour "
-    }
-    .navegaciontour {grid-area: navegaciontour;}
-    .secciontour { grid-area: secciontour; }
-    .footertour { grid-area: footertour; }
-    
-     .containertour{
-        overflow-x: hidden; 
-         margin: 0;
-        padding: 0; 
-    }
-        .headertour img{
-        object-fit: cover;
-        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+        opacity: 0.9;
+        background-color: #ffd60a;
+        width: 20rem;
+        height: 15rem;
         }
-        .navegaciontour flex{
-        display: flex;
-        }
-        .navegaciontour{
-        width:100%;
-        height:26rem;
-        display: block;
-        }
-        .navegaciontour__titulo{
-        font-size: 20px;
-        margin-left:-1px;
-        }
-        .navtour{
-        width: 50%;
-        height: 2rem;
-        margin-left:-21px;
-        }
-        
-        .barrastour{ 
-        display: block;
-        margin:10px 350px;
-        font-size:50px;
-        }
-        .headertour ul{
-        position: absolute;
-        width: 60%;
-        height: 65%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-        .menutour ul li{
-        display: block;
-        margin:50px 0;
-        }
-        .headertour ul li a{
-        margin-top: 5px;
-        width: 60%;
-        font-size: 35px;
-        display: block; 
-        }
-        li a:hover, li a.active{
-        background: none;
-        } 
-        #check:checked~ ul{
-        left: 0;
-        }
-        .tours{
-            margin-bottom: 10px;
-            height: auto;
-        }
-        .secciontour h1{
-            height: 8rem;
-            margin-top: 2px;
-            margin-left: -205px;
-            }
-            .secciontour span{
-            display: block;
-            text-align: center;
-            width: 40%;
-            }
-            .secciontour__fechas{
-                padding: 15px;
-                margin-top: 10px;
-                height:auto;
-                width: 65%;
-                font-size: 18px;
-                }
-                .tourboton{
-                font-size: 15px;
-                margin-top:12px;
-                margin-left: 65px;
-                display: block;
-         }
-        .footertour{ 
-        background-color: #d00000;
-        height: 17rem;
-        width: 100%;
-        margin-top: 1.5rem;
-        box-shadow: -5px -5px 5px  18px #d00000; 
-        }
-        .flex{
-        display: flex;
-        }
-        .footertour{
-            margin-top: 30px;
-        }
-        .footertour img{
-            display: inline-block;
-            width: 2rem;
-            border: 2px solid black; 
-            border-radius: 8px;
-            padding: 5px;
-            }
-            .redestour a{
+        .redestour a{
+            width: 100%;
+            height: 15%;
             display:block;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            margin-left: 6rem;
-            margin-top: 11px;
+            align-items: center; 
+            margin-left: 50%;
+            margin-top: 15px; 
             }  
-            .registrofootertour{
-            margin: 0;
-            margin-left: 10px;
-            opacity: 0.9;
-            background-color: #ffd60a;
-            width: 18rem;
-            height: 15rem;
-            }
-            .registrofootertour input{  
-            display: inline-block;
-            font-family:  'Hubballi', cursive;
-            height: 15px;
-            margin: 0;
-            border-radius: 10%;
-            background-color: #d8dee9;
-            }
-            #copyrighttour{
-             font-size:15px;
-            margin-left: -50px;
-            margin-top: 1rem;
-            width: 40rem;
-            text-align: center; 
-            }
-
+    #copyrighttour{
+    font-size:15px;
+    margin-left: -50px;
+    margin-top: 1rem;
+    width: 40rem;
+    text-align: center; 
+    }
 }
-@media screen and (min-width:769px) and (max-width: 1004px){
-    .containertour {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:   0.40fr  2fr 0.25fr;
-    grid-template-areas:
-    "navegaciontour"
-    "secciontour"
-    "footertour "
-    }
-    .navegaciontour {grid-area: navegaciontour;}
-    .secciontour { grid-area: secciontour; }
-    .footertour { grid-area: footertour; }
-    
-    .containertour{
-    overflow-x: hidden; 
-    /* margin: 0;
-    padding: 0;  */
-    }
-    .headertour img{
-        object-fit: cover;
-        width: 100%;
-        }
-        .navegaciontour flex{
-        display: flex;
-        }
-        .navegaciontour{
-        width:88%;
-        height:15rem;
-        
-        }
-        .navegaciontour__titulo{
-        font-size: 30px;
-        margin-left: -240px;
-        }
-        .navtour{
-        width: 40%;
-        height: 6rem;
-        
-        }
-        .menutour ul li{
-        display: block;
-        margin:10px 0;
-        }
-        .headertour ul li a{
-        margin-left: -240px;
-        margin-top: 1px;
-        width: 25%;
-        font-size: 25px;
-        display: inline-block; 
-        }
-  
-    }
