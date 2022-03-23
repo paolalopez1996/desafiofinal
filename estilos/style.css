@@ -1,4 +1,18 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    }
+    
+    body{
+    font-family: 'Hubballi', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Caveat', cursive;
+    background-image: url(../imagenes/45degreee_fabric.png);
+    background-repeat: repeat;
+    text-decoration: none;
+    }
+    /*--------------------------INDEX--------------------------------------*/
 .container {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:  1fr 0.5fr 0.2fr 0.1fr 0.1fr ;
@@ -395,23 +409,700 @@ text-align: center;
     background-color: #d8dee9;
     }
     #copyrighttour{
-    font-size:20px;
+    font-size:15px;
     margin-left: 30rem;
-    margin-top: 2rem;
+    margin-top: 0%;
     width: 40rem;
     /* height: 1rem; */
     text-align: center;
+}
+    /*FIN DE TOUR DATES-------------------------*/
+    /*--------SECCION PHOTOS----*/
+    /*header seccion photo*/
+    .fondo{
+        background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
+        background-repeat: repeat;
+        object-fit: cover;
+    }
+.headerphoto{
+background-color: #eeeeee; 
+font-weight: 500;
+height: 100px;
+text-align: center;
+width: 100%;
+}
+.navegacionphoto{
+background-color: #eeeeee;
+font-weight: 500;
+height: 200px;
+text-align: center;
+width: 100%;
+}
+.menuphoto li{
+font-size: 20px;
+margin-left: 4%;
+ margin-top: 1%; 
+padding: 2px;
+display: flex;
+display: inline-block;
+} 
+.navegacionphoto__titulo{
+font-weight: 600;
+font-size: 30px; 
+text-align: center;
+padding-top: 2%;
+}
+.barrasphoto{
+line-height: 80px;
+font-size: 40px;
+float: right;
+margin-right: 50px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+
+/*body seccion photo*/
+.containerphoto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5rem;
+}
+.containerphoto img{
+    margin-top: 25px;
+height: 400px;
+width: 400px;
+object-fit: cover;
+box-shadow: 5px 5px 2px 2px red;
+}
+/*footer seccion photos*/
+footerphoto{ 
+    background-color: #d00000;
+    height: 20rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    box-shadow: -5px -5px 5px  18px #d00000;
+    }
+    .flex{
+    display: flex;
+    }
+    footerphoto img{
+    display: inline-block;
+    width: 2rem;
+    border: 2px solid black; 
+    border-radius: 8px;
+    padding: 5px;
+    }
+    .footerphoto img:hover{
+    border-color: #ffd60a;
+    }
+    .redesphoto {
+    width: 30%;
+    height: 20%;
+    
+    display:inline-block;
+    margin-left: 20%;
+    margin-top: 4rem;
+    } 
+    .redesphoto a{
+    margin-left: 10%;
+    } 
+    .registrofooterphoto{
+    margin: 0 2rem;
+    opacity: 0.9;
+    background-color: #ffd60a;
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    }
+    .registrofooterphoto input{
+    display: inline-block;
+    font-family:  'Hubballi', cursive;
+    height: 15px;
+    margin: 0;
+    border-radius: 10%;
+    background-color: #d8dee9;
+    }
+    #copyrightphoto{
+    font-size:15px;
+    margin-left: -700px; 
+    margin-top: 16%;
+    width: 25%;
+    height: 2%;
+    } 
+    @media screen and (min-width:140px) and (max-width: 320px){
+    .navegacionphoto flex{
+    display: flex;
+    }
+    .navegacionphoto{
+    width:100%;
+    height:10rem;
+    display: block;
+    }
+    .navphoto{
+    width: 60%;
+    height: 2rem;
+    }
+    .barrasphoto{ 
+    display: block;
+    margin:10px 20px;
+    font-size:80px;
+    }
+    ul{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: #d00000;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+    .menuphoto ul li{
+    display: block;
+    margin:10px 0;
+    line-height: 40px;
+    }
+    .menuphoto ul li a{
+    font-size: 20px;
+    display: block;
+    }
+    li a:hover, li a.active{
+    background: none;
+    }
+    #check:checked~ ul{
+    left: 0;
+    }
+    .containerphoto img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .registrofootertour{
+    font-size: 4px;
+    opacity: 0.9;
+    background-color: #ffd60a;
+    width:20%;
+    height: 12rem;
+    padding: 2rem;
+    }
+    .redesphoto {
+    margin-left: 16%;
+    } 
+    #copyrightphoto{
+    visibility: hidden;
+    }
+    }
+    @media screen and (min-width:321px) and (max-width: 768px){
+    .navegacionphoto{
+    width:100%;
+    height:10rem;
+    display: block;
+    }
+    .navphoto{
+    width: 60%;
+    height: 2rem;
+    }
+    ul{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    background-color: #d00000;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+    .menuphoto ul li a{
+    font-size: 20px;
+    display: block;
+    }
+    li a:hover, li a.active{
+    background: none;
+    }
+    #check:checked~ ul{
+    left: 0;
+    }
+    .barrasphoto{ 
+    display: block;
+    margin:10px 10px;
+    font-size:80px;
+    } 
+  
+    #copyrightphoto{
+    visibility: hidden;
     }
 
+    }
+    @media screen and (min-width:768px) and (max-width: 1200px){
+    #copyrightphoto{
+    visibility: hidden;
+    }
+    }
 
-/*FIN DE TOUR DATES-------------------------*/
-/* ----RESPONSIVE INDEX Y TOURDATES */
+    /*--------------------------------------- SECCION VIDEOS-----------------*/
+    .fondo{
+        background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
+        background-repeat: repeat;
+        object-fit: cover;
+    }
+    .headervideo{
+        background-color: #eeeeee; 
+        font-weight: 500;
+        height: 180px;
+        text-align: center;
+        width: 100%;
+        }
+        .navegacionvideo{
+        background-color: #eeeeee;
+        font-weight: 500;
+        height: 200px;
+        text-align: center;
+        width: 100%;
+        }
+        .menuvideo li{
+        font-size: 20px;
+        margin-left: 4%;
+        margin-top: 2%;
+        padding: 2px;
+        display: flex;
+        display: inline-block;
+        } 
+        .navegacionvideo__titulo{
+        font-weight: 600;
+        font-size: 40px; 
+        padding-top: 2%;
+        text-align: center;
+        }
+        .barrasvideo{
+        line-height: 80px;
+        font-size: 40px;
+        float: right;
+        margin-right: 50px;
+        cursor: pointer;
+        display: none;
+        }
+        #check{
+        display: none;
+        }
+        
+        /*body seccion video*/
+        .containervideo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+        .containervideo iframe{
+            margin-top: 25px;
+        height: 500px;
+        width: 500px;
+        object-fit: cover;
+        box-shadow: 5px 5px 2px 2px red;
+        }
+        /*footer seccion video*/
+        footervideo{ 
+            background-color: #d00000;
+            height: 20rem;
+            width: 100%;
+            margin-top: 1.5rem;
+            box-shadow: -5px -5px 5px  18px #d00000;
+            }
+            .flex{
+            display: flex;
+            }
+            footervideo img{
+            display: inline-block;
+            width: 2rem;
+            border: 2px solid black; 
+            border-radius: 8px;
+            padding: 5px;
+            }
+            .footervideo img:hover{
+            border-color: #ffd60a;
+            }
+            .redesvideo {
+            width: 30%;
+            height: 20%;
+            display:inline-block;
+            margin-left: 20%;
+            margin-top: 4rem;
+            } 
+            .redesvideo a{
+            margin-left: 10%;
+            } 
+            .registrofootervideo{
+            margin: 0 2rem;
+            opacity: 0.9;
+            background-color: #ffd60a;
+            width: 30%;
+            height: 50%;
+            padding: 1rem;
+            }
+            .registrofootervideo input{
+            display: inline-block;
+            font-family:  'Hubballi', cursive;
+            height: 15px;
+            margin: 0;
+            border-radius: 10%;
+            background-color: #d8dee9;
+            }
+            #copyrightvideo{
+            font-size:15px;
+            margin-left: -700px; 
+            margin-top: 16%;
+            width: 25%;
+            height: 2%;
+            } 
+            @media screen and (min-width:140px) and (max-width: 320px){
+                .navegacionvideo flex{
+                display: flex;
+                }
+                .navegacionvideo{
+                width:100%;
+                height:10rem;
+                display: block;
+                }
+                .navvideo{
+                width: 60%;
+                height: 2rem;
+                }
+                .barrasvideo{ 
+                display: block;
+                margin:10px 20px;
+                font-size:80px;
+                }
+                ul{
+                position: absolute;
+                width: 100%;
+                height: 60%;
+                background-color: #d00000;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+                }
+                .menuvideo ul li{
+                display: block;
+                margin:10px 0;
+                line-height: 40px;
+                }
+                .menuvideo ul li a{
+                font-size: 20px;
+                display: block;
+                }
+                li a:hover, li a.active{
+                background: none;
+                }
+                #check:checked~ ul{
+                left: 0;
+                }
+                .containervideo iframe{
+                    margin-top: 25px;
+                    height: 300px;
+                    width: 300px;
+                    object-fit: cover;
+                    }
+                .registrofootervideo{
+                font-size: 15px;
+                opacity: 0.9;
+                background-color: #ffd60a;
+                width:45%;
+                height: 12rem;
+                padding: 0.2rem;
+                }
+                .redesvideo {
+                margin-left: 16%;
+                } 
+                #copyrightvideo{
+                visibility: hidden;
+                }
+                }
+                @media screen and (min-width:321px) and (max-width: 768px){
+                .navegacionvideo{
+                width:100%;
+                height:10rem;
+                display: block;
+                }
+                .navvideo{
+                width: 60%;
+                height: 2rem;
+                }
+                ul{
+                position: absolute;
+                width: 50%;
+                height: 60%;
+                background-color: #d00000;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+                }
+                .menuvideo ul li a{
+                font-size: 20px;
+                display: block;
+                }
+                li a:hover, li a.active{
+                background: none;
+                }
+                #check:checked~ ul{
+                left: 0;
+                }
+                .barrasvideo{ 
+                display: block;
+                margin:10px 10px;
+                font-size:80px;
+                } 
+                #copyrightvideo{
+                visibility: hidden;
+                }
+                .containervideo iframe{
+                margin-top: 25px;
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+                }
+            
+                }
+                @media screen and (min-width:768px) and (max-width: 1200px){
+                #copyrightvideo{
+                visibility: hidden;
+                }
+                } 
+/*---------------------DISCOGRAPHY---------------*/  
+.fondo{
+    background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
+    background-repeat: repeat;
+    object-fit: cover;
+}         
+.headerdisco{
+background-color: #eeeeee; 
+font-weight: 500;
+height: 180px;
+text-align: center;
+width: 100%;
+}
+.navegaciondisco{
+background-color: #eeeeee;
+font-weight: 500;
+ height: 90px;
+text-align: center;
+width: 100%;
+}
+.menudisco li{
+font-size: 20px;
+margin-left: 4%;
+margin-top: 2%;
+padding: 2px;
+display: flex;
+display: inline-block;
+                    } 
+                    .navegaciondisco__titulo{
+                    font-weight: 600;
+                    font-size: 30px; 
+                   
+                    text-align: center;
+                    }
+                    .barrasdisco{
+                    line-height: 80px;
+                    font-size: 40px;
+                    float: right;
+                    margin-right: 50px;
+                    cursor: pointer;
+                    display: none;
+                    }
+                    #check{
+                    display: none;
+                    }
+                    
+                    /*body seccion discography*/
+                    .padrediscography{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        width: 100%;
+                    }
+                    .padrediscography img{
+                    margin-top: 25px;
+                    height: 500px;
+                    width: 500px;
+                    object-fit: cover;
+                    box-shadow: 5px 5px 2px 2px red;
+                    }
+                    /*footer seccion discography*/
+                    footerdisco{ 
+                        background-color: #d00000;
+                        height: 20rem;
+                        width: 100%;
+                        margin-top: 1.5rem;
+                        box-shadow: -5px -5px 5px  18px #d00000;
+                        }
+                        .flex{
+                        display: flex;
+                        }
+                        footerdisco img{
+                        display: inline-block;
+                        width: 2rem;
+                        border: 2px solid black; 
+                        border-radius: 8px;
+                        padding: 5px;
+                        }
+                        .footerdisco img:hover{
+                        border-color: #ffd60a;
+                        }
+                        .redesdisco{
+                        width: 30%;
+                        height: 20%;
+                        display:inline-block;
+                        margin-left: 20%;
+                        margin-top: 4rem;
+                        } 
+                        .redesdisco a{
+                        margin-left: 10%;
+                        } 
+                        .registrofooterdisco{
+                        margin: 0 2rem;
+                        opacity: 0.9;
+                        background-color: #ffd60a;
+                        width: 30%;
+                        height: 50%;
+                        padding: 1rem;
+                        }
+                        .registrofooterdisco input{
+                        display: inline-block;
+                        font-family:  'Hubballi', cursive;
+                        height: 15px;
+                        margin: 0;
+                        border-radius: 10%;
+                        background-color: #d8dee9;
+                        }
+                        #copyrightdisco{
+                        font-size:15px;
+                        margin-left: -700px; 
+                        margin-top: 16%;
+                        width: 25%;
+                        height: 2%;
+                        }
+                        @media screen and (min-width:140px) and (max-width: 320px){
+                            .navegaciondisco flex{
+                            display: flex;
+                            }
+                            .navegaciondisco{
+                            width:100%;
+                            height:10rem;
+                            display: block;
+                            }
+                            .navdisco{
+                            width: 60%;
+                            height: 2rem;
+                            }
+                            .barrasdisco{ 
+                            display: block;
+                            margin:10px 20px;
+                            font-size:80px;
+                            }
+                            ul{
+                            position: absolute;
+                            width: 100%;
+                            height: 60%;
+                            background-color: #d00000;
+                            left: -100%;
+                            text-align: center;
+                            transition: all .5s;
+                            }
+                            .menudisco ul li{
+                            display: block;
+                            margin:10px 0;
+                            line-height: 40px;
+                            }
+                            .menudisco ul li a{
+                            font-size: 20px;
+                            display: block;
+                            }
+                            li a:hover, li a.active{
+                            background: none;
+                            }
+                            #check:checked~ ul{
+                            left: 0;
+                            }
+                            .padrediscography img{
+                                margin-top: 25px;
+                                height: 300px;
+                                width: 300px;
+                                object-fit: cover;
+                                }
+                            .registrofooterdisco{
+                            font-size: 15px;
+                            opacity: 0.9;
+                            background-color: #ffd60a;
+                            width:45%;
+                            height: 12rem;
+                            padding: 0.2rem;
+                            }
+                            .redesdisco {
+                            margin-left: 16%;
+                            } 
+                            #copyrightdisco{
+                            visibility: hidden;
+                            }
+                            }
+                            @media screen and (min-width:321px) and (max-width: 768px){
+                            .navegaciondisco{
+                            width:100%;
+                            height:10rem;
+                            display: block;
+                            }
+                            .navvideo{
+                            width: 60%;
+                            height: 2rem;
+                            }
+                            ul{
+                            position: absolute;
+                            width: 50%;
+                            height: 60%;
+                            background-color: #d00000;
+                            left: -100%;
+                            text-align: center;
+                            transition: all .5s;
+                            }
+                            .menudisco ul li a{
+                            font-size: 20px;
+                            display: block;
+                            }
+                            li a:hover, li a.active{
+                            background: none;
+                            }
+                            #check:checked~ ul{
+                            left: 0;
+                            }
+                            .barrasdisco{ 
+                            display: block;
+                            margin:10px 10px;
+                            font-size:80px;
+                            } 
+                            #copyrightdisco{
+                            visibility: hidden;
+                            }
+                            .padrediscography img{
+                            margin-top: 25px;
+                            height: 300px;
+                            width: 300px;
+                            object-fit: cover;
+                            }
+                        
+                            }
+                            @media screen and (min-width:768px) and (max-width: 1200px){
+                            #copyrightdisco{
+                            visibility: hidden;
+                            }
+                            } 
+                        /* ----RESPONSIVE INDEX Y TOURDATES ----------------------------------*/
 @media screen and (min-width:240px) and (max-width: 320px){
 .container {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:  0.4fr 0.1fr  0.1fr 0.1fr 0.9fr 0.1fr ;
 grid-template-areas:
- "navegacion"
+"navegacion"
 "sectionbio"
 "sectionbio"
 "albums"
