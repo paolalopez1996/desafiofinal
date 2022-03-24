@@ -1,17 +1,16 @@
 *{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    }
-    
-    body{
-    font-family: 'Hubballi', cursive;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Caveat', cursive;
-    background-image: url(../imagenes/45degreee_fabric.png);
-    background-repeat: repeat;
-    text-decoration: none;
-    }
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+body{
+font-family: 'Hubballi', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Caveat', cursive;
+background-image: url(../imagenes/45degreee_fabric.png);
+background-repeat: repeat;
+text-decoration: none;
+}
     /*--------------------------INDEX--------------------------------------*/
 .container {  display: grid;
 grid-template-columns: 1fr;
@@ -535,6 +534,13 @@ footerphoto{
     height: 2%;
     } 
     @media screen and (min-width:140px) and (max-width: 320px){
+        .headerphoto nav ul{
+            height: 45%;
+            width: 55%;
+        }
+        .headerphoto nav h1{
+            font-size: 20px;
+        } 
     .navegacionphoto flex{
     display: flex;
     }
@@ -550,7 +556,7 @@ footerphoto{
     .barrasphoto{ 
     display: block;
     margin:10px 20px;
-    font-size:80px;
+    font-size:40px;
     }
     ul{
     position: absolute;
@@ -581,22 +587,30 @@ footerphoto{
         height: 250px;
         object-fit: cover;
     }
-    .registrofootertour{
-    font-size: 4px;
+    .registrofooterphoto{
+    font-size: 10px;
     opacity: 0.9;
     background-color: #ffd60a;
-    width:20%;
+    width:40%;
     height: 12rem;
-    padding: 2rem;
     }
     .redesphoto {
-    margin-left: 16%;
+    margin-left: 5%;
+    margin-top: 5%;
     } 
     #copyrightphoto{
     visibility: hidden;
     }
+    
     }
     @media screen and (min-width:321px) and (max-width: 768px){
+        .headerphoto nav ul{
+            height: 50%;
+            width: 55%;
+        } 
+        .headerphoto nav a{
+            font-size: 15px;
+        }
     .navegacionphoto{
     width:100%;
     height:10rem;
@@ -616,7 +630,6 @@ footerphoto{
     transition: all .5s;
     }
     .menuphoto ul li a{
-    font-size: 20px;
     display: block;
     }
     li a:hover, li a.active{
@@ -628,247 +641,259 @@ footerphoto{
     .barrasphoto{ 
     display: block;
     margin:10px 10px;
-    font-size:80px;
+    font-size:40px;
     } 
-  
     #copyrightphoto{
     visibility: hidden;
     }
-
+    .registrofooterphoto{
+font-size: 10px;
+opacity: 0.9;
+background-color: #ffd60a;
+width:30%;
+height: 12rem;
+}
+.redesphoto {
+margin-left: 5%;
+}
+}
+@media screen and (min-width:768px) and (max-width: 1200px){
+#copyrightphoto{
+visibility: hidden;
+}
+}
+/*--------------------------------------- SECCION VIDEOS-----------------*/
+ .fondo{
+background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
+background-repeat: repeat;
+ object-fit: cover;
+}
+.headervideo{
+background-color: #eeeeee; 
+font-weight: 500;
+height: 180px;
+text-align: center;
+width: 100%;
+}
+.navegacionvideo{
+background-color: #eeeeee;
+font-weight: 500;
+height: 200px;
+text-align: center;
+width: 100%;
+}
+.menuvideo li{
+font-size: 20px;
+margin-left: 4%;
+margin-top: 2%;
+padding: 2px;
+display: flex;
+ display: inline-block;
+} 
+.navegacionvideo__titulo{
+font-weight: 600;
+font-size: 40px; 
+padding-top: 2%;
+text-align: center;
+}
+.barrasvideo{
+line-height: 80px;
+font-size: 40px;
+float: right;
+margin-right: 50px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+ }
+        /*body seccion video*/
+ .containervideo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
     }
-    @media screen and (min-width:768px) and (max-width: 1200px){
-    #copyrightphoto{
-    visibility: hidden;
+    .containervideo iframe{
+    margin-top: 25px;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    box-shadow: 5px 5px 2px 2px red;
     }
+        /*footer seccion video*/
+    footervideo{ 
+    background-color: #d00000;
+    height: 20rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    box-shadow: -5px -5px 5px  18px #d00000;
     }
-
-    /*--------------------------------------- SECCION VIDEOS-----------------*/
-    .fondo{
-        background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
-        background-repeat: repeat;
-        object-fit: cover;
+    .flex{
+    display: flex;
     }
-    .headervideo{
-        background-color: #eeeeee; 
-        font-weight: 500;
-        height: 180px;
-        text-align: center;
-        width: 100%;
+    footervideo img{
+    display: inline-block;
+    width: 2rem;
+    border: 2px solid black; 
+    border-radius: 8px;
+    padding: 5px;
+    }
+    .footervideo img:hover{
+    border-color: #ffd60a;
+    }
+    .redesvideo {
+    width: 30%;
+    height: 20%;
+    display:inline-block;
+    margin-left: 20%;
+    margin-top: 4rem;
+    } 
+    .redesvideo a{
+    margin-left: 10%;
+    } 
+    .registrofootervideo{
+    margin: 0 2rem;
+    opacity: 0.9;
+     background-color: #ffd60a;
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    }
+    .registrofootervideo input{
+    display: inline-block;
+    font-family:  'Hubballi', cursive;
+    height: 15px;
+    margin: 0;
+     border-radius: 10%;
+    background-color: #d8dee9;
+    }
+    #copyrightvideo{
+    font-size:15px;
+    margin-left: -700px; 
+    margin-top: 16%;
+    width: 25%;
+    height: 2%;
+    } 
+     @media screen and (min-width:140px) and (max-width: 320px){
+    .headervideo nav ul{
+        height: 62%;
+        width: 60%;
+        } 
+        .headervideo nav h1{
+        font-size: 10px;
+        }
+        .navegacionvideo flex{
+        display: flex;
         }
         .navegacionvideo{
-        background-color: #eeeeee;
-        font-weight: 500;
-        height: 200px;
-        text-align: center;
-        width: 100%;
+        width:100%;
+        height:10rem;
+        display: block;
         }
-        .menuvideo li{
+        .navvideo{
+        width: 60%;
+        height: 2rem;
+        }
+        .barrasvideo{ 
+        display: block;
+        margin:10px 20px;
+        font-size:80px;
+        }
+        ul{
+        position: absolute;
+         width: 100%;
+        height: 60%;
+        background-color: #d00000;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        }
+        .menuvideo ul li{
+        display: block;
+        margin:10px 0;
+        line-height: 40px;
+        }
+        .menuvideo ul li a{
         font-size: 20px;
-        margin-left: 4%;
-        margin-top: 2%;
-        padding: 2px;
-        display: flex;
-        display: inline-block;
+        display: block;
+        }
+        li a:hover, li a.active{
+        background: none;
+        }
+        #check:checked~ ul{
+         left: 0;
+            }
+        .containervideo iframe{
+        margin-top: 25px;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        }
+        #copyrightvideo{
+        visibility: hidden;
+        }
+        }
+        @media screen and (min-width:321px) and (max-width: 768px){
+         .headervideo nav ul{
+        height: 40%;
+        width: 40%;
         } 
-        .navegacionvideo__titulo{
-        font-weight: 600;
-        font-size: 40px; 
-        padding-top: 2%;
+        .headervideo nav h1{
+        font-size: 20px;
+        }
+        .navegacionvideo{
+        width:100%;
+        height:10rem;
+        display: block;
+        }
+        .navvideo{
+         width: 60%;
+        height: 2rem;
+        }
+        ul{
+        position: absolute;
+        width: 50%;
+        height: 60%;
+        background-color: #d00000;
+        left: -100%;
         text-align: center;
+        transition: all .5s;
         }
-        .barrasvideo{
-        line-height: 80px;
-        font-size: 40px;
-        float: right;
-        margin-right: 50px;
-        cursor: pointer;
-        display: none;
+        .menuvideo ul li a{
+        font-size: 20px;
+        display: block;
         }
-        #check{
-        display: none;
+        li a:hover, li a.active{
+        background: none;
         }
-        
-        /*body seccion video*/
-        .containervideo{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            width: 100%;
+        #check:checked~ ul{
+        left: 0;
+        }
+        .barrasvideo{ 
+        display: block;
+        margin:10px 10px;
+        font-size:80px;
+        } 
+        #copyrightvideo{
+        visibility:  hidden; 
         }
         .containervideo iframe{
-            margin-top: 25px;
-        height: 500px;
-        width: 500px;
+        margin-top: 25px;
+        height: 300px;
+        width: 300px;
         object-fit: cover;
-        box-shadow: 5px 5px 2px 2px red;
         }
-        /*footer seccion video*/
-        footervideo{ 
-            background-color: #d00000;
-            height: 20rem;
-            width: 100%;
-            margin-top: 1.5rem;
-            box-shadow: -5px -5px 5px  18px #d00000;
-            }
-            .flex{
-            display: flex;
-            }
-            footervideo img{
-            display: inline-block;
-            width: 2rem;
-            border: 2px solid black; 
-            border-radius: 8px;
-            padding: 5px;
-            }
-            .footervideo img:hover{
-            border-color: #ffd60a;
-            }
-            .redesvideo {
-            width: 30%;
-            height: 20%;
-            display:inline-block;
-            margin-left: 20%;
-            margin-top: 4rem;
-            } 
-            .redesvideo a{
-            margin-left: 10%;
-            } 
-            .registrofootervideo{
-            margin: 0 2rem;
-            opacity: 0.9;
-            background-color: #ffd60a;
-            width: 30%;
-            height: 50%;
-            padding: 1rem;
-            }
-            .registrofootervideo input{
-            display: inline-block;
-            font-family:  'Hubballi', cursive;
-            height: 15px;
-            margin: 0;
-            border-radius: 10%;
-            background-color: #d8dee9;
-            }
-            #copyrightvideo{
-            font-size:15px;
-            margin-left: -700px; 
-            margin-top: 16%;
-            width: 25%;
-            height: 2%;
-            } 
-            @media screen and (min-width:140px) and (max-width: 320px){
-                .navegacionvideo flex{
-                display: flex;
-                }
-                .navegacionvideo{
-                width:100%;
-                height:10rem;
-                display: block;
-                }
-                .navvideo{
-                width: 60%;
-                height: 2rem;
-                }
-                .barrasvideo{ 
-                display: block;
-                margin:10px 20px;
-                font-size:80px;
-                }
-                ul{
-                position: absolute;
-                width: 100%;
-                height: 60%;
-                background-color: #d00000;
-                left: -100%;
-                text-align: center;
-                transition: all .5s;
-                }
-                .menuvideo ul li{
-                display: block;
-                margin:10px 0;
-                line-height: 40px;
-                }
-                .menuvideo ul li a{
-                font-size: 20px;
-                display: block;
-                }
-                li a:hover, li a.active{
-                background: none;
-                }
-                #check:checked~ ul{
-                left: 0;
-                }
-                .containervideo iframe{
-                    margin-top: 25px;
-                    height: 300px;
-                    width: 300px;
-                    object-fit: cover;
-                    }
-                .registrofootervideo{
-                font-size: 15px;
-                opacity: 0.9;
-                background-color: #ffd60a;
-                width:45%;
-                height: 12rem;
-                padding: 0.2rem;
-                }
-                .redesvideo {
-                margin-left: 16%;
-                } 
-                #copyrightvideo{
-                visibility: hidden;
-                }
-                }
-                @media screen and (min-width:321px) and (max-width: 768px){
-                .navegacionvideo{
-                width:100%;
-                height:10rem;
-                display: block;
-                }
-                .navvideo{
-                width: 60%;
-                height: 2rem;
-                }
-                ul{
-                position: absolute;
-                width: 50%;
-                height: 60%;
-                background-color: #d00000;
-                left: -100%;
-                text-align: center;
-                transition: all .5s;
-                }
-                .menuvideo ul li a{
-                font-size: 20px;
-                display: block;
-                }
-                li a:hover, li a.active{
-                background: none;
-                }
-                #check:checked~ ul{
-                left: 0;
-                }
-                .barrasvideo{ 
-                display: block;
-                margin:10px 10px;
-                font-size:80px;
-                } 
-                #copyrightvideo{
-                visibility: hidden;
-                }
-                .containervideo iframe{
-                margin-top: 25px;
-                height: 300px;
-                width: 300px;
-                object-fit: cover;
-                }
-            
-                }
-                @media screen and (min-width:768px) and (max-width: 1200px){
-                #copyrightvideo{
-                visibility: hidden;
-                }
-                } 
+        }
+         @media screen and (min-width:768px) and (max-width: 1200px){
+         #copyrightvideo{
+        visibility: hidden;
+        }
+        .headervideo nav ul a{
+        height: 90%;
+        font-size: 20px;  
+        }
+        } 
 /*---------------------DISCOGRAPHY---------------*/  
 .fondo{
     background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
@@ -896,207 +921,440 @@ margin-top: 2%;
 padding: 2px;
 display: flex;
 display: inline-block;
-                    } 
-                    .navegaciondisco__titulo{
-                    font-weight: 600;
-                    font-size: 30px; 
-                   
-                    text-align: center;
-                    }
-                    .barrasdisco{
-                    line-height: 80px;
-                    font-size: 40px;
-                    float: right;
-                    margin-right: 50px;
-                    cursor: pointer;
-                    display: none;
-                    }
-                    #check{
-                    display: none;
-                    }
+} 
+.navegaciondisco__titulo{
+font-weight: 600;
+font-size: 30px; 
+text-align: center;
+        }
+    .barrasdisco{
+    line-height: 80px;
+    font-size: 40px;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+    }
+    #check{
+    display: none;
+        }
                     
-                    /*body seccion discography*/
-                    .padrediscography{
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        width: 100%;
-                    }
-                    .padrediscography img{
-                    margin-top: 25px;
-                    height: 500px;
-                    width: 500px;
-                    object-fit: cover;
-                    box-shadow: 5px 5px 2px 2px red;
-                    }
-                    /*footer seccion discography*/
-                    footerdisco{ 
-                        background-color: #d00000;
-                        height: 20rem;
-                        width: 100%;
-                        margin-top: 1.5rem;
-                        box-shadow: -5px -5px 5px  18px #d00000;
-                        }
-                        .flex{
-                        display: flex;
-                        }
-                        footerdisco img{
-                        display: inline-block;
-                        width: 2rem;
-                        border: 2px solid black; 
-                        border-radius: 8px;
-                        padding: 5px;
-                        }
-                        .footerdisco img:hover{
-                        border-color: #ffd60a;
-                        }
-                        .redesdisco{
-                        width: 30%;
-                        height: 20%;
-                        display:inline-block;
-                        margin-left: 20%;
-                        margin-top: 4rem;
-                        } 
-                        .redesdisco a{
-                        margin-left: 10%;
-                        } 
-                        .registrofooterdisco{
-                        margin: 0 2rem;
-                        opacity: 0.9;
-                        background-color: #ffd60a;
-                        width: 30%;
-                        height: 50%;
-                        padding: 1rem;
-                        }
-                        .registrofooterdisco input{
-                        display: inline-block;
-                        font-family:  'Hubballi', cursive;
-                        height: 15px;
-                        margin: 0;
-                        border-radius: 10%;
-                        background-color: #d8dee9;
-                        }
-                        #copyrightdisco{
-                        font-size:15px;
-                        margin-left: -700px; 
-                        margin-top: 16%;
-                        width: 25%;
-                        height: 2%;
-                        }
-                        @media screen and (min-width:140px) and (max-width: 320px){
-                            .navegaciondisco flex{
-                            display: flex;
-                            }
-                            .navegaciondisco{
-                            width:100%;
-                            height:10rem;
-                            display: block;
-                            }
-                            .navdisco{
-                            width: 60%;
-                            height: 2rem;
-                            }
-                            .barrasdisco{ 
-                            display: block;
-                            margin:10px 20px;
-                            font-size:80px;
-                            }
-                            ul{
-                            position: absolute;
-                            width: 100%;
-                            height: 60%;
-                            background-color: #d00000;
-                            left: -100%;
-                            text-align: center;
-                            transition: all .5s;
-                            }
-                            .menudisco ul li{
-                            display: block;
-                            margin:10px 0;
-                            line-height: 40px;
-                            }
-                            .menudisco ul li a{
-                            font-size: 20px;
-                            display: block;
-                            }
-                            li a:hover, li a.active{
-                            background: none;
-                            }
-                            #check:checked~ ul{
-                            left: 0;
-                            }
-                            .padrediscography img{
-                                margin-top: 25px;
-                                height: 300px;
-                                width: 300px;
-                                object-fit: cover;
-                                }
-                            .registrofooterdisco{
-                            font-size: 15px;
-                            opacity: 0.9;
-                            background-color: #ffd60a;
-                            width:45%;
-                            height: 12rem;
-                            padding: 0.2rem;
-                            }
-                            .redesdisco {
-                            margin-left: 16%;
-                            } 
-                            #copyrightdisco{
-                            visibility: hidden;
-                            }
-                            }
-                            @media screen and (min-width:321px) and (max-width: 768px){
-                            .navegaciondisco{
-                            width:100%;
-                            height:10rem;
-                            display: block;
-                            }
-                            .navvideo{
-                            width: 60%;
-                            height: 2rem;
-                            }
-                            ul{
-                            position: absolute;
-                            width: 50%;
-                            height: 60%;
-                            background-color: #d00000;
-                            left: -100%;
-                            text-align: center;
-                            transition: all .5s;
-                            }
-                            .menudisco ul li a{
-                            font-size: 20px;
-                            display: block;
-                            }
-                            li a:hover, li a.active{
-                            background: none;
-                            }
-                            #check:checked~ ul{
-                            left: 0;
-                            }
-                            .barrasdisco{ 
-                            display: block;
-                            margin:10px 10px;
-                            font-size:80px;
-                            } 
-                            #copyrightdisco{
-                            visibility: hidden;
-                            }
-                            .padrediscography img{
-                            margin-top: 25px;
-                            height: 300px;
-                            width: 300px;
-                            object-fit: cover;
-                            }
-                        
-                            }
-                            @media screen and (min-width:768px) and (max-width: 1200px){
-                            #copyrightdisco{
-                            visibility: hidden;
-                            }
-                            } 
-                        /* ----RESPONSIVE INDEX Y TOURDATES ----------------------------------*/
+        /*body seccion discography*/
+    .padrediscography{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    }
+    .padrediscography img{
+    margin-top: 25px;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    box-shadow: 5px 5px 2px 2px red;
+        }
+            /*footer seccion discography*/
+    footerdisco{ 
+    background-color: #d00000;
+    height: 20rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    box-shadow: -5px -5px 5px  18px #d00000;
+    }
+    .flex{
+    display: flex;
+    }
+    footerdisco img{
+    display: inline-block;
+    width: 2rem;
+    border: 2px solid black; 
+    border-radius: 8px;
+    padding: 5px;
+    }
+    .footerdisco img:hover{
+    border-color: #ffd60a;
+    }
+    .redesdisco{
+    width: 30%;
+    height: 20%;
+    display:inline-block;
+    margin-left: 20%;
+    margin-top: 4rem;
+    } 
+    .redesdisco a{
+    margin-left: 10%;
+    } 
+    .registrofooterdisco{
+    margin: 0 2rem;
+    opacity: 0.9;
+    background-color: #ffd60a;
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    }
+    .registrofooterdisco input{
+    display: inline-block;
+    font-family:  'Hubballi', cursive;
+    height: 15px;
+    margin: 0;
+    border-radius: 10%;
+    background-color: #d8dee9;
+    }
+    #copyrightdisco{
+    font-size:15px;
+    margin-left: -700px; 
+    margin-top: 16%;
+    width: 25%;
+    height: 2%;
+    }
+     @media screen and (min-width:140px) and (max-width: 320px){
+    .headerdisco nav ul{
+     height: 20%;
+    width: 70%;
+    } 
+    .navegaciondisco flex{
+     display: flex;
+    }
+    .navegaciondisco{
+    width:100%;
+    height:10rem;
+    display: block;
+    }
+    .navdisco{
+   width: 60%;
+   height: 2rem;
+}
+    .barrasdisco{ 
+    display: block;
+    margin:10px 20px;
+    font-size:20px;
+    }
+    ul{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: #d00000;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+    .menudisco ul li{
+    display: block;
+    margin:10px 0;
+    line-height: 40px;
+    }
+    .menudisco ul li a{
+    font-size: 20px;
+    display: block;
+    }
+    li a:hover, li a.active{
+        background: none;
+    }
+    #check:checked~ ul{
+    left: 0;
+    }
+        .padrediscography img{
+        margin-top: 25px;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        }
+        .registrofooterdisco{
+        font-size: 15px;
+        opacity: 0.9;
+        background-color: #ffd60a;
+        width:45%;
+        height: 12rem;
+        padding: 0.2rem;
+         }
+        .redesdisco {
+     margin-left: 16%;
+    } 
+        #copyrightdisco{
+        visibility: hidden;
+        }
+        }
+@media screen and (min-width:321px) and (max-width: 768px){
+         .headerdisco nav ul{
+         height: 20%;
+        width: 70%;
+        } 
+        .navegaciondisco{
+        width:100%;
+        height:10rem;
+        display: block;
+        }
+         .navvideo{
+        width: 60%;
+        height: 2rem;
+        }
+        ul{
+        position: absolute;
+        width: 50%;
+        height: 60%;
+        background-color: #d00000;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+       }
+        .menudisco ul li a{
+        font-size: 20px;
+        display: block;
+        }
+    li a:hover, li a.active{
+    background: none;
+        }
+        #check:checked~ ul{
+        left: 0;
+        }
+        .barrasdisco{ 
+        display: block;
+        margin:10px 10px;
+        font-size:80px;
+        }
+        #copyrightdisco{
+        visibility: hidden;
+        }
+        .padrediscography img{
+        margin-top: 25px;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        }
+        }
+        @media screen and (min-width:768px) and (max-width: 1200px){
+    #copyrightdisco{
+    visibility: hidden;
+    }
+    } 
+/*-------------ABOUT------------------*/
+/* .fondo{
+    background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
+    background-repeat: repeat;
+    object-fit: cover;
+} */
+.headerabout{
+background-color: #eeeeee; 
+font-weight: 500;
+height: 20%;
+text-align: center;
+width: 100%;
+}
+.navegacionabout{
+background-color: #eeeeee;
+font-weight: 500;
+height: 6rem;
+text-align: center;
+width: 100%;
+}
+.menuabout li{
+font-size: 20px;
+margin-left: 4%;
+margin-top: 1%; 
+padding: 2px;
+display: flex;
+display: inline-block;
+} 
+.navegacionabout__titulo{
+font-weight: 600;
+font-size: 30px; 
+text-align: center;
+padding-top: 2%;
+}
+.barrasabout{
+line-height: 80px;
+font-size: 40px;
+float: right;
+margin-right: 50px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.containerabout {
+    background-color: #d8dee9;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.text-center{
+    text-align: center;
+}
+.integrante{
+    font-size: 25px;
+    background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
+    background-repeat: repeat;
+    object-fit: cover;
+    width: 80%;
+    padding: 10px;
+    margin: 25px;
+    margin-left: 10%;
+    box-sizing: border-box;
+    border: 1px solid black;
+} 
+ 
+.containerabout img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    
+}
+footerabout{ 
+    background-color: #d00000;
+    height: 20rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    box-shadow: -5px -5px 5px  18px #d00000;
+    }
+    .flex{
+    display: flex;
+    }
+    footerabout img{
+    display: inline-block;
+    width: 2rem;
+    border: 2px solid black; 
+    border-radius: 8px;
+    padding: 5px;
+    }
+    .footerabout img:hover{
+    border-color: #ffd60a;
+    }
+    .redesabout {
+    width: 30%;
+    height: 20%;
+    display:inline-block;
+    margin-left: 20%;
+    margin-top: 4rem;
+    } 
+    .redesabout a{
+    margin-left: 10%;
+    } 
+    .registrofooterabout{
+    margin: 0 2rem;
+    opacity: 0.9;
+    background-color: #ffd60a;
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    }
+    .registrofooterabout input{
+    display: inline-block;
+    font-family:  'Hubballi', cursive;
+    height: 15px;
+    margin: 0;
+    border-radius: 10%;
+    background-color: #d8dee9;
+    }
+    #copyrightabout{
+    font-size:15px;
+    margin-left: -700px; 
+    margin-top: 16%;
+    width: 25%;
+    height: 2%;
+    } 
+    @media screen and (min-width:140px) and (max-width: 320px){
+        .navegacioabout flex{
+        display: flex;
+        }
+        .navegacionabout{
+        width:100%;
+        height:10rem;
+        display: block;
+        }
+        .navabout{
+        width: 80%;
+        height: 2.5rem;
+        }
+        .menuabout{
+        height: 22%;
+        width: 50%;
+        }
+        .barrasabout{ 
+        display: block;
+        margin:10px  35px;
+        font-size:50px;
+        }
+        ul{
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        background-color: #d00000;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        }
+        .menuabout ul li{
+        display: block;
+        margin:10px 0;
+        line-height: 20px;
+        }
+        .menuabout ul li a{
+        font-size: 20px;
+        display: block;
+        }
+        li a:hover, li a.active{
+        background: none;
+        }
+        #check:checked~ ul{
+        left: 0;
+        }
+    }
+    @media screen and (min-width:321px) and (max-width: 768px){
+        .navegacioabout{
+        width:100%;
+        height:10rem;
+        display: block;
+        }
+        .navabout{
+        width: 60%;
+        height: 2rem;
+        }
+        ul{
+        position: absolute;
+        width: 50%;
+        height: 60%;
+        background-color: #d00000;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        }
+        .menuabout{
+        height: 35%;
+        width: 30%;
+        }
+        .menuabout ul li a{
+        font-size: 20px;
+        display: block;
+        }
+        li a:hover, li a.active{
+        background: none;
+        }
+        #check:checked~ ul{
+    left: 0;
+    }
+    .barrasabout{ 
+    display: block;
+    margin:10px 10px;
+    font-size:40px;
+    } 
+     #copyrightabout{
+    visibility: hidden;
+     }
+        }
+    @media screen and (min-width:769px) and (max-width: 1046px){
+    .headerabout nav{
+    height: 55%;
+    font-size: 15px;
+    }
+        }
+/* ----RESPONSIVE INDEX Y TOURDATES ----------------------------------*/
 @media screen and (min-width:240px) and (max-width: 320px){
 .container {  display: grid;
 grid-template-columns: 1fr;
@@ -1122,8 +1380,11 @@ padding: 0;
 }
 .navegacion flex{
 display: flex;
-/*flex-wrap: wrap; */
 }
+ .header nav ul{
+    height: 65%;
+    width: 55%;
+} 
 .navegacion{
 width:100%;
 height:10rem;
@@ -1281,6 +1542,10 @@ display: block;
 margin-bottom: 15px;
 height: 12rem; 
 }
+.header nav ul{
+    height: 65%;
+    width: 55%;
+} 
 .nav{
 width: 50%;
 height: 2rem;
@@ -1429,6 +1694,10 @@ display: block;
 margin-bottom: 5px;
 height: 40rem;  
 }
+.header nav ul{
+    height: 95%;
+    width: 100%;
+} 
 .nav{
 width: 100%;
 height: 4rem;
@@ -1444,7 +1713,7 @@ width: 100%;
 height: 40rem;
 background-color: #d00000;
 left: -100%;
-    -align: center;
+    text-align: center;
 transition: all .5s;
 }
 .menu ul li{
@@ -1487,10 +1756,11 @@ font-size:50px;
 margin-top: -50px;
 }
 .more{
-font-size: 60px;
-margin-top: 90px;
-height: 40rem;
-width: 35rem;
+font-size: 40px;
+margin-top: -480px;
+margin-left: 720px;
+height: 22rem;
+width: 25rem;
 }
 .tours{
  margin-top: -180px;
@@ -1517,7 +1787,7 @@ font-size: 20px;
 } 
 @media screen and (min-width:769px) and (max-width: 1024px){
 nav li a{
-    font-size: 40px;
+font-size: 40px;
 }
 .textoprincipal{
 width: 50rem;
@@ -1525,10 +1795,15 @@ height: 42rem;
 margin-left:170px;
 }
 .more{
-margin-left: 20px;
+font-size: 40px;
+margin-top: -480px;
+margin-left: 720px;
+height: 22rem;
+width: 25rem;
+/* margin-left: 20px;
 width: 40rem;
 height: 30rem;
-font-size: 45px;
+font-size: 45px; */
 }
 .tourindex__item{
 font-size: 35px;
@@ -1671,7 +1946,7 @@ margin-left: 30rem;
 margin-top: 2rem;
 width: 40rem;
 text-align: center;
- }
+}
 }
 @media screen and (min-width:321px) and (max-width: 480px){
 .containertour {  display: grid;
@@ -1780,14 +2055,14 @@ display:inline-block;
 justify-content: center;
 align-items: center;
 margin-left: 2rem;
-margin-top: 0;
+margin-top: 2px;
 }  
 .registrofootertour{
 margin: 0;
 opacity: 0.9;
 background-color: #ffd60a;
-width: 28rem;
-height: 15rem;
+width: 20rem;
+height: 11rem;
 }
 .registrofootertour input{  
 display: inline-block;
@@ -1926,8 +2201,8 @@ display: inline-block;
         margin-left: 10px;
         opacity: 0.9;
         background-color: #ffd60a;
-        width: 20rem;
-        height: 15rem;
+        width: 10rem;
+        height: 10rem;
         }
         .redestour a{
             width: 100%;
