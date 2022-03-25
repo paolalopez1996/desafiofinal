@@ -24,7 +24,7 @@ li:hover{
     animation: flash;
     animation-duration: 1s;
 }
-    /*--------------------------INDEX--------------------------------------*/
+/*--------------------------INDEX--------------------------------------*/
 .container {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:  1fr 0.5fr 0.2fr 0.1fr 0.1fr ;
