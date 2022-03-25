@@ -11,6 +11,19 @@ background-image: url(../imagenes/45degreee_fabric.png);
 background-repeat: repeat;
 text-decoration: none;
 }
+/*-----ANIMACIONES!!!--------------------*/ 
+h1{
+    animation: pulse; 
+  animation-duration: 2s; 
+}
+.containerphoto img:hover{
+animation: pulse; 
+animation-duration: 1s;
+}
+li:hover{
+    animation: flash;
+    animation-duration: 1s;
+}
     /*--------------------------INDEX--------------------------------------*/
 .container {  display: grid;
 grid-template-columns: 1fr;
