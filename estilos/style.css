@@ -85,7 +85,7 @@ object-fit: cover;
 
 .menu li a{
     font-weight: 800;
-    color: #d00000;
+    
 }
 .navegacion{
 background-color: #eeeeee;
@@ -348,7 +348,6 @@ grid-template-areas:
     }
     .menutour li a{
         font-weight: 800;
-        color: #d00000;
     }
 
 .secciontour h1{
@@ -475,7 +474,7 @@ display: inline-block;
 } 
 .menuphoto li a{
     font-weight: 800;
-    color: #d00000;
+   
 }
 .navegacionphoto__titulo{
 font-weight: 600;
@@ -592,12 +591,13 @@ box-shadow: 5px 5px 2px 2px black;
     position: absolute;
     width: 100%;
     height: 60%;
-    background-color: #d00000;
+    color: #343a40;
     left: -100%;
     text-align: center;
     transition: all .5s;
     }
     .menuphoto ul li{
+    color: #343a40;
     display: block;
     margin:10px 0;
     line-height: 40px;
@@ -682,7 +682,7 @@ box-shadow: 5px 5px 2px 2px black;
     width: 9rem;
     height: 13rem;
     opacity: 0.9;
-    background-color: #ffd60a;
+
 }
 .redesphoto {
 margin-left: 5%;
@@ -727,7 +727,6 @@ display: flex;
 } 
 .menuvideo li a{
     font-weight: 800;
-    color: #d00000;
 }
 .navegacionvideo__titulo{
 font-weight: 600;
@@ -999,7 +998,6 @@ display: inline-block;
 } 
 .menudisco li a{
     font-weight: 800;
-    color: #d00000;
 }
 .navegaciondisco__titulo{
 font-weight: 600;
@@ -1310,7 +1308,7 @@ display: inline-block;
 }
 .menuabout li a{
     font-weight: 800;
-    color: #d00000;
+    
 } 
 .navegacionabout__titulo{
 font-weight: 600;
@@ -1470,7 +1468,6 @@ display: none;
         .registrofooterabout{
             font-size: 15px;
             opacity: 0.9;
-            background-color: #ffd60a;
             width:45%;
             height: 12rem;
             padding: 0.2rem;
@@ -1553,9 +1550,45 @@ display: none;
         }
         }
     @media screen and (min-width:481px) and (max-width: 768px){
-    .headerabout nav{
-    height: 55%;
-    font-size: 15px;
+        .navegacioabout{
+            width:100%;
+            height:10rem;
+            display: block;
+            }
+            .navabout{
+            width: 60%;
+            height: 2rem;
+            }
+            ul{
+            position: absolute;
+            width: 50%;
+            height: 60%;
+            background-color: #d00000;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            }
+            .menuabout{
+            height: 35%;
+            width: 30%;
+            }
+            .menuabout ul li a{
+            font-size: 20px;
+            display: block;
+            }
+            li a:hover, li a.active{
+            background: none;
+            }
+            #check:checked~ ul{
+        left: 0;
+        }
+        .barrasabout{ 
+        display: block;
+        margin:10px 10px;
+        font-size:40px;
+        } 
+    .integrante{
+        margin-top: 50px;
     }
     .registrofooterabout{
         margin: 0;
@@ -1573,6 +1606,10 @@ display: none;
         }
         }
         @media screen and (min-width:768px) and (max-width: 2045px){
+            .headerabout nav ul a{
+                height: 90%;
+                font-size: 20px;  
+                }
         #copyrightabout{
         width: 100%;
         height: 5%;
@@ -2416,7 +2453,7 @@ margin-left:-21px;
 }
 .barrastour{ 
 display: block;
-margin:10px 220px;
+margin:10px 130px;
 font-size:40px;
 }
 .headertour ul{
