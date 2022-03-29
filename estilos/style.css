@@ -13,7 +13,7 @@ text-decoration: none;
 }
 /*-----ANIMACIONES!!!--------------------*/ 
 h1{
-    animation: pulse; 
+animation: pulse; 
   animation-duration: 2s; 
 }
 .containerphoto img:hover{
@@ -22,6 +22,10 @@ animation-duration: 1s;
 }
 li:hover{
     animation: flash;
+    animation-duration: 1s;
+}
+.padrediscography img:hover{
+    animation: pulse;
     animation-duration: 1s;
 }
 /*--------------------------INDEX--------------------------------------*/
@@ -72,13 +76,17 @@ padding-top: 2%;
 text-align: center;
 }
 a{
-color: black;
+    color: black;
 }
 .header img{
-    width: 100%; 
+width: 100%; 
 object-fit: cover;
 }
 
+.menu li a{
+    font-weight: 800;
+    color: #d00000;
+}
 .navegacion{
 background-color: #eeeeee;
 font-weight: 500;
@@ -99,6 +107,7 @@ margin-top: 2%;
 padding: 2px;
 display: flex;
 display: inline-block;
+
 }
      /* SECCION BIOGRAFIA INDEX */
 .sectionbio{
@@ -108,10 +117,9 @@ height: 50rem;
 
 }
 .sectionbio h2{
-box-shadow: 5px 5px 8px red;
+color: #d00000;
 font-size: 60px;
-font-weight: 200;
-
+font-weight: 800;
 margin: 1rem 10rem;
 width: 60%;
 text-align: center;
@@ -127,11 +135,14 @@ background-image: url(../imagenes/45degreee_fabric.png);
 text-align:center;
 font-size: 25px;
 line-height: 60px;
+font-weight: 800;
 box-shadow: 10px 10px 25px black;
 font-family: 'Caveat', cursive;
 }
 /* -----------SECCION ALBUM INDEX-------- */
-
+.albums h2{
+    color: #d00000;
+}
 .albums {
 margin-top: 4rem;
 height: 50rem;
@@ -147,10 +158,12 @@ display: flex;
 display: block;
 }
 .columnaalbum img{
-    box-shadow: 5px 5px 8px red; 
+box-shadow: 5px 5px 8px red; 
     
 }
 .more{
+font-size: 30px;
+font-weight: 800;
 opacity: 0.9;
 display: block;
 font-size: 40px;
@@ -159,17 +172,14 @@ margin-top: 15%;
 height: 25rem;
 width: 35rem;
 padding: 15px;
-background-color: red;
+background-color: #d3d3d3;
 line-height: 6rem;
 text-align: center;
-}
-.albums a:hover{
-background-image: url(../imagenes/pexels-adrien-olichon-2387532.jpg);
-box-shadow: 4px 4px 5px black;
-border-radius: 5%;
+}.albums a:hover{
+border: 2px gray solid;
 width: 35rem;
 height: 5rem;
-}
+} 
 /* -------SECCION TOURS INDEX--------- */
 .tours h1{
 font-size: 80px;
@@ -177,12 +187,13 @@ text-align: center;
 width: 80%;
 margin: 1rem 7rem;
 padding: 0;
+color: #d00000;
 }
 .tourindex{
 margin-top: 4%;
 width: 100%;
 color: white;
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/conciertoo.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/conciertoazul.jpg);
 height: 40rem;
 display: flex;
 flex-flow: column wrap;
@@ -204,11 +215,11 @@ height: 60px;
 opacity: 0.5;
 }
 .moretour:hover{
-background-color: #f2e9e4;
+background-color: #d00000;
 opacity: 0.5;
 }
 .moretour{
-background-color: #ffd60a;
+background-color:  #3a86ff;;
 width: 25%;
 margin-top: 4rem;
 text-align: center;
@@ -253,7 +264,7 @@ margin-top: 4rem;
 .registrofooter{
 margin: 0 2rem;
 opacity: 0.9;
-background-color: #ffd60a;
+background-color: #6a040f;
 width: 30rem;
 height: 10rem;
 padding: 1rem;
@@ -335,6 +346,10 @@ grid-template-areas:
     display: flex;
     display: inline-block;
     }
+    .menutour li a{
+        font-weight: 800;
+        color: #d00000;
+    }
 
 .secciontour h1{
 margin-top: 2rem;
@@ -374,15 +389,14 @@ border-style: dashed;
 .secciontour__fechas:hover{
 background-color: #343a40;
 width: 70%;
-height: 10rem;
 text-align: center;
 }
 .footertour{ 
     background-color: #d00000;
-    height: 17rem;
+    height: auto;
     width: 100%;
     margin-top: 1.5rem;
-    box-shadow: -5px -5px 5px  18px #d00000; 
+    box-shadow: -5px -5px 5px  18px #d00000;
     }
     .flex{
     display: flex;
@@ -397,45 +411,46 @@ text-align: center;
     .footertour img:hover{
     border-color: #ffd60a;
     }
-    .redestour a{
+    .redestour {
+    width: 30%;
+    /* height: 20%; */
+    
     display:inline-block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 8rem;
+    margin-left: 20%;
     margin-top: 4rem;
-    }  
+    } 
+    .redestour a{
+    margin-left: 10%;
+    } 
     .registrofootertour{
-    margin: 0 2rem;
     opacity: 0.9;
-    background-color: #ffd60a;
-    width: 30rem;
-    height: 10rem;
+    background-color: #6a040f;
+    width: 25%;
+    height: 12rem;
     padding: 1rem;
+    font-size: 10px;
     }
     .registrofootertour input{
     display: inline-block;
     font-family:  'Hubballi', cursive;
     height: 15px;
     margin: 0;
-    border-radius: 10%;
+    margin-top: 5px;
     background-color: #d8dee9;
     }
-    #copyrighttour{
+    /* #copyrighttour{
     font-size:15px;
-    margin-left: 30rem;
-    margin-top: 0%;
-    width: 40rem;
-    /* height: 1rem; */
-    text-align: center;
-}
+    position: sticky;
+    left: 100%;
+    top: 20%;
+    }  */
     /*FIN DE TOUR DATES-------------------------*/
     /*--------SECCION PHOTOS----*/
     /*header seccion photo*/
-    .fondo{
-        background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
-        background-repeat: repeat;
-        object-fit: cover;
-    }
+     .fondophoto{
+      background-color: #0c285e;
+      
+    } 
 .headerphoto{
 background-color: #eeeeee; 
 font-weight: 500;
@@ -458,6 +473,10 @@ padding: 2px;
 display: flex;
 display: inline-block;
 } 
+.menuphoto li a{
+    font-weight: 800;
+    color: #d00000;
+}
 .navegacionphoto__titulo{
 font-weight: 600;
 font-size: 30px; 
@@ -475,7 +494,6 @@ display: none;
 #check{
 display: none;
 }
-
 /*body seccion photo*/
 .containerphoto{
     display: flex;
@@ -485,16 +503,16 @@ display: none;
     margin-top: 5rem;
 }
 .containerphoto img{
-    margin-top: 25px;
+margin-top: 25px;
 height: 400px;
 width: 400px;
 object-fit: cover;
-box-shadow: 5px 5px 2px 2px red;
+box-shadow: 5px 5px 2px 2px black;
 }
 /*footer seccion photos*/
-footerphoto{ 
+.footerphoto{ 
     background-color: #d00000;
-    height: 20rem;
+    height: auto;
     width: 100%;
     margin-top: 1.5rem;
     box-shadow: -5px -5px 5px  18px #d00000;
@@ -502,7 +520,7 @@ footerphoto{
     .flex{
     display: flex;
     }
-    footerphoto img{
+    .footerphoto img{
     display: inline-block;
     width: 2rem;
     border: 2px solid black; 
@@ -524,27 +542,26 @@ footerphoto{
     margin-left: 10%;
     } 
     .registrofooterphoto{
-    margin: 0 2rem;
     opacity: 0.9;
-    background-color: #ffd60a;
-    width: 30%;
-    height: 50%;
+    background-color: #6a040f;
+    width: 25%;
+    height: 12rem;
     padding: 1rem;
+    font-size: 10px;
     }
     .registrofooterphoto input{
     display: inline-block;
     font-family:  'Hubballi', cursive;
     height: 15px;
     margin: 0;
-    border-radius: 10%;
+    margin-top: 5px;
     background-color: #d8dee9;
     }
     #copyrightphoto{
     font-size:15px;
-    margin-left: -700px; 
-    margin-top: 16%;
-    width: 25%;
-    height: 2%;
+    position: sticky;
+    left: 40%;
+    top: 50%;
     } 
     @media screen and (min-width:140px) and (max-width: 320px){
         .headerphoto nav ul{
@@ -612,9 +629,13 @@ footerphoto{
     margin-top: 5%;
     } 
     #copyrightphoto{
-    visibility: hidden;
+        text-align: center;
+        margin-top: 25px;
+        position: sticky;
+        font-size: 15px;
+        top: 80%;
+        left: 20%;
     }
-    
     }
     @media screen and (min-width:321px) and (max-width: 768px){
         .headerphoto nav ul{
@@ -656,30 +677,31 @@ footerphoto{
     margin:10px 10px;
     font-size:40px;
     } 
-    #copyrightphoto{
-    visibility: hidden;
-    }
     .registrofooterphoto{
-font-size: 10px;
-opacity: 0.9;
-background-color: #ffd60a;
-width:30%;
-height: 12rem;
+    font-size: 10px;
+    width: 9rem;
+    height: 13rem;
+    opacity: 0.9;
+    background-color: #ffd60a;
 }
 .redesphoto {
 margin-left: 5%;
+height: 100%;
+width: 40%;
 }
-}
-@media screen and (min-width:768px) and (max-width: 1200px){
 #copyrightphoto{
-visibility: hidden;
+    text-align: center;
+    margin-top: 25px;
+    position: sticky;
+    font-size: 15px;
+    top: 80%;
+    left: 20%;
 }
 }
+
 /*--------------------------------------- SECCION VIDEOS-----------------*/
- .fondo{
-background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
-background-repeat: repeat;
- object-fit: cover;
+ .fondovideo{
+    background-color: #0c285e;
 }
 .headervideo{
 background-color: #eeeeee; 
@@ -703,6 +725,10 @@ padding: 2px;
 display: flex;
  display: inline-block;
 } 
+.menuvideo li a{
+    font-weight: 800;
+    color: #d00000;
+}
 .navegacionvideo__titulo{
 font-weight: 600;
 font-size: 40px; 
@@ -735,7 +761,7 @@ display: none;
     box-shadow: 5px 5px 2px 2px red;
     }
         /*footer seccion video*/
-    footervideo{ 
+    .footervideo{ 
     background-color: #d00000;
     height: 20rem;
     width: 100%;
@@ -756,38 +782,38 @@ display: none;
     border-color: #ffd60a;
     }
     .redesvideo {
-    width: 30%;
-    height: 20%;
-    display:inline-block;
-    margin-left: 20%;
+    width: 50%;
+    height: 30%;
+    margin-left: 20%; 
     margin-top: 4rem;
     } 
     .redesvideo a{
     margin-left: 10%;
     } 
     .registrofootervideo{
-    margin: 0 2rem;
+    margin: 0;
     opacity: 0.9;
-     background-color: #ffd60a;
+    background-color: #6a040f;
     width: 30%;
-    height: 50%;
-    padding: 1rem;
+    height: 60%;
+    padding: 0;
     }
     .registrofootervideo input{
     display: inline-block;
     font-family:  'Hubballi', cursive;
     height: 15px;
     margin: 0;
-     border-radius: 10%;
+    border-radius: 10%;
     background-color: #d8dee9;
     }
     #copyrightvideo{
-    font-size:15px;
-    margin-left: -700px; 
-    margin-top: 16%;
-    width: 25%;
-    height: 2%;
-    } 
+        text-align: center;
+        margin-top: 25px;
+        position: sticky;
+        font-size: 15px;
+        top: 90%;
+        left: 40%;
+    }
      @media screen and (min-width:140px) and (max-width: 320px){
     .headervideo nav ul{
         height: 62%;
@@ -843,8 +869,25 @@ display: none;
         width: 300px;
         object-fit: cover;
         }
+        .footervideo{
+            height: 100%;
+        }
+        .registrofootervideo{
+            width: 50%;
+            height: 80%;
+        }
+        .redesvideo{
+            width: 45%;
+            height: 50%;
+            margin-left: 1px;
+        }
         #copyrightvideo{
-        visibility: hidden;
+            text-align: center;
+            margin-top: 25px;
+            position: sticky;
+            font-size: 15px;
+            top: 80%;
+            left: 20%;
         }
         }
         @media screen and (min-width:321px) and (max-width: 768px){
@@ -888,23 +931,42 @@ display: none;
         margin:10px 10px;
         font-size:80px;
         } 
-        #copyrightvideo{
-        visibility:  hidden; 
-        }
+        
         .containervideo iframe{
         margin-top: 25px;
         height: 300px;
         width: 300px;
         object-fit: cover;
         }
+        .footervideo{
+            height: 100%;
         }
-         @media screen and (min-width:768px) and (max-width: 1200px){
-         #copyrightvideo{
-        visibility: hidden;
+        .registrofootervideo{
+            width: 50%;
+            height: 80%;
         }
+        .redesvideo{
+            width: 45%;
+            height: 50%;
+            margin-left: 1px;
+        }
+        #copyrightvideo{
+            text-align: center;
+            margin-top: 1px;
+            position: sticky;
+            font-size: 15px;
+            top: 40%;
+            left: 20%;
+        }
+        }
+        @media screen and (min-width:768px) and (max-width: 1200px){
         .headervideo nav ul a{
         height: 90%;
         font-size: 20px;  
+        }
+        .registrofootervideo{
+            width: 30%;
+            height: 60%;
         }
         } 
 /*---------------------DISCOGRAPHY---------------*/  
@@ -935,11 +997,15 @@ padding: 2px;
 display: flex;
 display: inline-block;
 } 
+.menudisco li a{
+    font-weight: 800;
+    color: #d00000;
+}
 .navegaciondisco__titulo{
 font-weight: 600;
 font-size: 30px; 
 text-align: center;
-        }
+    }
     .barrasdisco{
     line-height: 80px;
     font-size: 40px;
@@ -950,22 +1016,34 @@ text-align: center;
     }
     #check{
     display: none;
-        }
-                    
+    }
+    
         /*body seccion discography*/
     .padrediscography{
    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+    height: auto;
     }
+   
     .padrediscography img{
     margin-top: 25px;
+    margin-right: 10px;
     height: 500px;
     width: 500px;
     object-fit: cover;
-    box-shadow: 5px 5px 2px 2px red;
-        }
+    box-shadow: 5px 5px 2px black;
+    }
+    .padrediscography h2{
+        border: 4px black  solid;
+        border-style: dashed;
+        border-radius: 2%;
+        color:white;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
             /*footer seccion discography*/
     footerdisco{ 
     background-color: #d00000;
@@ -1000,7 +1078,7 @@ text-align: center;
     .registrofooterdisco{
     margin: 0 2rem;
     opacity: 0.9;
-    background-color: #ffd60a;
+    background-color: #6a040f;
     width: 30%;
     height: 50%;
     padding: 1rem;
@@ -1020,13 +1098,13 @@ text-align: center;
     width: 25%;
     height: 2%;
     }
-     @media screen and (min-width:140px) and (max-width: 320px){
+    @media screen and (min-width:140px) and (max-width: 320px){
     .headerdisco nav ul{
-     height: 20%;
+    height: 20%;
     width: 70%;
     } 
     .navegaciondisco flex{
-     display: flex;
+    display: flex;
     }
     .navegaciondisco{
     width:100%;
@@ -1034,9 +1112,9 @@ text-align: center;
     display: block;
     }
     .navdisco{
-   width: 60%;
-   height: 2rem;
-}
+    width: 60%;
+    height: 2rem;
+    }
     .barrasdisco{ 
     display: block;
     margin:10px 20px;
@@ -1066,28 +1144,42 @@ text-align: center;
     #check:checked~ ul{
     left: 0;
     }
-        .padrediscography img{
-        margin-top: 25px;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
+    .padrediscography img{
+    margin-top: 25px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    }
+    .registrofooterdisco{
+    font-size: 15px;
+    opacity: 0.9;
+    width:45%;
+    height: 12rem;
+    padding: 0.2rem;
+    }
+    .footerdisco{
+    height: 100%;
+    }
+    .registrofooterdisco{
+    width: 50%;
+    height: 80%;
+    margin: 0;
+    }
+    .redesdisco{
+    width: 45%;
+    height: 50%;
+    margin-left: 1px;
+    }
+    #copyrightdisco{
+    text-align: center;
+    margin-top: 25px;
+    position: sticky;
+    font-size: 15px;
+    top: 80%;
+    left: 20%;
+    }
         }
-        .registrofooterdisco{
-        font-size: 15px;
-        opacity: 0.9;
-        background-color: #ffd60a;
-        width:45%;
-        height: 12rem;
-        padding: 0.2rem;
-         }
-        .redesdisco {
-     margin-left: 16%;
-    } 
-        #copyrightdisco{
-        visibility: hidden;
-        }
-        }
-@media screen and (min-width:321px) and (max-width: 768px){
+@media screen and (min-width:321px) and (max-width: 480px){
          .headerdisco nav ul{
          height: 20%;
         width: 70%;
@@ -1125,27 +1217,75 @@ text-align: center;
         margin:10px 10px;
         font-size:80px;
         }
-        #copyrightdisco{
-        visibility: hidden;
-        }
         .padrediscography img{
         margin-top: 25px;
         height: 300px;
         width: 300px;
         object-fit: cover;
         }
+        .registrofooterdisco{
+            font-size: 15px;
+            opacity: 0.9;
+            width:45%;
+            height: 12rem;
+            padding: 0.2rem;
+            }
+            .footerdisco{
+            height: 100%;
+            }
+            .registrofooterdisco{
+            width: 50%;
+            height: 60%;
+            margin: 0;
+            }
+            .redesdisco{
+            width: 45%;
+            height: 50%;
+            margin-left: 1px;
+            }
+            #copyrightdisco{
+            width: 100%;
+            height: 20%;
+            text-align: center; 
+            position: sticky;
+            font-size: 15px;
+            margin-top: 60%;
+            top: 20rem;
+            left: 20%;
+            }
         }
-        @media screen and (min-width:768px) and (max-width: 1200px){
-    #copyrightdisco{
-    visibility: hidden;
-    }
+        @media screen and (min-width:481px) and (max-width: 768px){
+            .footerdisco{
+                height: 100%;
+                }
+            .registrofooterdisco{
+                height: 70%;
+                width: 42%;
+                margin: 0;
+            }
+            #copyrightdisco{
+                visibility: hidden;
+                }
     } 
+    @media screen and (min-width:769px) and (max-width: 2045px){
+        #copyrightdisco{
+            width: 100%;
+            height: 20%;
+            text-align: center; 
+            position: sticky;
+            font-size: 15px;
+            margin-top: 2%;
+            top: 30rem;
+            left: 50%;
+            }
+    }
 /*-------------ABOUT------------------*/
-/* .fondo{
-    background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
+.fondoabout{ 
+    background-color: black;
+    /* background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
     background-repeat: repeat;
-    object-fit: cover;
-} */
+    object-fit: cover; */
+}
 .headerabout{
 background-color: #eeeeee; 
 font-weight: 500;
@@ -1167,6 +1307,10 @@ margin-top: 1%;
 padding: 2px;
 display: flex;
 display: inline-block;
+}
+.menuabout li a{
+    font-weight: 800;
+    color: #d00000;
 } 
 .navegacionabout__titulo{
 font-weight: 600;
@@ -1192,7 +1336,6 @@ display: none;
     
 }
 .containerabout {
-    background-color: #d8dee9;
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -1201,25 +1344,31 @@ display: none;
     text-align: center;
 }
 .integrante{
-    font-size: 25px;
-    background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
-    background-repeat: repeat;
-    object-fit: cover;
+    background-color: #E8E8E6;
     width: 80%;
+    height: 42rem;
     padding: 10px;
     margin: 25px;
     margin-left: 10%;
     box-sizing: border-box;
-    border: 1px solid black;
+    box-shadow: 4px 4px 5px 5px #E8E8E6;
 } 
- 
-.containerabout img{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+.integrante h3{
+    color: #d00000;
+}
+.integrante p{
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
     
 }
-footerabout{ 
+.containerabout img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+.footerabout{ 
     background-color: #d00000;
     height: 20rem;
     width: 100%;
@@ -1229,7 +1378,7 @@ footerabout{
     .flex{
     display: flex;
     }
-    footerabout img{
+    .footerabout img{
     display: inline-block;
     width: 2rem;
     border: 2px solid black; 
@@ -1252,7 +1401,7 @@ footerabout{
     .registrofooterabout{
     margin: 0 2rem;
     opacity: 0.9;
-    background-color: #ffd60a;
+    background-color: #6a040f;
     width: 30%;
     height: 50%;
     padding: 1rem;
@@ -1318,8 +1467,37 @@ footerabout{
         #check:checked~ ul{
         left: 0;
         }
+        .registrofooterabout{
+            font-size: 15px;
+            opacity: 0.9;
+            background-color: #ffd60a;
+            width:45%;
+            height: 12rem;
+            padding: 0.2rem;
+            }
+            .footerabout{
+            height: 100%;
+            }
+            .registrofooterabout{
+            width: 50%;
+            height: 80%;
+            margin: 0;
+            }
+            .redesabout{
+            width: 45%;
+            height: 50%;
+            margin-left: 1px;
+            }
+            #copyrightabout{
+            text-align: center;
+            margin-top: 25px;
+            position: sticky;
+            font-size: 15px;
+            top: 80%;
+            left: 20%;
+            }
     }
-    @media screen and (min-width:321px) and (max-width: 768px){
+    @media screen and (min-width:321px) and (max-width: 480px){
         .navegacioabout{
         width:100%;
         height:10rem;
@@ -1357,15 +1535,58 @@ footerabout{
     margin:10px 10px;
     font-size:40px;
     } 
-     #copyrightabout{
-    visibility: hidden;
-     }
+    .footerabout{
+        height: 100%;
         }
-    @media screen and (min-width:769px) and (max-width: 1046px){
+        .registrofooterabout{
+        width: 40%;
+        height: 80%;
+        margin: 0;
+        }
+        .redesabout{
+        width: 45%;
+        height: 50%;
+        margin-left: 1px;
+        }
+        #copyrightabout{
+        visibility: hidden;
+        }
+        }
+    @media screen and (min-width:481px) and (max-width: 768px){
     .headerabout nav{
     height: 55%;
     font-size: 15px;
     }
+    .registrofooterabout{
+        margin: 0;
+        height: 62%;
+    }
+    #copyrightabout{
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        margin-top: 270px;
+        position: sticky;
+        font-size: 15px;
+        top: 80%;
+        left: 20%;
+        }
+        }
+        @media screen and (min-width:768px) and (max-width: 2045px){
+        #copyrightabout{
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        margin-top: 30px;
+        position: sticky;
+        font-size: 15px;
+        top: 80%;
+        left: 20%;
+        }   
+        .registrofooterabout{
+        margin: 0;
+        height: 62%;
+        }
         }
 /* ----RESPONSIVE INDEX Y TOURDATES ----------------------------------*/
 @media screen and (min-width:240px) and (max-width: 320px){
@@ -1410,7 +1631,7 @@ height: 2rem;
 .barras{ 
 display: block;
 margin:10px 10px;
-font-size:80px;
+font-size:40px;
 }
 ul{
 position: absolute;
@@ -1437,19 +1658,20 @@ background: none;
 left: 0;
 }
 .sectionbio{
-height: 40rem;
-margin-top: 10px;
+ height: 43rem;
+margin-top: 10px; 
 }
 .textoprincipal h2{
-margin-bottom: 10px;
+margin-bottom: 5px;
 margin-left:15px;
 text-align: center;
 width:14rem;
 font-size:20px;
 }
 .textoprincipal{
+    font-size: 15px;
 overflow-y:hidden;
-height: 38rem;
+height: 42rem;
 width:90%;
 padding-left: 1px;
 margin-top: -20px;
@@ -1461,25 +1683,35 @@ font-size: 17px;
 line-height: 30px;
 padding-right: 1px;
 }
+.albums h2{
+    color: white;
+}
 .albums{
-background-color: #d00000;
-height: 50rem;
+background-color: black;
+height: 45rem;
 width:100%;
 margin-top:20px;
 margin-left: 0;
-display: block;
+display: flex;
 }
 .columnaalbum{
-width: 100rem;
-padding: 0;
-margin: 0;
+flex-direction: column;
+flex-wrap: wrap;
+}
+.columnaalbum img{
+    width: 100%;
+    height: 80%;
 }
 .more{
+line-height: 40px;
 box-shadow: -1px -4px 2px 4px black;
-margin-top: 5rem;
-height: 40rem;
-font-size: 20px;
-margin-left: 5px;
+height: 30%;
+font-size: 30px;
+line-height: 50px;
+font-weight: 800;
+margin-top: 1px;
+margin-left: 1px;
+padding: 0;
 background-color: #d00000;
 }   
 .columnaalbum h2{
@@ -1492,6 +1724,9 @@ font-size: 20px;
 height: 5rem;
 width: 15rem;
 }
+.tours{
+height: 100%;
+}
 .tours h1{
 font-size: 25px;
 }
@@ -1499,27 +1734,30 @@ font-size: 25px;
 margin-left: 1px;
 width: 15rem;
 }
-footer{
+.footer{
 width: 100%;
-height: 22rem;
+height: 12rem;
 background-color: #d00000;
 margin-top: 10px;
 }
 .registrofooter{
-height: 15rem;
+font-size: 15px;
+height: 9rem;
 margin: 0;
 }
 .redes{
-padding: 25px;
-position: relative;
-left: 10px;
-margin: 0;
-width: 230px;
-height: 16rem;
-}
+margin-top: 15px;
+margin-left: 40px;
+height: 4rem;
+} 
 .redes a{
 margin: 0;
 } 
+#copyright{
+    position: sticky;
+    top: 20px;
+}
+
 }
 @media screen and (min-width:321px) and (max-width: 480px){
 .container {  display: grid;
@@ -1566,7 +1804,7 @@ height: 2rem;
 .barras{ 
 display: block;
 margin:10px 10px;
-font-size:80px;
+font-size:40px;
 }
 ul{
 position: absolute;
@@ -1618,28 +1856,36 @@ width:14rem;
 font-size:20px;
         }
 .albums{
-background-color: #d00000;
-height: 50rem;
+background-color: black;
+height:45rem;
 width:100%;
 margin-top:20px;
 margin-left: 0;
 display: block;
 }
+.albums h2{
+    color:white;
+}
 .columnaalbum img {
 display: block;
-width: 48rem;
-height: 30rem;
+width: 100%;
+height: 70%;
 } 
 .more{
+    background-color: #d00000;
 padding: 0;
 display: block;
 width: 22rem;
-height: 30rem;
+height: 15rem;
 font-size: 30px;
+margin-top: -32px;
 line-height: 45px;
 }   
 .columnaalbum h2{
 font-size: 30px;
+}
+.tours{
+    height: auto;
 }
 .tourindex__item{
 text-align: center;
@@ -1655,26 +1901,37 @@ margin-left: 1px;
 width: 15rem;
 }
 footer{
+    height: 22rem;
+}
+.footer{
 width: 100%;
-height: 22rem;
 background-color: #d00000;
 margin-top: 10px;
 }
 .registrofooter{
-height: 15rem;
-margin: 0;
-}
-.redes{
-padding: 25px;
-position: relative;
-left: 10px;
-margin: 0;
-width: 230px;
-height: 16rem;
-}
-.redes a{
-margin: 0;
-} 
+    font-size: 12px;
+    height: 30%; 
+    width: 11rem;
+    margin: 0;
+    padding: 0;
+    }
+    .registrofooter input{
+        margin-top: 10px;
+    }
+    .redes{
+    margin-left: 20px; 
+    flex-wrap: wrap;
+    /* display: inline-block; */
+    width: 32%;
+    
+    } 
+    .redes a{
+    margin: 0;
+    margin-left: 15px;
+    } 
+     #copyright{
+        margin-top: -105px;
+    } 
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
 .container {  display: grid;
@@ -1776,7 +2033,7 @@ height: 22rem;
 width: 25rem;
 }
 .tours{
- margin-top: -180px;
+margin-top: -180px;
 height:50rem;
 }
 .tourindex{
@@ -1789,16 +2046,31 @@ width:80rem;
 padding: 0;
 padding-top:63px;
 }
+.redes{
+width: 60%;
+margin-top: 1px;
+}
+.redes  img{
+width: 3rem;
+margin-top: -20px;
+
+}
 .registrofooter{
 width: 25rem;
-height: 15rem;
+height: 40%;
 font-size: 20px;
 }
 .registrofooter input{
-    height: 2rem;
+height: 2rem;
 }
+#copyright{
+position: sticky;
+top: 10px;
+margin-top: -5px;
+}
+
 } 
-@media screen and (min-width:769px) and (max-width: 1024px){
+@media screen and (min-width:769px) and (max-width: 1500px){
 nav li a{
 font-size: 40px;
 }
@@ -1826,8 +2098,16 @@ height: 6.7rem;
 margin-top:5px;
 }
 .registrofooter{
-    width: 20rem;
+width: 15rem;
+height: 50%;
 }
+
+#copyright{
+font-size:15px;
+ position: sticky;
+left: 40%;
+top: 50%;
+} 
 }
 @media screen and (min-width:240px) and (max-width: 320px){
 .containertour {  display: grid;
@@ -1870,7 +2150,7 @@ margin-left:-21px;
 .barrastour{ 
 display: block;
 margin:10px 20px;
-font-size:50px;
+font-size:40px;
 }
 .headertour ul{
 position: absolute;
@@ -1913,9 +2193,11 @@ font-size: 18px;
 font-size: 15px;
 margin-top:12px;
 }
+.footer{
+    height: auto;
+}
 .footertour{ 
 background-color: #d00000;
-height: 17rem;
 width: 100%;
 margin-top: 1.5rem;
 box-shadow: -5px -5px 5px  18px #d00000; 
@@ -1930,19 +2212,15 @@ border: 2px solid black;
 border-radius: 8px;
 padding: 5px;
 }
-.redestour a{
-display:block;
-justify-content: center;
-align-items: center;
-margin-left: 1rem;
-margin-top: 1rem;
-}  
+.redestour{
+margin-top: 1px;
+}
 .registrofootertour{
 margin: 0;
 opacity: 0.9;
 background-color: #ffd60a;
-width: 12rem;
-height: 14rem;
+ width: 6rem;
+height: 12rem; 
 padding: 1rem;
 }
 .registrofootertour input{
@@ -1950,15 +2228,17 @@ display: inline-block;
 font-family:  'Hubballi', cursive;
 height: 15px;
 margin: 0;
+margin-top: 5px;
 border-radius: 10%;
 background-color: #d8dee9;
 }
-#copyrighttour{
-font-size:20px;
-margin-left: 30rem;
-margin-top: 2rem;
-width: 40rem;
-text-align: center;
+.copyrighttour{
+    margin-top: 40px;
+font-size:10px;
+position: sticky;
+left: 10%;
+top: 80%;
+
 }
 }
 @media screen and (min-width:321px) and (max-width: 480px){
@@ -2002,7 +2282,7 @@ margin-left:-21px;
 .barrastour{ 
 display: block;
 margin:10px 10px;
-font-size:50px;
+font-size:40px;
 }
 .headertour ul{
 position: absolute;
@@ -2062,35 +2342,37 @@ width: 2rem;
 border: 2px solid black; 
 border-radius: 8px;
 padding: 5px;
+flex-wrap: wrap;
 }
-.redestour a{
+.redestour {
+flex-wrap: wrap;
 display:inline-block;
-justify-content: center;
-align-items: center;
 margin-left: 2rem;
-margin-top: 2px;
-}  
+margin-top: 5px;
+}   
 .registrofootertour{
 margin: 0;
 opacity: 0.9;
 background-color: #ffd60a;
-width: 20rem;
-height: 11rem;
+width: 10rem;
+height: 12rem;
 }
 .registrofootertour input{  
 display: inline-block;
 font-family:  'Hubballi', cursive;
 height: 15px;
 margin: 0;
+margin-top: 5px;
 border-radius: 10%;
 background-color: #d8dee9;
 }
-#copyrighttour{
-font-size:20px;
-margin-left: 30rem;
-margin-top: 2rem;
-width: 40rem;
-text-align: center;
+.copyrighttour{
+    font-size: 35px;
+margin-top: 30px;
+font-size:10px;
+position: sticky;
+left: 15%;
+top: 80%;
 }
 }
 @media screen and (min-width:481px) and (max-width: 1024px){
@@ -2135,7 +2417,7 @@ margin-left:-21px;
 .barrastour{ 
 display: block;
 margin:10px 220px;
-font-size:50px;
+font-size:40px;
 }
 .headertour ul{
 position: absolute;
@@ -2210,28 +2492,34 @@ display: inline-block;
     padding: 5px;
     }
     .registrofootertour{
-        margin: 0;
-        margin-left: 10px;
-        opacity: 0.9;
-        background-color: #ffd60a;
-        width: 10rem;
-        height: 10rem;
-        }
-        .redestour a{
-            width: 100%;
-            height: 15%;
-            display:block;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center; 
-            margin-left: 50%;
-            margin-top: 15px; 
-            }  
-    #copyrighttour{
-    font-size:15px;
-    margin-left: -50px;
-    margin-top: 1rem;
-    width: 40rem;
-    text-align: center; 
+    margin: 0;
+    margin-left: 10px;
+    opacity: 0.9;
+    background-color: #ffd60a;
+    width: 11rem;
+    height: 12rem;
+    }
+    .redestour{
+    width: 45%;
+    flex-wrap: wrap;
+    display:inline-block;
+    margin-left: 2rem;
+    margin-top: 5px;
+    }
+    .copyrighttour{
+    font-size: 15px;
+    margin-top: 30px;
+    position: sticky;
+    left: 35%;
+    top: 80%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 2045px){
+    .copyrighttour{
+    font-size: 15px;
+    margin-top: 30px;
+    position: sticky;
+    left: 35%;
+    top: 80%;
     }
 }
