@@ -29,35 +29,6 @@ li:hover{
     animation-duration: 1s;
 }
 /*--------------------------INDEX--------------------------------------*/
-/* .containerindex {  display: grid;
-grid-template-columns: 1fr;
-grid-template-rows:  1fr 1fr 0.2fr 0.1fr 0.1fr ;
-grid-template-areas:
-"navegacion"
-"sectionbio "
-"albums"
-"tours "
-"footer "
-}
-.navegacion { grid-area: navegacion; }
-.sectionbio { grid-area: sectionbio; }
-.albums{ grid-area: albums; }
-.tours { grid-area: tours; }
-.footer { grid-area: footer; }
-*{
-margin: 0;
-padding: 0;
-text-decoration: none;
-} */
-
-body{
-font-family: 'Hubballi', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Caveat', cursive;
-background-image: url(../imagenes/45degreee_fabric.png);
-background-repeat: repeat;
-text-decoration: none;
-}
 .barras{
 line-height: 80px;
 font-size: 40px;
