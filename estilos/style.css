@@ -85,6 +85,7 @@ display: inline-block;
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/newspaper.JPEG);
 box-shadow: -15px -10px 20px red;
 height: 50rem;
+width: 100%;
 
 }
 .sectionbio h2{
