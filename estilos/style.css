@@ -29,7 +29,17 @@ li:hover{
     animation-duration: 1s;
 }
 /*--------------------------INDEX--------------------------------------*/
-.barras{
+.barranav{
+    height: 20rem;
+    background-color: #ffd60a;
+}
+.titulo{
+    font-size: 20px;
+    background-color: #3a86ff;
+    text-decoration: none;
+    
+}
+ /* .barras{
 line-height: 80px;
 font-size: 40px;
 float: right;
@@ -39,12 +49,13 @@ display: none;
 }
 #check{
 display: none;
-}
+} 
 .navegacion__titulo{
 font-weight: 600;
 font-size: 40px; 
 padding-top: 2%;
 text-align: center;
+text-decoration: none;
 }
 a{
     color: black;
@@ -65,13 +76,13 @@ height: 200px;
 text-align: center;
 width: 100%;
 }
-/* .nav:hover{
+ .nav:hover{
 height: 2rem;
 width: 6rem;
 text-align: center;
 background-color: red;
-}  */
-.menu li{
+}  
+ .menu li{
 font-size: 20px;
 margin-left: 4%;
 margin-top: 2%;
@@ -79,9 +90,9 @@ padding: 2px;
 display: flex;
 display: inline-block;
 
-}
+}  */
      /* SECCION BIOGRAFIA INDEX */
-.sectionbio{
+/* .sectionbio{
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/newspaper.JPEG);
 box-shadow: -15px -10px 20px red;
 height: 50rem;
@@ -151,7 +162,7 @@ text-align: center;
 border: 2px gray solid;
 width: 35rem;
 height: 5rem;
-} 
+}  */
 /* -------SECCION TOURS INDEX--------- */
 .tours h1{
 font-size: 80px;
@@ -917,7 +928,7 @@ display: none;
     height: 2%;
     } 
 /* ----------------------------------------RESPONSIVE INDEX ----------------------------------*/
-@media screen and (min-width:240px) and (max-width: 320px){
+/* @media screen and (min-width:240px) and (max-width: 320px){
 .containerindex {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:  0.4fr 0.1fr  0.1fr 0.1fr 0.9fr 0.1fr ;
@@ -933,7 +944,7 @@ grid-template-areas:
 .sectionbio { grid-area: sectionbio; }
 .albums{ grid-area: albums; }
 .tours { grid-area: tours; }
-.footer { grid-area: footer; }
+.footer { grid-area: footer; } */
 
 *{
 overflow-x: hidden;
@@ -1086,9 +1097,9 @@ margin: 0;
     top: 20px;
 }
 
-}
+
 @media screen and (min-width:321px) and (max-width: 480px){
-.containerindex {  display: grid;
+/* .containerindex {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:   0.4fr 0.10fr  1fr 0.9fr 0.1fr 0.01fr ;
 grid-template-areas:
@@ -1102,7 +1113,7 @@ grid-template-areas:
     .sectionbio { grid-area: sectionbio; }
     .albums{ grid-area: albums; }
     .tours { grid-area: tours; }
-    .footer { grid-area: footer; }
+    .footer { grid-area: footer; } */
 *{
 overflow-x: hidden;
 margin: 0;
@@ -1262,7 +1273,7 @@ margin-top: 10px;
     } 
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
-.containerindex {  display: grid;
+/* .containerindex {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:   0.4fr 2fr  1fr 0.9fr 0.1fr 0.01fr ;
 grid-template-areas:
@@ -1276,7 +1287,7 @@ grid-template-areas:
 .sectionbio { grid-area: sectionbio; }
 .albums{ grid-area: albums; }
 .tours { grid-area: tours; }
-.footer { grid-area: footer; }
+.footer { grid-area: footer; } */
 
 .barras{      
 display: block;
