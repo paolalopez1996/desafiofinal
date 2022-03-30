@@ -29,7 +29,7 @@ li:hover{
     animation-duration: 1s;
 }
 /*--------------------------INDEX--------------------------------------*/
-.containerindex {  display: grid;
+/* .containerindex {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:  1fr 1fr 0.2fr 0.1fr 0.1fr ;
 grid-template-areas:
@@ -48,7 +48,7 @@ grid-template-areas:
 margin: 0;
 padding: 0;
 text-decoration: none;
-}
+} */
 
 body{
 font-family: 'Hubballi', cursive;
