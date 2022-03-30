@@ -29,9 +29,9 @@ li:hover{
     animation-duration: 1s;
 }
 /*--------------------------INDEX--------------------------------------*/
-.container {  display: grid;
+.containerindex {  display: grid;
 grid-template-columns: 1fr;
-grid-template-rows:  1fr 0.5fr 0.2fr 0.1fr 0.1fr ;
+grid-template-rows:  1fr 1fr 0.2fr 0.1fr 0.1fr ;
 grid-template-areas:
 "navegacion"
 "sectionbio "
@@ -1627,7 +1627,7 @@ display: none;
         }
 /* ----RESPONSIVE INDEX Y TOURDATES ----------------------------------*/
 @media screen and (min-width:240px) and (max-width: 320px){
-.container {  display: grid;
+.containerindex {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:  0.4fr 0.1fr  0.1fr 0.1fr 0.9fr 0.1fr ;
 grid-template-areas:
@@ -1797,7 +1797,7 @@ margin: 0;
 
 }
 @media screen and (min-width:321px) and (max-width: 480px){
-.container {  display: grid;
+.containerindex {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:   0.4fr 0.10fr  1fr 0.9fr 0.1fr 0.01fr ;
 grid-template-areas:
@@ -1971,7 +1971,7 @@ margin-top: 10px;
     } 
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
-.container {  display: grid;
+.containerindex {  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:   0.4fr 2fr  1fr 0.9fr 0.1fr 0.01fr ;
 grid-template-areas:
