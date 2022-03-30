@@ -417,9 +417,8 @@ text-align: center;
     /*FIN DE TOUR DATES-------------------------*/
     /*--------SECCION PHOTOS----*/
     /*header seccion photo*/
-     .fondophoto{
-      background-color: #0c285e;
-      
+    .fondophoto{
+    background-color: #0c285e;
     } 
 .headerphoto{
 background-color: #eeeeee; 
@@ -444,8 +443,7 @@ display: flex;
 display: inline-block;
 } 
 .menuphoto li a{
-    font-weight: 800;
-   
+font-weight: 800;
 }
 .navegacionphoto__titulo{
 font-weight: 600;
@@ -533,143 +531,6 @@ box-shadow: 5px 5px 2px 2px black;
     left: 40%;
     top: 50%;
     } 
-    @media screen and (min-width:140px) and (max-width: 320px){
-        .headerphoto nav ul{
-            height: 45%;
-            width: 55%;
-        }
-        .headerphoto nav h1{
-            font-size: 20px;
-        } 
-    .navegacionphoto flex{
-    display: flex;
-    }
-    .navegacionphoto{
-    width:100%;
-    height:10rem;
-    display: block;
-    }
-    .navphoto{
-    width: 60%;
-    height: 2rem;
-    }
-    .barrasphoto{ 
-    display: block;
-    margin:10px 20px;
-    font-size:40px;
-    }
-    ul{
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    color: #343a40;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    }
-    .menuphoto ul li{
-    color: #343a40;
-    display: block;
-    margin:10px 0;
-    line-height: 40px;
-    }
-    .menuphoto ul li a{
-    font-size: 20px;
-    display: block;
-    }
-    li a:hover, li a.active{
-    background: none;
-    }
-    #check:checked~ ul{
-    left: 0;
-    }
-    .containerphoto img{
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-    }
-    .registrofooterphoto{
-    font-size: 10px;
-    opacity: 0.9;
-    background-color: #ffd60a;
-    width:40%;
-    height: 12rem;
-    }
-    .redesphoto {
-    margin-left: 5%;
-    margin-top: 5%;
-    } 
-    #copyrightphoto{
-        text-align: center;
-        margin-top: 25px;
-        position: sticky;
-        font-size: 15px;
-        top: 80%;
-        left: 20%;
-    }
-    }
-    @media screen and (min-width:321px) and (max-width: 768px){
-        .headerphoto nav ul{
-            height: 50%;
-            width: 55%;
-        } 
-        .headerphoto nav a{
-            font-size: 15px;
-        }
-    .navegacionphoto{
-    width:100%;
-    height:10rem;
-    display: block;
-    }
-    .navphoto{
-    width: 60%;
-    height: 2rem;
-    }
-    ul{
-    position: absolute;
-    width: 50%;
-    height: 60%;
-    background-color: #d00000;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    }
-    .menuphoto ul li a{
-    display: block;
-    }
-    li a:hover, li a.active{
-    background: none;
-    }
-    #check:checked~ ul{
-    left: 0;
-    }
-    .barrasphoto{ 
-    display: block;
-    margin:10px 10px;
-    font-size:40px;
-    } 
-    .registrofooterphoto{
-    font-size: 10px;
-    width: 9rem;
-    height: 13rem;
-    opacity: 0.9;
-
-}
-.redesphoto {
-margin-left: 5%;
-height: 100%;
-width: 40%;
-}
-#copyrightphoto{
-    text-align: center;
-    margin-top: 25px;
-    position: sticky;
-    font-size: 15px;
-    top: 80%;
-    left: 20%;
-}
-}
-
 /*--------------------------------------- SECCION VIDEOS-----------------*/
  .fondovideo{
     background-color: #0c285e;
@@ -784,161 +645,6 @@ display: none;
         top: 90%;
         left: 40%;
     }
-     @media screen and (min-width:140px) and (max-width: 320px){
-    .headervideo nav ul{
-        height: 62%;
-        width: 60%;
-        } 
-        .headervideo nav h1{
-        font-size: 10px;
-        }
-        .navegacionvideo flex{
-        display: flex;
-        }
-        .navegacionvideo{
-        width:100%;
-        height:10rem;
-        display: block;
-        }
-        .navvideo{
-        width: 60%;
-        height: 2rem;
-        }
-        .barrasvideo{ 
-        display: block;
-        margin:10px 20px;
-        font-size:80px;
-        }
-        ul{
-        position: absolute;
-         width: 100%;
-        height: 60%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-        .menuvideo ul li{
-        display: block;
-        margin:10px 0;
-        line-height: 40px;
-        }
-        .menuvideo ul li a{
-        font-size: 20px;
-        display: block;
-        }
-        li a:hover, li a.active{
-        background: none;
-        }
-        #check:checked~ ul{
-         left: 0;
-            }
-        .containervideo iframe{
-        margin-top: 25px;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        }
-        .footervideo{
-            height: 100%;
-        }
-        .registrofootervideo{
-            width: 50%;
-            height: 80%;
-        }
-        .redesvideo{
-            width: 45%;
-            height: 50%;
-            margin-left: 1px;
-        }
-        #copyrightvideo{
-            text-align: center;
-            margin-top: 25px;
-            position: sticky;
-            font-size: 15px;
-            top: 80%;
-            left: 20%;
-        }
-        }
-        @media screen and (min-width:321px) and (max-width: 768px){
-         .headervideo nav ul{
-        height: 40%;
-        width: 40%;
-        } 
-        .headervideo nav h1{
-        font-size: 20px;
-        }
-        .navegacionvideo{
-        width:100%;
-        height:10rem;
-        display: block;
-        }
-        .navvideo{
-         width: 60%;
-        height: 2rem;
-        }
-        ul{
-        position: absolute;
-        width: 50%;
-        height: 60%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-        .menuvideo ul li a{
-        font-size: 20px;
-        display: block;
-        }
-        li a:hover, li a.active{
-        background: none;
-        }
-        #check:checked~ ul{
-        left: 0;
-        }
-        .barrasvideo{ 
-        display: block;
-        margin:10px 10px;
-        font-size:80px;
-        } 
-        
-        .containervideo iframe{
-        margin-top: 25px;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        }
-        .footervideo{
-            height: 100%;
-        }
-        .registrofootervideo{
-            width: 50%;
-            height: 80%;
-        }
-        .redesvideo{
-            width: 45%;
-            height: 50%;
-            margin-left: 1px;
-        }
-        #copyrightvideo{
-            text-align: center;
-            margin-top: 1px;
-            position: sticky;
-            font-size: 15px;
-            top: 40%;
-            left: 20%;
-        }
-        }
-        @media screen and (min-width:768px) and (max-width: 1200px){
-        .headervideo nav ul a{
-        height: 90%;
-        font-size: 20px;  
-        }
-        .registrofootervideo{
-            width: 30%;
-            height: 60%;
-        }
-        } 
 /*---------------------DISCOGRAPHY---------------*/  
 .fondo{
     background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
@@ -1066,187 +772,6 @@ text-align: center;
     margin-top: 16%;
     width: 25%;
     height: 2%;
-    }
-    @media screen and (min-width:140px) and (max-width: 320px){
-    .headerdisco nav ul{
-    height: 20%;
-    width: 70%;
-    } 
-    .navegaciondisco flex{
-    display: flex;
-    }
-    .navegaciondisco{
-    width:100%;
-    height:10rem;
-    display: block;
-    }
-    .navdisco{
-    width: 60%;
-    height: 2rem;
-    }
-    .barrasdisco{ 
-    display: block;
-    margin:10px 20px;
-    font-size:20px;
-    }
-    ul{
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    background-color: #d00000;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    }
-    .menudisco ul li{
-    display: block;
-    margin:10px 0;
-    line-height: 40px;
-    }
-    .menudisco ul li a{
-    font-size: 20px;
-    display: block;
-    }
-    li a:hover, li a.active{
-        background: none;
-    }
-    #check:checked~ ul{
-    left: 0;
-    }
-    .padrediscography img{
-    margin-top: 25px;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    }
-    .registrofooterdisco{
-    font-size: 15px;
-    opacity: 0.9;
-    width:45%;
-    height: 12rem;
-    padding: 0.2rem;
-    }
-    .footerdisco{
-    height: 100%;
-    }
-    .registrofooterdisco{
-    width: 50%;
-    height: 80%;
-    margin: 0;
-    }
-    .redesdisco{
-    width: 45%;
-    height: 50%;
-    margin-left: 1px;
-    }
-    #copyrightdisco{
-    text-align: center;
-    margin-top: 25px;
-    position: sticky;
-    font-size: 15px;
-    top: 80%;
-    left: 20%;
-    }
-        }
-@media screen and (min-width:321px) and (max-width: 480px){
-         .headerdisco nav ul{
-         height: 20%;
-        width: 70%;
-        } 
-        .navegaciondisco{
-        width:100%;
-        height:10rem;
-        display: block;
-        }
-         .navvideo{
-        width: 60%;
-        height: 2rem;
-        }
-        ul{
-        position: absolute;
-        width: 50%;
-        height: 60%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-       }
-        .menudisco ul li a{
-        font-size: 20px;
-        display: block;
-        }
-    li a:hover, li a.active{
-    background: none;
-        }
-        #check:checked~ ul{
-        left: 0;
-        }
-        .barrasdisco{ 
-        display: block;
-        margin:10px 10px;
-        font-size:80px;
-        }
-        .padrediscography img{
-        margin-top: 25px;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        }
-        .registrofooterdisco{
-            font-size: 15px;
-            opacity: 0.9;
-            width:45%;
-            height: 12rem;
-            padding: 0.2rem;
-            }
-            .footerdisco{
-            height: 100%;
-            }
-            .registrofooterdisco{
-            width: 50%;
-            height: 60%;
-            margin: 0;
-            }
-            .redesdisco{
-            width: 45%;
-            height: 50%;
-            margin-left: 1px;
-            }
-            #copyrightdisco{
-            width: 100%;
-            height: 20%;
-            text-align: center; 
-            position: sticky;
-            font-size: 15px;
-            margin-top: 60%;
-            top: 20rem;
-            left: 20%;
-            }
-        }
-        @media screen and (min-width:481px) and (max-width: 768px){
-            .footerdisco{
-                height: 100%;
-                }
-            .registrofooterdisco{
-                height: 70%;
-                width: 42%;
-                margin: 0;
-            }
-            #copyrightdisco{
-                visibility: hidden;
-                }
-    } 
-    @media screen and (min-width:769px) and (max-width: 2045px){
-        #copyrightdisco{
-            width: 100%;
-            height: 20%;
-            text-align: center; 
-            position: sticky;
-            font-size: 15px;
-            margin-top: 2%;
-            top: 30rem;
-            left: 50%;
-            }
     }
 /*-------------ABOUT------------------*/
 .fondoabout{ 
@@ -1390,213 +915,7 @@ display: none;
     width: 25%;
     height: 2%;
     } 
-    @media screen and (min-width:140px) and (max-width: 320px){
-        .navegacioabout flex{
-        display: flex;
-        }
-        .navegacionabout{
-        width:100%;
-        height:10rem;
-        display: block;
-        }
-        .navabout{
-        width: 80%;
-        height: 2.5rem;
-        }
-        .menuabout{
-        height: 22%;
-        width: 50%;
-        }
-        .barrasabout{ 
-        display: block;
-        margin:10px  35px;
-        font-size:50px;
-        }
-        ul{
-        position: absolute;
-        width: 100%;
-        height: 90%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-        .menuabout ul li{
-        display: block;
-        margin:10px 0;
-        line-height: 20px;
-        }
-        .menuabout ul li a{
-        font-size: 20px;
-        display: block;
-        }
-        li a:hover, li a.active{
-        background: none;
-        }
-        #check:checked~ ul{
-        left: 0;
-        }
-        .registrofooterabout{
-            font-size: 15px;
-            opacity: 0.9;
-            width:45%;
-            height: 12rem;
-            padding: 0.2rem;
-            }
-            .footerabout{
-            height: 100%;
-            }
-            .registrofooterabout{
-            width: 50%;
-            height: 80%;
-            margin: 0;
-            }
-            .redesabout{
-            width: 45%;
-            height: 50%;
-            margin-left: 1px;
-            }
-            #copyrightabout{
-            text-align: center;
-            margin-top: 25px;
-            position: sticky;
-            font-size: 15px;
-            top: 80%;
-            left: 20%;
-            }
-    }
-    @media screen and (min-width:321px) and (max-width: 480px){
-        .navegacioabout{
-        width:100%;
-        height:10rem;
-        display: block;
-        }
-        .navabout{
-        width: 60%;
-        height: 2rem;
-        }
-        ul{
-        position: absolute;
-        width: 50%;
-        height: 60%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-        .menuabout{
-        height: 35%;
-        width: 30%;
-        }
-        .menuabout ul li a{
-        font-size: 20px;
-        display: block;
-        }
-        li a:hover, li a.active{
-        background: none;
-        }
-        #check:checked~ ul{
-    left: 0;
-    }
-    .barrasabout{ 
-    display: block;
-    margin:10px 10px;
-    font-size:40px;
-    } 
-    .footerabout{
-        height: 100%;
-        }
-        .registrofooterabout{
-        width: 40%;
-        height: 80%;
-        margin: 0;
-        }
-        .redesabout{
-        width: 45%;
-        height: 50%;
-        margin-left: 1px;
-        }
-        #copyrightabout{
-        visibility: hidden;
-        }
-        }
-    @media screen and (min-width:481px) and (max-width: 768px){
-        .navegacioabout{
-            width:100%;
-            height:10rem;
-            display: block;
-            }
-            .navabout{
-            width: 60%;
-            height: 2rem;
-            }
-            ul{
-            position: absolute;
-            width: 50%;
-            height: 60%;
-            background-color: #d00000;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            }
-            .menuabout{
-            height: 35%;
-            width: 30%;
-            }
-            .menuabout ul li a{
-            font-size: 20px;
-            display: block;
-            }
-            li a:hover, li a.active{
-            background: none;
-            }
-            #check:checked~ ul{
-        left: 0;
-        }
-        .barrasabout{ 
-        display: block;
-        margin:10px 10px;
-        font-size:40px;
-        } 
-    .integrante{
-        margin-top: 50px;
-    }
-    .registrofooterabout{
-        margin: 0;
-        height: 62%;
-    }
-    #copyrightabout{
-        width: 100%;
-        height: 5%;
-        text-align: center;
-        margin-top: 270px;
-        position: sticky;
-        font-size: 15px;
-        top: 80%;
-        left: 20%;
-        }
-        }
-        @media screen and (min-width:768px) and (max-width: 2045px){
-            .headerabout nav ul a{
-                height: 90%;
-                font-size: 20px;  
-                }
-        #copyrightabout{
-        width: 100%;
-        height: 5%;
-        text-align: center;
-        margin-top: 30px;
-        position: sticky;
-        font-size: 15px;
-        top: 80%;
-        left: 20%;
-        }   
-        .registrofooterabout{
-        margin: 0;
-        height: 62%;
-        }
-        }
-/* ----RESPONSIVE INDEX Y TOURDATES ----------------------------------*/
+/* ----------------------------------------RESPONSIVE INDEX ----------------------------------*/
 @media screen and (min-width:240px) and (max-width: 320px){
 .containerindex {  display: grid;
 grid-template-columns: 1fr;
@@ -2117,6 +1436,7 @@ left: 40%;
 top: 50%;
 } 
 }
+/* -----------------RESPONSIVE TOUR--------------------------- */
 @media screen and (min-width:240px) and (max-width: 320px){
 .containertour {  display: grid;
 grid-template-columns: 1fr;
@@ -2531,3 +1851,686 @@ display: inline-block;
     top: 80%;
     }
 }
+/* ------------------RESPONSIVE PHOTOS-------------------- */
+@media screen and (min-width:140px) and (max-width: 320px){
+    .headerphoto nav ul{
+        height: 45%;
+        width: 55%;
+    }
+    .headerphoto nav h1{
+        font-size: 20px;
+    } 
+.navegacionphoto flex{
+display: flex;
+}
+.navegacionphoto{
+width:100%;
+height:10rem;
+display: block;
+}
+.navphoto{
+width: 60%;
+height: 2rem;
+}
+.barrasphoto{ 
+display: block;
+margin:10px 20px;
+font-size:40px;
+}
+ul{
+position: absolute;
+width: 100%;
+height: 60%;
+color: #343a40;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+.menuphoto ul li{
+color: #343a40;
+display: block;
+margin:10px 0;
+line-height: 40px;
+}
+.menuphoto ul li a{
+font-size: 20px;
+display: block;
+}
+li a:hover, li a.active{
+background: none;
+}
+#check:checked~ ul{
+left: 0;
+}
+.containerphoto img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.registrofooterphoto{
+font-size: 10px;
+opacity: 0.9;
+background-color: #ffd60a;
+width:40%;
+height: 12rem;
+}
+.redesphoto {
+margin-left: 5%;
+margin-top: 5%;
+} 
+#copyrightphoto{
+    text-align: center;
+    margin-top: 25px;
+    position: sticky;
+    font-size: 15px;
+    top: 80%;
+    left: 20%;
+}
+}
+@media screen and (min-width:321px) and (max-width: 768px){
+.headerphoto nav ul{
+height: 50%;
+width: 55%;
+} 
+.headerphoto nav a{
+font-size: 15px;
+}
+.navegacionphoto{
+width:100%;
+height:10rem;
+display: block;
+}
+.navphoto{
+width: 60%;
+height: 2rem;
+}
+ul{
+position: absolute;
+width: 50%;
+height: 60%;
+background-color: #d00000;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+.menuphoto ul li a{
+display: block;
+}
+li a:hover, li a.active{
+background: none;
+}
+#check:checked~ ul{
+left: 0;
+}
+.barrasphoto{ 
+display: block;
+margin:10px 10px;
+font-size:40px;
+} 
+.registrofooterphoto{
+font-size: 10px;
+width: 9rem;
+height: 13rem;
+opacity: 0.9;
+
+}
+.redesphoto {
+margin-left: 5%;
+height: 100%;
+width: 40%;
+}
+#copyrightphoto{
+text-align: center;
+margin-top: 25px;
+position: sticky;
+font-size: 15px;
+top: 80%;
+left: 20%;
+}
+}
+/* -------------RESPONSIVE VIDEOS--------- */
+@media screen and (min-width:140px) and (max-width: 320px){  .headervideo nav ul{
+    height: 62%;
+    width: 60%;
+    } 
+    .headervideo nav h1{
+    font-size: 10px;
+    }
+    .navegacionvideo flex{
+    display: flex;
+    }
+    .navegacionvideo{
+    width:100%;
+    height:10rem;
+    display: block;
+    }
+    .navvideo{
+    width: 60%;
+    height: 2rem;
+    }
+    .barrasvideo{ 
+    display: block;
+    margin:10px 20px;
+    font-size:80px;
+    }
+    ul{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: #d00000;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+    .menuvideo ul li{
+    display: block;
+    margin:10px 0;
+    line-height: 40px;
+    }
+    .menuvideo ul li a{
+    font-size: 20px;
+    display: block;
+    }
+    li a:hover, li a.active{
+    background: none;
+    }
+    #check:checked~ ul{
+    left: 0;
+    }
+    .containervideo iframe{
+    margin-top: 25px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    }
+    .footervideo{
+        height: 100%;
+    }
+    .registrofootervideo{
+        width: 50%;
+        height: 80%;
+    }
+    .redesvideo{
+        width: 45%;
+        height: 50%;
+        margin-left: 1px;
+    }
+    #copyrightvideo{
+        text-align: center;
+        margin-top: 25px;
+        position: sticky;
+        font-size: 15px;
+        top: 80%;
+        left: 20%;
+    }
+    }
+    @media screen and (min-width:321px) and (max-width: 768px){
+     .headervideo nav ul{
+    height: 40%;
+    width: 40%;
+    } 
+    .headervideo nav h1{
+    font-size: 20px;
+    }
+    .navegacionvideo{
+    width:100%;
+    height:10rem;
+    display: block;
+    }
+    .navvideo{
+     width: 60%;
+    height: 2rem;
+    }
+    ul{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    background-color: #d00000;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+    .menuvideo ul li a{
+    font-size: 20px;
+    display: block;
+    }
+    li a:hover, li a.active{
+    background: none;
+    }
+    #check:checked~ ul{
+    left: 0;
+    }
+    .barrasvideo{ 
+    display: block;
+    margin:10px 10px;
+    font-size:80px;
+    } 
+    
+    .containervideo iframe{
+    margin-top: 25px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    }
+    .footervideo{
+        height: 100%;
+    }
+    .registrofootervideo{
+        width: 50%;
+        height: 80%;
+    }
+    .redesvideo{
+        width: 45%;
+        height: 50%;
+        margin-left: 1px;
+    }
+    #copyrightvideo{
+        text-align: center;
+        margin-top: 1px;
+        position: sticky;
+        font-size: 15px;
+        top: 40%;
+        left: 20%;
+    }
+    }
+    @media screen and (min-width:768px) and (max-width: 1200px){
+    .headervideo nav ul a{
+    height: 90%;
+    font-size: 20px;  
+    }
+    .registrofootervideo{
+        width: 30%;
+        height: 60%;
+    }
+    }
+    /* --------------RESPONSIVE DISCOGRAPHY---------------------------------------------------------------------------pwd
+     */
+@media screen and (min-width:140px) and (max-width: 320px){
+    .headerdisco nav ul{
+    height: 20%;
+    width: 70%;
+    } 
+    .navegaciondisco flex{
+    display: flex;
+    }
+    .navegaciondisco{
+    width:100%;
+    height:10rem;
+    display: block;
+    }
+    .navdisco{
+    width: 60%;
+    height: 2rem;
+    }
+    .barrasdisco{ 
+     display: block;
+            margin:10px 20px;
+            font-size:20px;
+            }
+            ul{
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            background-color: #d00000;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            }
+            .menudisco ul li{
+            display: block;
+            margin:10px 0;
+            line-height: 40px;
+            }
+            .menudisco ul li a{
+            font-size: 20px;
+            display: block;
+            }
+            li a:hover, li a.active{
+                background: none;
+            }
+            #check:checked~ ul{
+            left: 0;
+            }
+            .padrediscography img{
+            margin-top: 25px;
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            }
+            .registrofooterdisco{
+            font-size: 15px;
+            opacity: 0.9;
+            width:45%;
+            height: 12rem;
+            padding: 0.2rem;
+            }
+            .footerdisco{
+            height: 100%;
+            }
+            .registrofooterdisco{
+            width: 50%;
+            height: 80%;
+            margin: 0;
+            }
+            .redesdisco{
+            width: 45%;
+            height: 50%;
+            margin-left: 1px;
+            }
+            #copyrightdisco{
+            text-align: center;
+            margin-top: 25px;
+            position: sticky;
+            font-size: 15px;
+            top: 80%;
+            left: 20%;
+            }
+                }
+        @media screen and (min-width:321px) and (max-width: 480px){
+                 .headerdisco nav ul{
+                 height: 20%;
+                width: 70%;
+                } 
+                .navegaciondisco{
+                width:100%;
+                height:10rem;
+                display: block;
+                }
+                 .navvideo{
+                width: 60%;
+                height: 2rem;
+                }
+                ul{
+                position: absolute;
+                width: 50%;
+                height: 60%;
+                background-color: #d00000;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+               }
+                .menudisco ul li a{
+                font-size: 20px;
+                display: block;
+                }
+            li a:hover, li a.active{
+            background: none;
+                }
+                #check:checked~ ul{
+                left: 0;
+                }
+                .barrasdisco{ 
+                display: block;
+                margin:10px 10px;
+                font-size:80px;
+                }
+                .padrediscography img{
+                margin-top: 25px;
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+                }
+                .registrofooterdisco{
+                    font-size: 15px;
+                    opacity: 0.9;
+                    width:45%;
+                    height: 12rem;
+                    padding: 0.2rem;
+                    }
+                    .footerdisco{
+                    height: 100%;
+                    }
+                    .registrofooterdisco{
+                    width: 50%;
+                    height: 60%;
+                    margin: 0;
+                    }
+                    .redesdisco{
+                    width: 45%;
+                    height: 50%;
+                    margin-left: 1px;
+                    }
+                    #copyrightdisco{
+                    width: 100%;
+                    height: 20%;
+                    text-align: center; 
+                    position: sticky;
+                    font-size: 15px;
+                    margin-top: 60%;
+                    top: 20rem;
+                    left: 20%;
+                    }
+                }
+                @media screen and (min-width:481px) and (max-width: 768px){
+                    .footerdisco{
+                        height: 100%;
+                        }
+                    .registrofooterdisco{
+                        height: 70%;
+                        width: 42%;
+                        margin: 0;
+                    }
+                    #copyrightdisco{
+                        visibility: hidden;
+                        }
+            } 
+            @media screen and (min-width:769px) and (max-width: 2045px){
+                #copyrightdisco{
+                    width: 100%;
+                    height: 20%;
+                    text-align: center; 
+                    position: sticky;
+                    font-size: 15px;
+                    margin-top: 2%;
+                    top: 30rem;
+                    left: 50%;
+                    }
+            }
+    /* -----------------RESPONSIVE ABOUT ------------------------------- */
+    @media screen and (min-width:140px) and (max-width: 320px){
+        .navegacioabout flex{
+        display: flex;
+        }
+        .navegacionabout{
+        width:100%;
+        height:10rem;
+        display: block;
+        }
+        .navabout{
+        width: 80%;
+        height: 2.5rem;
+        }
+        .menuabout{
+        height: 22%;
+        width: 50%;
+        }
+        .barrasabout{ 
+        display: block;
+        margin:10px  35px;
+        font-size:50px;
+        }
+        ul{
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        background-color: #d00000;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        }
+        .menuabout ul li{
+        display: block;
+        margin:10px 0;
+        line-height: 20px;
+        }
+        .menuabout ul li a{
+        font-size: 20px;
+        display: block;
+        }
+        li a:hover, li a.active{
+        background: none;
+        }
+        #check:checked~ ul{
+        left: 0;
+        }
+        .registrofooterabout{
+            font-size: 15px;
+            opacity: 0.9;
+            width:45%;
+            height: 12rem;
+            padding: 0.2rem;
+            }
+            .footerabout{
+            height: 100%;
+            }
+            .registrofooterabout{
+            width: 50%;
+            height: 80%;
+            margin: 0;
+            }
+            .redesabout{
+            width: 45%;
+            height: 50%;
+            margin-left: 1px;
+            }
+            #copyrightabout{
+            text-align: center;
+            margin-top: 25px;
+            position: sticky;
+            font-size: 15px;
+            top: 80%;
+            left: 20%;
+            }
+    }
+    @media screen and (min-width:321px) and (max-width: 480px){
+        .navegacioabout{
+        width:100%;
+        height:10rem;
+        display: block;
+        }
+        .navabout{
+        width: 60%;
+        height: 2rem;
+        }
+        ul{
+        position: absolute;
+        width: 50%;
+        height: 60%;
+        background-color: #d00000;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        }
+        .menuabout{
+        height: 35%;
+        width: 30%;
+        }
+        .menuabout ul li a{
+        font-size: 20px;
+        display: block;
+        }
+        li a:hover, li a.active{
+        background: none;
+        }
+        #check:checked~ ul{
+    left: 0;
+    }
+    .barrasabout{ 
+    display: block;
+    margin:10px 10px;
+    font-size:40px;
+    } 
+    .footerabout{
+        height: 100%;
+        }
+        .registrofooterabout{
+        width: 40%;
+        height: 80%;
+        margin: 0;
+        }
+        .redesabout{
+        width: 45%;
+        height: 50%;
+        margin-left: 1px;
+        }
+        #copyrightabout{
+        visibility: hidden;
+        }
+        }
+    @media screen and (min-width:481px) and (max-width: 768px){
+        .navegacioabout{
+            width:100%;
+            height:10rem;
+            display: block;
+            }
+            .navabout{
+            width: 60%;
+            height: 2rem;
+            }
+            ul{
+            position: absolute;
+            width: 50%;
+            height: 60%;
+            background-color: #d00000;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            }
+            .menuabout{
+            height: 35%;
+            width: 30%;
+            }
+            .menuabout ul li a{
+            font-size: 20px;
+            display: block;
+            }
+            li a:hover, li a.active{
+            background: none;
+            }
+            #check:checked~ ul{
+        left: 0;
+        }
+        .barrasabout{ 
+        display: block;
+        margin:10px 10px;
+        font-size:40px;
+        } 
+    .integrante{
+        margin-top: 50px;
+    }
+    .registrofooterabout{
+        margin: 0;
+        height: 62%;
+    }
+    #copyrightabout{
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        margin-top: 270px;
+        position: sticky;
+        font-size: 15px;
+        top: 80%;
+        left: 20%;
+        }
+        }
+        @media screen and (min-width:768px) and (max-width: 2045px){
+            .headerabout nav ul a{
+                height: 90%;
+                font-size: 20px;  
+                }
+        #copyrightabout{
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        margin-top: 30px;
+        position: sticky;
+        font-size: 15px;
+        top: 80%;
+        left: 20%;
+        }   
+        .registrofooterabout{
+        margin: 0;
+        height: 62%;
+        }
+        }
+    
