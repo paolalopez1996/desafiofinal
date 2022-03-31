@@ -7,7 +7,7 @@ animation-duration: 2s;
 animation: pulse; 
 animation-duration: 1s;
 }
-li:hover{
+.menupropio a:hover{
 animation: flash;
 animation-duration: 1s;
 }
@@ -34,11 +34,16 @@ nav{
 height: 10rem;
 }
 .imagenprincipal img{
+filter: brightness(50%); 
 object-fit: cover;
 width: 100%;
 height: 30rem;
 }
-a {
+.imagenprincipal:hover{
+    filter: brightness(150%);
+
+}
+a{
 color:black;
 text-decoration: none;
 }
@@ -58,17 +63,18 @@ text-align: center;
 margin-right: 20px;
 }
 .parrafoindex{
-    height: auto;
-
+height: auto;
 }
 .parrafoprincipal{
-text-align:justify;
+text-align:center;
+font-family: 'Space Mono', monospace;
 font-size: 30px;
 color: #e5e5e5;
 height: 40rem;
 padding: 20px;
 }
 .parrafoprincipal h2{
+font-family: 'Hubballi', cursive;
 margin-top: 3rem;
 color: #6a040f;
 border-bottom: 2px solid gray;
@@ -76,21 +82,38 @@ height: 3rem;
 text-align: center;
 font-size: 35px;
 }
+.parrafoprincipal h2:hover{
+    background-color: orange;
+}
 .otroparrafoprincipal{
-background-color: #d00000;
 height: 40rem;
 text-align: center;
+}
+.otroparrafoprincipal p{
+    font-size: 20px;
+    color: #d00000;
+    font-family: 'Space Mono', monospace;
 }
 .otroparrafoprincipal img{
 border-radius: 10%;
 width: 600px;
 height: 500px;
 margin: 15px;
-margin-left: 30px;
 }
-.otroparrafoprincipal button a{
-font-size: 20px;
-text-decoration: none;
+.linkalbum{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+justify-content: center;
+align-content:flex-end;
+}
+.linkalbum a img{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 15rem 5rem;
+    border-radius: 15%;
+    padding: 15px;
 }
 .imagenparrafoprincipal{
 background-repeat: no-repeat;
@@ -121,6 +144,8 @@ margin-top: 10rem;
 background-color: #14B2B8;
 } 
 .tabla button{
+background-color: #6a040f;
+font-family: 'Space Mono', monospace;
 font-size: 40px;
 margin-top: 65px;
 font-weight: 900;
@@ -136,15 +161,13 @@ height: 25rem;
 }
 .barranavpropio{
 height: 24rem;
-
 margin-top: 1px;
 }
 }
-/* -----FOOTER INDEX*------- */
+/* -------------------------------------FOOTER INDEX*--------------------- */
 .footer{ 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-height: 21rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+height:auto;
 }
 .footer img:hover{
 border-color: #ffd60a;
@@ -174,18 +197,15 @@ margin-top: 15px;
 display: inline-block;
 text-align: center;
 margin-top: 4rem;
-
 }
 .redsocial a img{
-color: #14B2B8;
-background-color: #14B2B8;
+background-color: #d00000;
 width: 40px;
 height: 40px;
 padding: 5px;
 margin-right: 20px;
 border-radius: 20%;
-border: 2px solid white;
-
+border: 2px solid red;
 } 
 .copyright{
 font-size:15px;
@@ -195,167 +215,54 @@ text-align: center;
 /*-------------------fin del index principal/------*/
 
 /* ----------------------TOUR DATES----------------------------*/
-.containertour {  display: grid;
-grid-template-columns: 1fr;
-grid-template-rows:    0.1fr 0.1fr 0.1fr; 
-grid-template-areas:
-"navegaciontour"
-"secciontour"
-"footertour"
+.tours h1{
+font-family:  'Hubballi', cursive;
+height: 8rem;
+font-size: 80px;
+margin: 2rem 1px;
 }
-.navegaciontour { grid-area: navegaciontour; }
-.secciontour { grid-area: secciontour; }
-.footertour {grid-area: footertour;}
-
-.barrastour{
-    line-height: 80px;
-    font-size: 40px;
-    float: right;
-    margin-right: 50px;
-    cursor: pointer;
-    display: none;
-    }
-    #check{
-    display: none;
-    }
-    .navegaciontour__titulo{
-    font-weight: 600;
-    font-size: 40px; 
-    padding-top: 2%;
-    text-align: center;
-    }
-    a{
-    color: black;
-    }
-    .headertour img{
-    width: 100%; 
-    object-fit: cover;
-    margin-top: 10px;
-    }
-    .navegaciontour{
-    background-color: #eeeeee;
-    font-weight: 500;
-    height: 200px;
-    text-align: center;
-    width: 100%;
-    }
-    /* .navtour:hover{
-    height: 5rem;
-    width: 8rem;
-    text-align: center;
-    background-color: #d00000;
-    }  */
-    .menutour li{
-    font-size: 20px;
-    margin-left: 4%;
-    margin-top: 2%;
-    padding: 2px;
-    display: flex;
-    display: inline-block;
-    }
-    .menutour li a{
-        font-weight: 800;
-    }
-
-.secciontour h1{
-margin-top: 2rem;
-margin-bottom: 3rem;
-font-size: 50px;
-} 
-.secciontour{
-font-size: 30px;
-width: 100%;
-height: 200rem;
-color: white;
+.tours h1:hover{
+    color: red;
+}
+.tours{
+color: #d8dee9;
+font-family: 'Space Mono', monospace;
+height: auto;
 display: flex;
-flex-flow: column nowrap;
+display: block;
+text-align: center;
 justify-content: center;
-align-items: center; 
-background-color: black;
-text-transform: uppercase; 
-
+align-items: center;
 }
-.tourboton{
-color: white;
-text-align: center;
-font-family: 'Caveat', cursive;
-background-color: transparent;
-text-transform: uppercase;
-margin-left: 1rem;
+.item{
+border-top: 2px solid red;
+font-size: 40px;
+ margin-bottom: 8rem;
 }
-.secciontour__fechas{
-height: 5rem;
-width: 65rem;
-margin-top: 4rem;
-padding: 1rem 2rem;
-text-align: center;
-border: 2px solid #d00000;
-border-style: dashed;
-}
-.secciontour__fechas:hover{
+.item:hover{
 background-color: #343a40;
-width: 70%;
+}
+.item button{
+flex-direction: column;
+color: grey;
+align-items: center;
+justify-content: center;
 text-align: center;
 }
-.footertour{ 
-    background-color: #d00000;
-    height: auto;
-    width: 100%;
-    margin-top: 1.5rem;
-    box-shadow: -5px -5px 5px  18px #d00000;
-    }
-    .flex{
-    display: flex;
-    }
-    .footertour img{
-    display: inline-block;
-    width: 2rem;
-    border: 2px solid black; 
-    border-radius: 8px;
-    padding: 5px;
-    }
-    .footertour img:hover{
-    border-color: #ffd60a;
-    }
-    .redestour {
-    width: 30%;
-    /* height: 20%; */
-    
-    display:inline-block;
-    margin-left: 20%;
-    margin-top: 4rem;
-    } 
-    .redestour a{
-    margin-left: 10%;
-    } 
-    .registrofootertour{
-    opacity: 0.9;
-    background-color: #6a040f;
-    width: 25%;
-    height: 12rem;
-    padding: 1rem;
-    font-size: 10px;
-    }
-    .registrofootertour input{
-    display: inline-block;
-    font-family:  'Hubballi', cursive;
-    height: 15px;
-    margin: 0;
-    margin-top: 5px;
-    background-color: #d8dee9;
-    }
-    /* #copyrighttour{
-    font-size:15px;
-    position: sticky;
-    left: 100%;
-    top: 20%;
-    }  */
-    /*FIN DE TOUR DATES-------------------------*/
-    /*--------SECCION PHOTOS----*/
-    /*header seccion photo*/
-    .fondophoto{
-    background-color: #0c285e;
-    } 
+.item button:hover{
+background-color: #e63946;
+}
+.imagentour img{
+object-fit: fill; 
+opacity: 0.5;
+margin-left: -20px;
+}
+
+/*FIN DE TOUR DATES-------------------------*/
+/*--------------------------------SECCION PHOTOS---------------------*/
+.fondophoto{
+background-color: #0c285e;
+} 
 .headerphoto{
 background-color: #eeeeee; 
 font-weight: 500;
@@ -373,7 +280,7 @@ width: 100%;
 .menuphoto li{
 font-size: 20px;
 margin-left: 4%;
- margin-top: 1%; 
+margin-top: 1%; 
 padding: 2px;
 display: flex;
 display: inline-block;
@@ -400,11 +307,11 @@ display: none;
 }
 /*body seccion photo*/
 .containerphoto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 5rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+width: 100%;
+margin-top: 5rem;
 }
 .containerphoto img{
 margin-top: 25px;
@@ -710,564 +617,31 @@ text-align: center;
     height: 2%;
     }
 /*-------------ABOUT------------------*/
-.fondoabout{ 
-    background-color: black;
-    /* background-image: url(../imagenes/pexels-kristina-paukshtite-1998922.jpg);
-    background-repeat: repeat;
-    object-fit: cover; */
-}
-.headerabout{
-background-color: #eeeeee; 
-font-weight: 500;
-height: 20%;
-text-align: center;
-width: 100%;
-}
-.navegacionabout{
-background-color: #eeeeee;
-font-weight: 500;
-height: 6rem;
-text-align: center;
-width: 100%;
-}
-.menuabout li{
-font-size: 20px;
-margin-left: 4%;
-margin-top: 1%; 
-padding: 2px;
-display: flex;
-display: inline-block;
-}
-.menuabout li a{
-    font-weight: 800;
-    
-} 
-.navegacionabout__titulo{
-font-weight: 600;
-font-size: 30px; 
-text-align: center;
-padding-top: 2%;
-}
-.barrasabout{
-line-height: 80px;
-font-size: 40px;
-float: right;
-margin-right: 50px;
-cursor: pointer;
-display: none;
-}
-#check{
-display: none;
-}
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-}
-.containerabout {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-}
-.text-center{
-    text-align: center;
+.aboutpadre{
+background-color: aquamarine;
 }
 .integrante{
-    background-color: #E8E8E6;
-    width: 80%;
-    height: 42rem;
-    padding: 10px;
-    margin: 25px;
-    margin-left: 10%;
-    box-sizing: border-box;
-    box-shadow: 4px 4px 5px 5px #E8E8E6;
+
+background-color: #E8E8E6;
+padding: 10px;
+box-sizing: border-box;
+box-shadow: 4px 4px 5px 5px #E8E8E6;
+} 
+ .integrante img{
+object-fit: cover;
+width: 500px;
+height: 500px;
 } 
 .integrante h3{
-    color: #d00000;
+color: #d00000;
 }
 .integrante p{
-    font-weight: 800;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10px;
-    
-}
-.containerabout img{
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-}
-.footerabout{ 
-    background-color: #d00000;
-    height: 20rem;
-    width: 100%;
-    margin-top: 1.5rem;
-    box-shadow: -5px -5px 5px  18px #d00000;
-    }
-    .flex{
-    display: flex;
-    }
-    .footerabout img{
-    display: inline-block;
-    width: 2rem;
-    border: 2px solid black; 
-    border-radius: 8px;
-    padding: 5px;
-    }
-    .footerabout img:hover{
-    border-color: #ffd60a;
-    }
-    .redesabout {
-    width: 30%;
-    height: 20%;
-    display:inline-block;
-    margin-left: 20%;
-    margin-top: 4rem;
-    } 
-    .redesabout a{
-    margin-left: 10%;
-    } 
-    .registrofooterabout{
-    margin: 0 2rem;
-    opacity: 0.9;
-    background-color: #6a040f;
-    width: 30%;
-    height: 50%;
-    padding: 1rem;
-    }
-    .registrofooterabout input{
-    display: inline-block;
-    font-family:  'Hubballi', cursive;
-    height: 15px;
-    margin: 0;
-    border-radius: 10%;
-    background-color: #d8dee9;
-    }
-    #copyrightabout{
-    font-size:15px;
-    margin-left: -700px; 
-    margin-top: 16%;
-    width: 25%;
-    height: 2%;
-    } 
-/* ----------------------------------------RESPONSIVE INDEX ----------------------------------*/
-
-/* -----------------RESPONSIVE TOUR--------------------------- */
-@media screen and (min-width:240px) and (max-width: 320px){
-.containertour {  display: grid;
-grid-template-columns: 1fr;
-grid-template-rows:   0.36fr  2fr 0.24fr;
-grid-template-areas:
-"navegaciontour"
-"secciontour"
-"footertour "
-}
-.navegaciontour {grid-area: navegaciontour;}
-.secciontour { grid-area: secciontour; }
-.footertour { grid-area: footertour; }
-
-.containertour{
-overflow-x: hidden;
-margin: 0;
-padding: 0;
- }
-.headertour img{
- object-fit: cover;
-}
-.navegaciontour flex{
-display: flex;
-}
-.navegaciontour{
-width:100%;
-height:25rem;
-display: block;
-}
-.navegaciontour__titulo{
- font-size: 20px;
- margin-left:-1px;
-}
-.navtour{
-width: 50%;
-height: 2rem;
-margin-left:-21px;
-}
-.barrastour{ 
-display: block;
-margin:10px 20px;
-font-size:40px;
-}
-.headertour ul{
-position: absolute;
-width: 78%;
-height: 62%;
-background-color: #d00000;
-left: -100%;
+font-weight: 800;
+font-size: 30px;
 text-align: center;
-transition: all .5s;
+margin-top: 10px;
 }
-.menutour ul li{
-display: block;
-margin:50px 0;
-}
-.headertour ul li a{
-margin-top: 5px;
-font-size: 20px;
-display: block; 
-}
-li a:hover, li a.active{
-background: none;
-} 
-#check:checked~ ul{
-left: 0;
-}
-.secciontour{
-margin-bottom: 1rem;
-} 
-.secciontour h1{
-height: 8rem;
-}
-.secciontour span{
-display: block;    
-}
-.secciontour__fechas{
-width: 90%;
-font-size: 18px;
-}
-.tourboton{
-font-size: 15px;
-margin-top:12px;
-}
-.footer{
-    height: auto;
-}
-.footertour{ 
-background-color: #d00000;
-width: 100%;
-margin-top: 1.5rem;
-box-shadow: -5px -5px 5px  18px #d00000; 
-}
-.flex{
-display: flex;
-}
-.footertour img{
-display: inline-block;
-width: 2rem;
-border: 2px solid black; 
-border-radius: 8px;
-padding: 5px;
-}
-.redestour{
-margin-top: 1px;
-}
-.registrofootertour{
-margin: 0;
-opacity: 0.9;
-background-color: #ffd60a;
- width: 6rem;
-height: 12rem; 
-padding: 1rem;
-}
-.registrofootertour input{
-display: inline-block;
-font-family:  'Hubballi', cursive;
-height: 15px;
-margin: 0;
-margin-top: 5px;
-border-radius: 10%;
-background-color: #d8dee9;
-}
-.copyrighttour{
-    margin-top: 40px;
-font-size:10px;
-position: sticky;
-left: 10%;
-top: 80%;
 
-}
-}
-@media screen and (min-width:321px) and (max-width: 480px){
-.containertour {  display: grid;
-grid-template-columns: 1fr;
-grid-template-rows:   0.40fr  2fr 0.24fr;
-grid-template-areas:
-"navegaciontour"
-"secciontour"
-"footertour "
-}
-.navegaciontour {grid-area: navegaciontour;}
-.secciontour { grid-area: secciontour; }
-.footertour { grid-area: footertour; }
-    
-.containertour{
-overflow-x: hidden;
-margin: 0;
-padding: 0;
-}
-.headertour img{
-object-fit: cover;
-}
-.navegaciontour flex{
-display: flex;
-}
-.navegaciontour{
-width:100%;
-height:25rem;
-display: block;
-}
-.navegaciontour__titulo{
-font-size: 20px;
-margin-left:-1px;
-}
-.navtour{
-width: 50%;
-height: 2rem;
-margin-left:-21px;
-}
-.barrastour{ 
-display: block;
-margin:10px 10px;
-font-size:40px;
-}
-.headertour ul{
-position: absolute;
-width: 78%;
-height: 62%;
-background-color: #d00000;
-left: -100%;
-text-align: center;
-transition: all .5s;
-}
-.menutour ul li{
-display: block;
-margin:50px 0;
-}
-.headertour ul li a{
-margin-top: 5px;
-font-size: 20px;
-display: block;
-}
-li a:hover, li a.active{
-background: none;
-} 
-#check:checked~ ul{
-left: 0;
-}
-.secciontour{
-margin-bottom: 1rem;
-} 
-.secciontour h1{
-height: 8rem;
-}
-.secciontour span{
-display: block;
-}
-.secciontour__fechas{
-height:auto;
-width: 90%;
-font-size: 18px;
-}
-.tourboton{
-font-size: 15px;
-margin-top:12px;
-}
-.footertour{ 
-background-color: #d00000;
-height: 17rem;
-width: 100%;
-margin-top: 1.5rem;
-box-shadow: -5px -5px 5px  18px #d00000; 
-}
-.flex{
-display: flex;
-}
-.footertour img{
-display: inline-block;
-width: 2rem;
-border: 2px solid black; 
-border-radius: 8px;
-padding: 5px;
-flex-wrap: wrap;
-}
-.redestour {
-flex-wrap: wrap;
-display:inline-block;
-margin-left: 2rem;
-margin-top: 5px;
-}   
-.registrofootertour{
-margin: 0;
-opacity: 0.9;
-background-color: #ffd60a;
-width: 10rem;
-height: 12rem;
-}
-.registrofootertour input{  
-display: inline-block;
-font-family:  'Hubballi', cursive;
-height: 15px;
-margin: 0;
-margin-top: 5px;
-border-radius: 10%;
-background-color: #d8dee9;
-}
-.copyrighttour{
-    font-size: 35px;
-margin-top: 30px;
-font-size:10px;
-position: sticky;
-left: 15%;
-top: 80%;
-}
-}
-@media screen and (min-width:481px) and (max-width: 1024px){
-.containertour {  display: grid;
-grid-template-columns: 1fr;
-grid-template-rows:   0.40fr  2fr 0.25fr;
-grid-template-areas:
-"navegaciontour"
-"secciontour"
-"footertour "
-}
-.navegaciontour {grid-area: navegaciontour;}
-.secciontour { grid-area: secciontour; }
-.footertour { grid-area: footertour; }
-    
-.containertour{
-overflow-x: hidden; 
-margin: 0;
-padding: 0; 
- }
-.headertour img{
-object-fit: cover;
-width: 100%;
-}
-.navegaciontour flex{
-display: flex;
-}
-.navegaciontour{
-width:100%;
-height:26rem;
-display: block;
-}
-.navegaciontour__titulo{
-font-size: 20px;
- margin-left:-1px;
-}
-.navtour{
-width: 50%;
-height: 2rem;
-margin-left:-21px;
-}
-.barrastour{ 
-display: block;
-margin:10px 130px;
-font-size:40px;
-}
-.headertour ul{
-position: absolute;
-width: 55%;
-height: 65%;
-background-color: #d00000;
-left: -100%;
-text-align: center;
-transition: all .5s;
-}
-.menutour ul li{
-display: block;
-margin:50px 0;
-}
-.headertour ul li a{
-margin-top: 5px;
- width: 60%;
-font-size: 35px;
-display: block; 
-}
-li a:hover, li a.active{
-background: none;
-} 
-#check:checked~ ul{
-left: 0;
-}
-.tours{
-margin-bottom: 10px;
-height: auto;
-}
-.secciontour h1{
-height: 8rem;
-margin-top: 2px;
-margin-left: -205px;
-}
-.secciontour span{
-display: inline-block;
-    text-align: center;
-    width: 40%;
-    }
-    .secciontour__fechas{
-    padding: 10px;
-    margin-top: 10px;
-    height:auto;
-    width: 25rem;
-    font-size: 20px;
-    }
-    .tourboton{
-    font-size: 15px;
-    margin-top:12px;
-    margin-left: 135px;
-    display: block;
-    }
-    .footertour{ 
-    background-color: #d00000;
-    height: 17rem;
-    width: 100%;
-    margin-top: 1.5rem;
-    box-shadow: -5px -5px 5px  18px #d00000; 
-    }
-    .flex{
-    display: flex;
-    }
-    .footertour{
-    margin-top: 30px;
-    }
-    .footertour img{
-    display: inline-block;
-    width: 2rem;
-    border: 2px solid black; 
-    border-radius: 8px;
-    padding: 5px;
-    }
-    .registrofootertour{
-    margin: 0;
-    margin-left: 10px;
-    opacity: 0.9;
-    background-color: #ffd60a;
-    width: 11rem;
-    height: 12rem;
-    }
-    .redestour{
-    width: 45%;
-    flex-wrap: wrap;
-    display:inline-block;
-    margin-left: 2rem;
-    margin-top: 5px;
-    }
-    .copyrighttour{
-    font-size: 15px;
-    margin-top: 30px;
-    position: sticky;
-    left: 35%;
-    top: 80%;
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 2045px){
-    .copyrighttour{
-    font-size: 15px;
-    margin-top: 30px;
-    position: sticky;
-    left: 35%;
-    top: 80%;
-    }
-}
 /* ------------------RESPONSIVE PHOTOS-------------------- */
 @media screen and (min-width:140px) and (max-width: 320px){
     .headerphoto nav ul{
@@ -1743,211 +1117,3 @@ left: 20%;
                     left: 50%;
                     }
             }
-    /* -----------------RESPONSIVE ABOUT ------------------------------- */
-    @media screen and (min-width:140px) and (max-width: 320px){
-        .navegacioabout flex{
-        display: flex;
-        }
-        .navegacionabout{
-        width:100%;
-        height:10rem;
-        display: block;
-        }
-        .navabout{
-        width: 80%;
-        height: 2.5rem;
-        }
-        .menuabout{
-        height: 22%;
-        width: 50%;
-        }
-        .barrasabout{ 
-        display: block;
-        margin:10px  35px;
-        font-size:50px;
-        }
-        ul{
-        position: absolute;
-        width: 100%;
-        height: 90%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-        .menuabout ul li{
-        display: block;
-        margin:10px 0;
-        line-height: 20px;
-        }
-        .menuabout ul li a{
-        font-size: 20px;
-        display: block;
-        }
-        li a:hover, li a.active{
-        background: none;
-        }
-        #check:checked~ ul{
-        left: 0;
-        }
-        .registrofooterabout{
-            font-size: 15px;
-            opacity: 0.9;
-            width:45%;
-            height: 12rem;
-            padding: 0.2rem;
-            }
-            .footerabout{
-            height: 100%;
-            }
-            .registrofooterabout{
-            width: 50%;
-            height: 80%;
-            margin: 0;
-            }
-            .redesabout{
-            width: 45%;
-            height: 50%;
-            margin-left: 1px;
-            }
-            #copyrightabout{
-            text-align: center;
-            margin-top: 25px;
-            position: sticky;
-            font-size: 15px;
-            top: 80%;
-            left: 20%;
-            }
-    }
-    @media screen and (min-width:321px) and (max-width: 480px){
-        .navegacioabout{
-        width:100%;
-        height:10rem;
-        display: block;
-        }
-        .navabout{
-        width: 60%;
-        height: 2rem;
-        }
-        ul{
-        position: absolute;
-        width: 50%;
-        height: 60%;
-        background-color: #d00000;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        }
-        .menuabout{
-        height: 35%;
-        width: 30%;
-        }
-        .menuabout ul li a{
-        font-size: 20px;
-        display: block;
-        }
-        li a:hover, li a.active{
-        background: none;
-        }
-        #check:checked~ ul{
-    left: 0;
-    }
-    .barrasabout{ 
-    display: block;
-    margin:10px 10px;
-    font-size:40px;
-    } 
-    .footerabout{
-        height: 100%;
-        }
-        .registrofooterabout{
-        width: 40%;
-        height: 80%;
-        margin: 0;
-        }
-        .redesabout{
-        width: 45%;
-        height: 50%;
-        margin-left: 1px;
-        }
-        #copyrightabout{
-        visibility: hidden;
-        }
-        }
-    @media screen and (min-width:481px) and (max-width: 768px){
-        .navegacioabout{
-            width:100%;
-            height:10rem;
-            display: block;
-            }
-            .navabout{
-            width: 60%;
-            height: 2rem;
-            }
-            ul{
-            position: absolute;
-            width: 50%;
-            height: 60%;
-            background-color: #d00000;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            }
-            .menuabout{
-            height: 35%;
-            width: 30%;
-            }
-            .menuabout ul li a{
-            font-size: 20px;
-            display: block;
-            }
-            li a:hover, li a.active{
-            background: none;
-            }
-            #check:checked~ ul{
-        left: 0;
-        }
-        .barrasabout{ 
-        display: block;
-        margin:10px 10px;
-        font-size:40px;
-        } 
-    .integrante{
-        margin-top: 50px;
-    }
-    .registrofooterabout{
-        margin: 0;
-        height: 62%;
-    }
-    #copyrightabout{
-        width: 100%;
-        height: 5%;
-        text-align: center;
-        margin-top: 270px;
-        position: sticky;
-        font-size: 15px;
-        top: 80%;
-        left: 20%;
-        }
-        }
-        @media screen and (min-width:768px) and (max-width: 2045px){
-            .headerabout nav ul a{
-                height: 90%;
-                font-size: 20px;  
-                }
-        #copyrightabout{
-        width: 100%;
-        height: 5%;
-        text-align: center;
-        margin-top: 30px;
-        position: sticky;
-        font-size: 15px;
-        top: 80%;
-        left: 20%;
-        }   
-        .registrofooterabout{
-        margin: 0;
-        height: 62%;
-        }
-        }
-    

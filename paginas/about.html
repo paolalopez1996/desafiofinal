@@ -5,47 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../estilos/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Hubballi&family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39e22fd9f2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/68f6372bfa.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
-    <div class="fondoabout">
-    <div class="headerabout">
-        <h1 class="navegacionabout__titulo"> <a href="../index.html">NOTHING BUT THIEVES</a></h1>
-        <nav class="navegacionabout"  >
-            <input type="checkbox" id="check">
-            <label for="check" class="barrasabout">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-        <ul  class="menuabout">
-            <li class="navabout" > <a href="../index.html">HOME</a>   </li>
-            <li class="navabout" ><a href="./tour.html">TOUR DATES</a> </li>
-            <li  class="naabout" > <a href="./gallery.html">PHOTOS</a></li>
-            <li class="navabout" > <a href="./videos.html">VIDEOS</a></li>
-            <li class="navabout" ><a href="./discography.html">DISCOGRAPHY</a></li>
-            <li class="navabout"> <a href="./about.html">ABOUT</a></li>
-        </ul>
-        </nav> 
-    </div>  
-    <section>
-    <div  class="containerabout flex text-center" > 
-        <div class="integrante">
-        <img src="../imagenes/conor.jpg" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-md">
+        <div class="container-fluid barranavpropio">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <a class="navbar-brand titulopropio" href="./index.html">NOTHING BUT THIEVES
+            </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-center menupropio">
+            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+            <a class="nav-link" href="../paginas/tour.html">TOUR DATES</a>
+            <a class="nav-link" href="../paginas/photos.html">PHOTOS</a>
+            <a class="nav-link" href="../paginas/videos.html">VIDEOS</a>
+            <a class="nav-link" href="../paginas/discography.html">DISCOGRAPHY</a>
+            <a class="nav-link" href="../paginas/about.html">ABOUT</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <section class="container-fluid text-center aboutpadre">
+        <div class="row">
+        <div class="col-12 integrante">
+            <img src="../imagenes/conor.jpg" class="img-fluid"  alt="">
             <h3>CONNOR MANSON</h3>
             <H3>LEAD VOCALS, GUITAR, FRONT MUM.</H3>
             <p>"Always tried to use my voice in interesting ways, like an instrument, just experimenting with it is part of our songwriting."</p>    
             <p>Influences: "Jeff Buckley is my main influence, and I guess we have a similar range.
             I also grew up with lots of jazz and blues, which I still love massively. And there’s classic rock, too." </p>
-            <p>Age: Born on 26th December 1992, 29 years young</p>
+            <p>Age: Born on 26th December 1992, 29 years young</p>    
         </div>
-        
-        <div class="integrante">
-        <img src="../imagenes/joe.jpg" alt="">
+        </div>
+        <div class="row">
+        <div class="col-12 integrante">
+            <img src="../imagenes/joe.jpg" class="img-fluid"  alt="">
             <h3>JOE LANGRIDGE-BROWN</h3>
             <H3>GUITAR, BACKING VOCALS, KEYS, LYRICS</H3>
             <p>"I once met Felix Baumgartner and got starstruck. It doesn’t usually happen but the man went to space!"</p>    
@@ -54,54 +60,68 @@
             Those albums made me pick up a guitar and pretty much changed my life."</p>
             <p>Age: Born on 29th November 1990</p>
         </div>
+        </div>
+        <div class="row">
+            <div class="col-12 integrante">
+                <img src="../imagenes/dom.jpg" class="img-fluid"  alt="">
+                <h3>DOM CRAIK</h3>
+                <H3>GUITAR, KEYBOARD, PIANO, BACKING VOCALS</H3>  
+                <p>Influences: " We all started off with rock, right? Bands like Led Zeppelin, AC/DC, that sort of thing. More recently, I’ve been inspired by Arcade Fire, Radiohead, Jeff Buckley to an extent. 
+                And I’m also into dance music and producing, so that finds its way into what we do too."</p>
+                <p>Age: Born on 22nd August 1993</p>  
+            </div>
+        </div>
+        <div>
+            <div class="col-12 integrante">
+                <img src="../imagenes/phil.jpg" class="img-fluid"  alt="">
+                <h3>PHIL BLAKE</h3>
+                <H3>BASS GUITAR</H3>  
+                <p>Influences:  "Bands I freaking love are The War on Drugs, Marmozets and Kvelertak."</p>
+                <p>Age:  Born on 5th October 1988</p>
+            </div>
+        </div>
         
-        <div  class="integrante">
-        <img src="../imagenes/dom.jpg" alt="">
-            <h3>DOM CRAIK</h3>
-            <H3>GUITAR, KEYBOARD, PIANO, BACKING VOCALS</H3>  
-            <p>Influences: " We all started off with rock, right? Bands like Led Zeppelin, AC/DC, that sort of thing. More recently, I’ve been inspired by Arcade Fire, Radiohead, Jeff Buckley to an extent. 
-            And I’m also into dance music and producing, so that finds its way into what we do too."</p>
-            <p>Age: Born on 22nd August 1993</p>
-        </div>
 
-        <div  class="integrante">
-        <img src="../imagenes/phil.jpg" alt="">
-            <h3>PHIL BLAKE</h3>
-            <H3>BASS GUITAR</H3>  
-            <p>Influences:  "Bands I freaking love are The War on Drugs, Marmozets and Kvelertak."</p>
-            <p>Age:  Born on 5th October 1988</p>
+        <div class="row">
+            <div class="col-12 integrante">
+                <img src="../imagenes/james.jpg"  class="img-fluid" alt="">
+                <h3>JAMES PRICE</h3>
+                <H3>DRUMS, DRUM MACHINE</H3>  
+                <p>Influences:  " Queen are the best band of all time. No other comment."</p>
+                <p>Age:  Born on 10 December 1992</p>
+            </div>
         </div>
-        <div class="integrante">
-        <img src="../imagenes/james.jpg" alt="">
-            <h3>JAMES PRICE</h3>
-            <H3>DRUMS, DRUM MACHINE</H3>  
-            <p>Influences:  " Queen are the best band of all time. No other comment."</p>
-            <p>Age:  Born on 10 December 1992</p>
-        </div>
-    </div>
     </section>
 
 
-        <footer>
-        <div class="footerabout flex">
-        <div class="registrofooterabout">
-        <h2>SIGN UP TO OUR NEWSLETTER</h2>
-        <h3>EMAIL ADDRESS</h3>  <input type="email" value=""  id=""  placeholder="enter your email">
-        <h3>NAME</h3> <input type="text" value="" id="" placeholder="Enter your  full name">
-        <h3>COUNTRY</h3> <input type="text" name="" id=""  placeholder="Enter your country" value="">
-        <input type= "button" value="SUBSCRIBE"  id="" placeholder="SUBSCRIBE">
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-7 col-sm-8 registro">
+            <h2>KEEP UP TO DATE WITH THE LATEST NEWS!</h2>
+            <div class="form-group">
+                <label class="form-control-label" for="formGroup1">Enter your name</label>
+                <input type="text" class="form-control" id="formGroup1" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label class="form-control-label" for="formGroup2">enter your email</label>
+                <input type="text" class="form-control" id="formGroup2" placeholder="Email">
+            </div>
+            <button type="button" class="btn btn-light">SIGN UP</button>
+            </div>
+            <div class="col-5 col-sm-4 redsocial">
+            <a  href="https://www.instagram.com/nothingbutthieves/?hl=es"> <img src="../imagenes/instagram_f_icon-icons.com_65485.png" alt="instagram">  </a>
+            <a   href="https://www.facebook.com/NothingButThieves"> <img src="../imagenes/FB_icon-icons.com_65484.png" alt="facebook">   </a>
+            <a  href="https://www.youtube.com/channel/UCAZtC3nKx-BGomyQz0Vhh3Q"> <img src="../imagenes/YOUTUBE_icon-icons.com_65487.png" alt="youtube">   </a>
+            <a  href="https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"> <img src="../imagenes/spotify_icon-icons.com_65503.png" alt="spotify">  </a>
+            </div>
         </div>
-        <div  class="redesabout">
-        <a  href="https://www.instagram.com/nothingbutthieves/?hl=es"> <img src="../imagenes/instagram_f_icon-icons.com_65485.png" alt="instagram">  </a>
-        <a   href="https://www.facebook.com/NothingButThieves"> <img src="../imagenes/FB_icon-icons.com_65484.png" alt="facebook">   </a>
-        <a   href="https://www.youtube.com/channel/UCAZtC3nKx-BGomyQz0Vhh3Q"> <img src="../imagenes/YOUTUBE_icon-icons.com_65487.png" alt="youtube">   </a>
-        <a  href="https://open.spotify.com/artist/1kDGbuxWknIKx4FlgWxiSp"> <img src="../imagenes/spotify_icon-icons.com_65503.png" alt="spotify">  </a>
+        <div class="row">
+            <div class="col-12 copyright">
+            <p>copyright  © 2021 NOTHING BUT THIEVES ALL RIGHTS RESERVED</p>
+            </div>
         </div>
-        <div id="copyrightabout">
-        <p>copyright  © 2021 NOTHING BUT THIEVES ALL RIGHTS RESERVED</p>
-        </div>
-        </div>  
-        </footer>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
