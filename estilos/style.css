@@ -27,16 +27,12 @@ font-family: 'Hubballi', cursive;
 font-family: 'Lato', sans-serif;
 font-family: 'Caveat', cursive;
 background-color: black;
-/* background-image: url(../imagenes/45degreee_fabric.png);
-background-repeat: repeat;
-text-decoration: none; */
 }
 
 /*--------------------------INDEX--------------------------------------*/
 nav{
-    height: 10rem;
+height: 10rem;
 }
-
 .imagenprincipal img{
 object-fit: cover;
 width: 100%;
@@ -144,262 +140,56 @@ height: 24rem;
 margin-top: 1px;
 }
 }
-    /*-------------------*/
-/* .barranavpropio{
-font-family: 'Lato', sans-serif;
-font-family: 'Caveat', cursive;
-background-color: #eeeeee;
-height: 10rem;
-font-size: 25px;
-color: black;
-margin-top: 1px;
-}
-.titulopropio {
-    font-weight: 800;
-    font-size: 25px;
-    color: #d00000;
-}
-.menupropio{
-    margin-left: 15rem;
-    text-align: right;
-    width: 50rem;
-}
-.menupropio  a{
-    color: black;
-    text-align: center;
-    margin-right: 25px;
-} */
-
-
-
-
- /* .barras{
-line-height: 80px;
-font-size: 40px;
-float: right;
-margin-right: 50px;
-cursor: pointer;
-display: none;
-}
-#check{
-display: none;
-} 
-.navegacion__titulo{
-font-weight: 600;
-font-size: 40px; 
-padding-top: 2%;
-text-align: center;
-text-decoration: none;
-}
-a{
-    color: black;
-}
-.header img{
-width: 100%; 
-object-fit: cover;
-}
-
-.menu li a{
-    font-weight: 800;
-    
-}
-.navegacion{
-background-color: #eeeeee;
-font-weight: 500;
-height: 200px;
-text-align: center;
-width: 100%;
-}
- .nav:hover{
-height: 2rem;
-width: 6rem;
-text-align: center;
-background-color: red;
-}  
- .menu li{
-font-size: 20px;
-margin-left: 4%;
-margin-top: 2%;
-padding: 2px;
-display: flex;
-display: inline-block;
-
-}  */
-     /* SECCION BIOGRAFIA INDEX */
-/* .sectionbio{
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/newspaper.JPEG);
-box-shadow: -15px -10px 20px red;
-height: 50rem;
-width: 100%;
-
-}
-.sectionbio h2{
-color: #d00000;
-font-size: 60px;
-font-weight: 800;
-margin: 1rem 10rem;
-width: 60%;
-text-align: center;
-}
-.textoprincipal{
-margin: 2rem 16rem;
-padding: 2rem;
-border-radius: 1%;
-text-transform: uppercase;
-width: 60%;
-height: 37rem;
-background-image: url(../imagenes/45degreee_fabric.png);
-text-align:center;
-font-size: 25px;
-line-height: 60px;
-font-weight: 800;
-box-shadow: 10px 10px 25px black;
-font-family: 'Caveat', cursive;
-}
-/* -----------SECCION ALBUM INDEX-------- */
-.albums h2{
-    color: #d00000;
-}
-.albums {
-margin-top: 4rem;
-height: 50rem;
-width: 90%;
-font-size: 50px;
-margin-left: 0.5rem; 
-
-}
-.flex{
-display: flex;
-}
-.columnaalbum a{
-display: block;
-}
-.columnaalbum img{
-box-shadow: 5px 5px 8px red; 
-    
-}
-.more{
-font-size: 30px;
-font-weight: 800;
-opacity: 0.9;
-display: block;
-font-size: 40px;
-margin-left: 10%;
-margin-top: 15%;
-height: 25rem;
-width: 35rem;
-padding: 15px;
-background-color: #d3d3d3;
-line-height: 6rem;
-text-align: center;
-}.albums a:hover{
-border: 2px gray solid;
-width: 35rem;
-height: 5rem;
-}  */
-/* -------SECCION TOURS INDEX--------- */
-.tours h1{
-font-size: 80px;
-text-align: center;
-width: 80%;
-margin: 1rem 7rem;
-padding: 0;
-color: #d00000;
-}
-.tourindex{
-margin-top: 4%;
-width: 100%;
-color: white;
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/conciertoazul.jpg);
-height: 40rem;
-display: flex;
-flex-flow: column wrap;
-align-items: center;
-justify-content: center;
-font-size: 25px;
-text-align: center;
-word-spacing: 5px;
-}
-.tourindex__item{
-width: 700px;
-height: 90px;
-padding: 5px;
-border-bottom: 1px solid white;
-}
-.tourindex__item:hover{
-background-color: black;
-height: 60px;
-opacity: 0.5;
-}
-.moretour:hover{
-background-color: #d00000;
-opacity: 0.5;
-}
-.moretour{
-background-color:  #3a86ff;;
-width: 25%;
-margin-top: 4rem;
-text-align: center;
-font-weight: 800;
-font-size: 40px;
-}
-.botonindex{
-font-size: 15px;
-word-spacing: 2px;
-background-color:black;
-color: white;
-height: 30px;
-}
 /* -----FOOTER INDEX*------- */
-footer{ 
-background-color: #d00000;
-height: 17rem;
-width: 100%;
-margin-top: 1.5rem;
-box-shadow: -5px -5px 5px  18px #d00000;
-}
-.flex{
-display: flex;
-}
-footer img{
-display: inline-block;
-width: 2rem;
-border: 2px solid black; 
-border-radius: 8px;
-padding: 5px;
+.footer{ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+height: 21rem;
 }
 .footer img:hover{
 border-color: #ffd60a;
 }
-.redes a{
-display:inline-block;
-justify-content: center;
-align-items: center;
-margin-left: 8rem;
-margin-top: 4rem;
-}  
-.registrofooter{
-margin: 0 2rem;
-opacity: 0.9;
-background-color: #6a040f;
-width: 30rem;
-height: 10rem;
+.registro h2{
+font-size: 20px;
+color: #e63946;
+} 
+.registro{
+border: 1px solid white;
+border-style: dashed;
+font-size: 20px;
+height: auto;
 padding: 1rem;
+margin-top: 10px;
 }
-.registrofooter input{
-display: inline-block;
+.registro input{
 font-family:  'Hubballi', cursive;
-height: 15px;
-margin: 0;
-border-radius: 10%;
-background-color: #d8dee9;
+background-color: #343a40;
+color: grey;
 }
-#copyright{
-font-size:20px;
-margin-left: 30rem;
-margin-top: 2rem;
-width: 40rem;
-/* height: 1rem; */
+.registro button{
+background-color: red;
+margin-top: 15px;
+}
+.redsocial{
+display: inline-block;
+text-align: center;
+margin-top: 4rem;
+
+}
+.redsocial a img{
+color: #14B2B8;
+background-color: #14B2B8;
+width: 40px;
+height: 40px;
+padding: 5px;
+margin-right: 20px;
+border-radius: 20%;
+border: 2px solid white;
+
+} 
+.copyright{
+font-size:15px;
+margin-top: 1rem;
 text-align: center;
 }
 /*-------------------fin del index principal/------*/
