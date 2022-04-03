@@ -56,21 +56,26 @@ height: 30rem;
 filter: brightness(150%);
 }
 a{
-color:#6a040f;
+    color: black;
 text-decoration: none;
 }
 .titulopropio {
+font-family: 'Permanent Marker', cursive; 
 font-weight: 800;
 font-size: 20px;
-background-color: #d00000;
+color: rgb(179, 171, 171);
 }
 .menupropio{
 text-align: right;
+
+}
+.navbar-nav a{
+border-radius: 5%;
+font-family: 'Permanent Marker', cursive;
 }
 .menupropio  a{
 font-weight: 500;
 font-size: 25px;
-color: black;
 text-align: center;
 margin-right: 20px;
 }
@@ -85,7 +90,7 @@ color: rgb(179, 171, 171);
 height: 40rem;
 }
 .parrafoprincipal h2{
-font-family: 'Hubballi', cursive;
+font-family: 'Permanent Marker', cursive; 
 margin-top: 3rem;
 color: #6a040f;
 border-bottom: 2px solid gray;
@@ -132,7 +137,8 @@ color: #d00000;
 }
 .tabla{
     font-family: 'Permanent Marker', cursive; 
-background-color: black;
+    background-color: #E8E8E6;
+
 text-align: center;
 font-size: 30px;
 margin-top: 10rem;
@@ -150,7 +156,7 @@ background-color: #14B2B8;
 .tabla button{
 border: 1px solid black;
 color: #d8dee9;
-
+background-color: #14B2B8;
 font-family: 'Permanent Marker', cursive; 
 font-size: 30px;
 margin-top: 25px;
@@ -227,8 +233,8 @@ text-align: center;
 /* ----------------------TOUR DATES----------------------------*/
 .tours h1{
 font-family: 'Permanent Marker', cursive; 
-height: 8rem;
-font-size: 60px;
+height: 10rem;
+font-size: 50px;
 margin: 2rem 1px;
 }
 .tours h1:hover{
@@ -270,12 +276,10 @@ text-align: center;
 background-color: #14B2B8;
 }
 .imagentour img{
-border-radius: 10%;
-object-fit: fill; 
+ object-fit: cover;  
 height: 40rem;
 margin-left: -20px;
 }
-
 /*FIN DE TOUR DATES-------------------------*/
 /*--------------------------------SECCION PHOTOS---------------------*/
 .container{
@@ -424,19 +428,25 @@ color: black;
     height: auto;
     }
     .parrafoprincipal h2{
-    height: auto;
+    height: 8rem;
     }
     .otroparrafoprincipal img{
     margin-top: 20px;
     width: 200px;
     height: 200px;
     }
+   
     .linkalbum a img{
     width: 60px;
     height: 60px;
     margin-top: 40px;
     margin-left: 3rem;
     }
+}
+@media screen and (max-width:480px){
+    .imagenprincipal img{
+        object-fit:cover;
+}
 }
    /* ---------RESPONSIVE FOOTER------------ */
     @media screen and (min-width: 320px) and (max-width:768px){
