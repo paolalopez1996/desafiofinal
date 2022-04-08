@@ -1,0 +1,29 @@
+/*-----ANIMACIONES--------------------*/ 
+    h1{
+    animation: pulse; 
+    animation-duration: 2s; 
+    }
+    .containerphoto img:hover{
+        animation: pulse; 
+        animation-duration: 1s;
+    }
+    .menupropio a:hover{
+        animation: flash;
+        animation-duration: 1s;
+    }
+    .parrafoprincipal h2:hover{
+        animation: flash;
+        animation-duration: 1s;
+    }
+    .padrediscography img:hover{
+        animation: pulse;
+        animation-duration: 1s;
+    }
+    .integrante img:hover{
+        animation: flash;
+        animation-duration: 1s;
+    }
+    .containervideo iframe:hover{
+        animation: pulse;
+        animation-duration: 1s;
+    }

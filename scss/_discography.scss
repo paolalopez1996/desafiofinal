@@ -1,0 +1,29 @@
+   /*---------------------DISCOGRAPHY---------------*/       
+   .padrediscography{
+      @include flexbox;
+      justify-content: space-evenly;
+      width: 100%;
+      height: auto;
+      margin-bottom: 5rem;
+   h2{
+      font-family: 'Permanent Marker', cursive; 
+      border: 4px black  solid;
+      border-style: dashed;
+      border-radius: 2%;
+      color:white;
+      text-align: center;
+      padding: 5px;
+      margin: 5px;
+   }
+   img{
+      box-shadow: 5px 8px 5px  #6a040f;
+      margin-top: 25px;
+      margin-right: 10px;
+      height: 500px;
+      width: 500px;
+      object-fit: cover;
+   }
+   .disco{
+      margin-bottom: 8rem;
+      }
+   }

@@ -1,0 +1,16 @@
+
+$colorParaParrafos: #b3abab; 
+$titulos: #d00000;
+$backgroundGeneral: #14B2B8;
+
+@mixin tamaño {
+    width: 100px;
+    height: 100px;
+    
+}
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}

@@ -1,0 +1,199 @@
+/*-------------ESTILOS GENERALES-----------------*/
+@import "utilities";
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Permanent Marker', cursive; 
+    background-color: black;
+a{
+color: black;
+text-decoration: none;
+}
+}
+
+/*--------------------------NAV-------------------------------------*/
+nav{
+height: 10rem;
+}
+.imagenprincipal img{
+    filter: brightness(30%); 
+    object-fit: cover;
+    &:hover{
+        filter: brightness(100%);
+    }
+}
+.titulopropio {
+    font-weight: 800;
+    font-size: 20px;
+    color: $colorParaParrafos;
+}
+.menupropio{
+text-align: right;
+    a{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 10px;
+    }
+}
+.navbar-nav a{
+    border-radius: 5%;
+    font-family: 'Permanent Marker', cursive;
+    }
+/*-----CUERPO DEL INDEX------*/
+.parrafoindex{
+    height: auto;
+.parrafoprincipal{
+    text-align:center;
+    font-size: 30px;
+    color: $colorParaParrafos;
+    h2{
+        margin-top: 3rem;
+        color: #6a040f;
+        border-bottom: 2px solid gray;
+        height: 5rem;
+        text-align: center;
+        font-size: 35px;
+        &:hover{
+            background-color: $colorParaParrafos;
+        }
+    }
+    }
+}
+.otroparrafoprincipal{
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    img{
+        padding: 1rem;
+        border-radius: 10%;
+        width: 500px;
+        height: 500px; 
+        }
+    p{
+    font-size: 20px;
+    color:#b7094c;;
+    }
+}
+.linkalbum{
+    width: 100%;
+    margin-left: 2rem;
+    a img{
+    background-color: $backgroundGeneral;
+    @include tamaño;
+    border-radius: 15%;
+    padding: 15px;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    &:hover{
+        background-color: #b3abab;
+        }
+        }
+    }
+.tabla{
+    background-color: #E8E8E6;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10rem;
+    tr{
+    height: 7rem;
+    color: #343a40;
+    &:hover{
+        background-color: $backgroundGeneral;
+            }
+        th{
+            color: $titulos;
+            } 
+    }
+h2{
+    text-align: center;
+    height: 6rem;
+    font-size: 55px;
+    color: $titulos;
+    }
+    .boton{
+        border: 1px solid black;
+        color: #d8dee9;
+        background-color: $backgroundGeneral;
+        font-family: 'Permanent Marker', cursive; 
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-weight: 900;
+    }
+}
+/* -------------------------------------FOOTER--------------------- */
+.footer{ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height:auto;
+img{
+    &:hover{
+    border-color: $backgroundGeneral;
+    }
+}
+}
+.registro {
+    font-family: 'Permanent Marker', cursive; 
+    color: $colorParaParrafos;
+    border: 4px solid #343a40;
+    border-left: black;
+    border-right: black;
+    border-style: dashed;
+    font-size: 20px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 10px;
+h2{
+    font-size: 20px;
+    color: #e63946;
+    height: 7rem;
+    width: 100%;
+}
+input{
+    border: 2px solid #343a40;
+    font-family:  'Hubballi', cursive;
+    background-color: black;
+    color: black;
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.botonfooter{
+    @extend .boton;
+    margin-top: 15px;
+}
+} 
+.redsocial{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+a{
+    img{
+        background-color: #e5e5e5;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin-right: 20px;
+        border-radius: 20%;
+        border: 4px solid $titulos;
+    }
+}
+}
+.copyright{
+    color: grey;
+    font-size:15px;
+    margin-top: 1rem;
+    text-align: center;
+}
+/*-------------------fin del index principal/------*/

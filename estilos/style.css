@@ -1,257 +1,226 @@
-/*-----ANIMACIONES!!!--------------------*/ 
-h1{
-animation: pulse; 
-animation-duration: 2s; 
-}
-.containerphoto img:hover{
-animation: pulse; 
-animation-duration: 1s;
-}
-.menupropio a:hover{
-animation: flash;
-animation-duration: 1s;
-}
-.parrafoprincipal h2:hover{
-animation: flash;
-animation-duration: 1s;
-}
-.padrediscography img:hover{
-animation: pulse;
-animation-duration: 1s;
-}
-.integrante img:hover{
-animation: flash;
-animation-duration: 1s;
-}
-.containervideo iframe:hover{
-animation: pulse;
-animation-duration: 1s;
-}
+/*-------------ESTILOS GENERALES-----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow-x: hidden; }
 
-*{
-margin: 0;
-padding: 0;
-text-decoration: none;
-overflow-x: hidden;
-}
-body{
-font-family: 'Hubballi', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Caveat', cursive;
-background-color: black;
-}
+body {
+  font-family: 'Permanent Marker', cursive;
+  background-color: black; }
+  body a {
+    color: black;
+    text-decoration: none; }
 
-/*--------------------------INDEX--------------------------------------*/
-nav{
-height: 10rem;
-}
-.imagenprincipal img{
-filter: brightness(50%); 
-object-fit: cover;
-width: 100%;
-height: 30rem;
-}
-.imagenprincipal:hover{
-filter: brightness(150%);
-}
-a{
-color: black;
-text-decoration: none;
-}
+/*--------------------------NAV-------------------------------------*/
+nav {
+  height: 10rem; }
+
+.imagenprincipal img {
+  filter: brightness(30%);
+  object-fit: cover; }
+  .imagenprincipal img:hover {
+    filter: brightness(100%); }
+
 .titulopropio {
-font-family: 'Permanent Marker', cursive; 
-font-weight: 800;
-font-size: 20px;
-color: rgb(179, 171, 171);
-}
-.menupropio{
-text-align: right;
+  font-weight: 800;
+  font-size: 20px;
+  color: #b3abab; }
 
-}
-.navbar-nav a{
-border-radius: 5%;
-font-family: 'Permanent Marker', cursive;
-}
-.menupropio  a{
-font-weight: 500;
-font-size: 25px;
-text-align: center;
-margin-right: 20px;
-}
-.parrafoindex{
-height: auto;
-}
-.parrafoprincipal{
-text-align:center;
-font-family: 'Permanent Marker', cursive; 
-font-size: 30px;
-color: rgb(179, 171, 171);
-height: 40rem;
-}
-.parrafoprincipal h2{
-font-family: 'Permanent Marker', cursive; 
-margin-top: 3rem;
-color: #6a040f;
-border-bottom: 2px solid gray;
-height: 3rem;
-text-align: center;
-font-size: 35px;
-}
-.parrafoprincipal h2:hover{
-background-color: rgb(154, 148, 148);
-}
-.otroparrafoprincipal{
-height: auto;
-text-align: center;
-}
-.otroparrafoprincipal p{
-font-size: 20px;
-color: #d00000;
-font-family: 'Permanent Marker', cursive;
+.menupropio {
+  text-align: right; }
+  .menupropio a {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 10px; }
 
-}
-.otroparrafoprincipal img{
-border-radius: 10%;
-width: 500px;
-height: 500px; 
-}
-.linkalbum a img{
-background-color: #d00000;
-width: 70px;
-height: 70px;
-border-radius: 15%;
-padding: 15px;
-margin-top: 10rem;
-margin-right: 8rem;
-}
-.imagenparrafoprincipal{
-background-repeat: no-repeat;
-object-fit: cover;
-}
-.tabla h2{
-text-align: center;
-height: 6rem;
-font-size: 55px;
-color: #d00000;
-}
-.tabla{
-    font-family: 'Permanent Marker', cursive; 
-    background-color: #E8E8E6;
+.navbar-nav a {
+  border-radius: 5%;
+  font-family: 'Permanent Marker', cursive; }
 
-text-align: center;
-font-size: 30px;
-margin-top: 10rem;
-}
-.tabla th{
-color: #d00000;
-} 
-.tabla tr{
-height: 7rem;
-color: #343a40;
-}
-.tabla tr:hover{
-background-color: #14B2B8;
-} 
-.tabla button{
-border: 1px solid black;
-color: #d8dee9;
-background-color: #14B2B8;
-font-family: 'Permanent Marker', cursive; 
-font-size: 30px;
-margin-top: 25px;
-margin-bottom: 25px;
-font-weight: 900;
-}
+/*-----CUERPO DEL INDEX------*/
+.parrafoindex {
+  height: auto; }
+  .parrafoindex .parrafoprincipal {
+    text-align: center;
+    font-size: 30px;
+    color: #b3abab; }
+    .parrafoindex .parrafoprincipal h2 {
+      margin-top: 3rem;
+      color: #6a040f;
+      border-bottom: 2px solid gray;
+      height: 5rem;
+      text-align: center;
+      font-size: 35px; }
+      .parrafoindex .parrafoprincipal h2:hover {
+        background-color: #b3abab; }
+
+.otroparrafoprincipal {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  text-align: center; }
+  .otroparrafoprincipal img {
+    padding: 1rem;
+    border-radius: 10%;
+    width: 500px;
+    height: 500px; }
+  .otroparrafoprincipal p {
+    font-size: 20px;
+    color: #b7094c; }
+
+.linkalbum {
+  width: 100%;
+  margin-left: 2rem; }
+  .linkalbum a img {
+    background-color: #14B2B8;
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    padding: 15px;
+    margin-top: 5rem;
+    margin-right: 5rem; }
+    .linkalbum a img:hover {
+      background-color: #b3abab; }
+
+.tabla {
+  background-color: #E8E8E6;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10rem; }
+  .tabla tr {
+    height: 7rem;
+    color: #343a40; }
+    .tabla tr:hover {
+      background-color: #14B2B8; }
+    .tabla tr th {
+      color: #d00000; }
+  .tabla h2 {
+    text-align: center;
+    height: 6rem;
+    font-size: 55px;
+    color: #d00000; }
+  .tabla .boton, .tabla .registro .botonfooter, .registro .tabla .botonfooter {
+    border: 1px solid black;
+    color: #d8dee9;
+    background-color: #14B2B8;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 900; }
+
 /* -------------------------------------FOOTER--------------------- */
-.footer{ 
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-height:auto;
-}
-.footer img:hover{
-border-color: #14B2B8;
-}
-.registro h2{
-font-family: 'Permanent Marker', cursive;
-font-size: 20px;
-color: #e63946;
-height: 7rem;
-width: 100%;
-} 
-.registro{
-font-family: 'Permanent Marker', cursive; 
-color: rgb(154, 148, 148);
-border: 4px solid #343a40;
-border-left: black;
-border-right: black;
-border-style: dashed;
-font-size: 20px;
-height: auto;
-width: 100%;
-text-align: center;
-padding: 4rem;
-margin-top: 10px;
-}
-.registro input{
-border: 2px solid #343a40;
-font-family:  'Hubballi', cursive;
-background-color: black;
-color: black;
-font-size: 25px;
-display: block;
-width: 100%;
-box-sizing: border-box;
-text-align: center;
-}
-.registro button{
-background-color: #d00000;
-margin-top: 15px;
-}
-.redsocial{
-display: inline-block;
-text-align: center;
-width: 100%;
-margin-top: 10px;
-}
-.redsocial a img{
-background-color: #e5e5e5;
-width: 40px;
-height: 40px;
-padding: 5px;
-margin-right: 20px;
-border-radius: 20%;
-border: 4px solid #d00000;
-} 
-.copyright{
-color: grey;
-font-size:15px;
-margin-top: 1rem;
-text-align: center;
-}
+.footer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: auto; }
+  .footer img:hover {
+    border-color: #14B2B8; }
+
+.registro {
+  font-family: 'Permanent Marker', cursive;
+  color: #b3abab;
+  border: 4px solid #343a40;
+  border-left: black;
+  border-right: black;
+  border-style: dashed;
+  font-size: 20px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: 4rem;
+  margin-top: 10px; }
+  .registro h2 {
+    font-size: 20px;
+    color: #e63946;
+    height: 7rem;
+    width: 100%; }
+  .registro input {
+    border: 2px solid #343a40;
+    font-family: 'Hubballi', cursive;
+    background-color: black;
+    color: black;
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; }
+  .registro .botonfooter {
+    margin-top: 15px; }
+
+.redsocial {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px; }
+  .redsocial a img {
+    background-color: #e5e5e5;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 20%;
+    border: 4px solid #d00000; }
+
+.copyright {
+  color: grey;
+  font-size: 15px;
+  margin-top: 1rem;
+  text-align: center; }
+
 /*-------------------fin del index principal/------*/
+/*-----ANIMACIONES--------------------*/
+h1 {
+  animation: pulse;
+  animation-duration: 2s; }
+
+.containerphoto img:hover {
+  animation: pulse;
+  animation-duration: 1s; }
+
+.menupropio a:hover {
+  animation: flash;
+  animation-duration: 1s; }
+
+.parrafoprincipal h2:hover {
+  animation: flash;
+  animation-duration: 1s; }
+
+.padrediscography img:hover {
+  animation: pulse;
+  animation-duration: 1s; }
+
+.integrante img:hover {
+  animation: flash;
+  animation-duration: 1s; }
+
+.containervideo iframe:hover {
+  animation: pulse;
+  animation-duration: 1s; }
 
 /* ----------------------TOUR DATES----------------------------*/
-.tours h1{
-    font-family: 'Permanent Marker', cursive; 
+.tours {
+  margin-bottom: 5rem;
+  color: #d8dee9;
+  font-family: 'Space Mono', monospace;
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .tours h1 {
+    font-family: 'Permanent Marker', cursive;
     height: 10rem;
     font-size: 50px;
-    margin: 2rem 1px;
-    }
-    .tours h1:hover{
-    color: #6a040f;
-    }
-    .tours{
-    margin-bottom: 5rem;
-    color: #d8dee9;
-    font-family: 'Space Mono', monospace;
-    height: auto;
-    width: 80%;
-    display: flex;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    }
-    .item{
+    margin: 2rem 1px; }
+    .tours h1:hover {
+      color: #6a040f; }
+  .tours .item {
     word-spacing: 1rem;
     width: 100%;
     height: 8rem;
@@ -259,249 +228,224 @@ text-align: center;
     font-size: 30px;
     box-sizing: border-box;
     padding-top: 2rem;
-    margin-top: 5rem;
-    }
-    .item:hover{
-    background-color: #6a040f;
-    }
-    .item button{
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    }
-    .item button:hover{
-    background-color: #14B2B8;
-    }
-    .imagentour img{
-     object-fit: cover;  
-    height: 40rem;
-    margin-left: -20px;
-    }
-/*FIN DE TOUR DATES-------------------------*/
+    margin-top: 5rem; }
+    .tours .item:hover {
+      background-color: #6a040f; }
+    .tours .item button {
+      flex-direction: column;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .tours .item button:hover {
+        background-color: #14B2B8; }
+
+.imagentour img {
+  object-fit: cover;
+  height: 40rem;
+  margin-left: -20px; }
+
 /*--------------------------------SECCION PHOTOS---------------------*/
-.container{
-height: auto;
-width: 80%; 
-margin-bottom: 5rem;
-margin-top: 5rem;
-background-color: #E8E8E6;  
-}  
-.frase{
-font-family: 'Permanent Marker', cursive;
-font-size: 3vh;
-text-align: right;
-width: 100%;
-color: #d00000;
-height: 12rem;
-margin-top: 1rem;
-}
+.container {
+  height: auto;
+  width: 80%;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  background-color: #E8E8E6; }
+  .container .frase {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3vh;
+    text-align: right;
+    width: 100%;
+    color: #d00000;
+    height: 12rem;
+    margin-top: 1rem; }
+
 /*--------------------------------------- SECCION VIDEOS-----------------*/
-.containervideo{
-background-color: #6a040f;
-margin:0;
-padding: 0;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-align-content: space-around;
-width: 100%;
-}
-.containervideo iframe{
-margin-right: 2rem;
-margin-top: 1rem;
-height: 300px;
-width: 300px;
-box-shadow:5px 5px 1px 2px #5ed9f2; 
-}
-.containervideo h2{
-font-family: 'Permanent Marker', cursive;
-color: #b7094c;
-font-size: 34px;
-height: 8rem;
-margin-top: 2rem;
-}
-.orchestral, .recent{
-box-sizing: border-box;
-padding: 1rem;
-margin-bottom: 10rem;
-width: 100%;
-background-color:  rgb(235, 231, 231);
-}
-/*---------------------DISCOGRAPHY---------------*/       
-.padrediscography{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-width: 100%;
-height: auto;
-margin-bottom: 5rem;
-}
-.padrediscography img{
-box-shadow: 5px 8px 5px  red;
-margin-top: 25px;
-margin-right: 10px;
-height: 500px;
-width: 500px;
-object-fit: cover;
-}
-.disco{
-margin-bottom: 8rem;
-}
-.padrediscography h2{
-font-family: 'Permanent Marker', cursive; 
-border: 4px black  solid;
-border-style: dashed;
-border-radius: 2%;
-color:white;
-text-align: center;
-padding: 5px;
-margin: 5px;
-}
+.containervideo {
+  background-color: #6a040f;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  width: 100%; }
+  .containervideo h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #b7094c;
+    font-size: 34px;
+    height: 8rem;
+    margin-top: 2rem; }
+  .containervideo iframe {
+    margin-right: 2rem;
+    margin-top: 1rem;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 1px 2px #14B2B8; }
+  .containervideo .orchestral, .containervideo .recent {
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    background-color: #ebe7e7; }
+
+/*---------------------DISCOGRAPHY---------------*/
+.padrediscography {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem; }
+  .padrediscography h2 {
+    font-family: 'Permanent Marker', cursive;
+    border: 4px black  solid;
+    border-style: dashed;
+    border-radius: 2%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 5px; }
+  .padrediscography img {
+    box-shadow: 5px 8px 5px  #6a040f;
+    margin-top: 25px;
+    margin-right: 10px;
+    height: 500px;
+    width: 500px;
+    object-fit: cover; }
+  .padrediscography .disco {
+    margin-bottom: 8rem; }
+
 /*-------------ABOUT------------------*/
-.aboutpadre{
-height: auto;
-}
-.integrante{
-color: #d8dee9;
-padding: 10px;
-box-sizing: border-box;
-box-shadow: 4px 4px 5px 5px #E8E8E6;
-} 
-.integrante img{
-border-radius: 10%;
-object-fit: cover;
-width: 500px;
-height: 500px;
-} 
-.integrante h3{
-font-family: 'Permanent Marker', cursive;
-color: #b7094c;
-height:4rem;
-font-size: 20px;
-margin-top: 1rem;
-}
-.integrante p{
-font-family: 'Space Mono', monospace;
-font-weight: 800;
-width: 100%;
-font-size: 20px;
-margin-top: 10px;
-color: rgb(154, 148, 148);
-}
-.integrantefondo1{
-background-color: rgb(235, 231, 231);
-color: black;
-}
+.aboutpadre {
+  height: auto; }
+  .aboutpadre .integrante {
+    color: #d8dee9;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px 5px #E8E8E6; }
+    .aboutpadre .integrante h3 {
+      color: #b7094c;
+      height: 4rem;
+      font-size: 20px;
+      margin-top: 1rem; }
+    .aboutpadre .integrante p {
+      font-family: 'Space Mono', monospace;
+      font-weight: 800;
+      width: 100%;
+      font-size: 20px;
+      margin-top: 10px;
+      color: #9a9494; }
+    .aboutpadre .integrante img {
+      border-radius: 10%;
+      object-fit: cover;
+      width: 500px;
+      height: 500px; }
+
+.integrantefondo1 {
+  background-color: #ebe7e7;
+  color: black; }
 
 /*-----------------------------------------responsive--------------------*/
-  /* --------------------------RESPONSIVE INDEX---------------------------------- */
-@media screen and (max-width:980px){
-    .titulopropio{
-    visibility: hidden;
-    } 
-    nav{
-    height: 25rem;
-    }
-    .barranavpropio{
+/* --------------------------RESPONSIVE INDEX---------------------------------- */
+@media screen and (max-width: 980px) {
+  .titulopropio {
+    visibility: hidden; }
+  nav {
+    height: 25rem; }
+  .barranavpropio {
     height: 24rem;
-    margin-top: 1px;
-    }
-    .tabla{
+    margin-top: 1px; }
+  .tabla {
     font-size: 20px;
     color: white;
-    background-color: #E8E8E6;
-    }
-    .parrafoprincipal p{
-    font-size: 20px;
-    }
-    .tabla button{
-    margin-top: 10px;
-    font-size: 20px;
-    margin-bottom: 10px;
-    }  
-    }
-    @media screen and (max-width:576px){
-    .parrafoprincipal{
-    height: auto;
-    }
-    .parrafoprincipal h2{
-    height: 8rem;
-    }
-    .otroparrafoprincipal img{
+    background-color: #E8E8E6; }
+    .tabla button {
+      margin-top: 10px;
+      font-size: 20px;
+      margin-bottom: 10px; }
+  .otroparrafoprincipal {
+    width: 100%;
+    margin-left: 0%; } }
+
+@media screen and (max-width: 576px) {
+  .parrafoprincipal {
+    height: auto; }
+  .otroparrafoprincipal img {
     margin-top: 20px;
     width: 200px;
-    height: 200px;
-    }
-   
-    .linkalbum a img{
+    height: 200px; }
+  .linkalbum a img {
     width: 60px;
     height: 60px;
     margin-top: 40px;
-    margin-left: 3rem;
-    }
-}
-@media screen and (max-width:480px){
-    .imagenprincipal img{
-        object-fit:cover;
-}
-}
-   /* ---------RESPONSIVE FOOTER------------ */
-    @media screen and (min-width: 320px) and (max-width:768px){
-    .redsocial img{
-    margin-top: 2rem;
-    }
-    }
+    margin-left: 3rem; } }
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .parrafoprincipal {
+    height: auto; }
+    .parrafoprincipal h2 {
+      margin-top: 0;
+      font-size: 15px; }
+    .parrafoprincipal p {
+      margin-top: 2rem;
+      height: 12rem;
+      font-size: 14px; } }
+
+@media screen and (max-width: 350px) {
+  .tabla {
+    font-size: 15px; }
+    .tabla h2 {
+      margin-top: 2rem;
+      font-size: 30px; } }
+
+/* ---------RESPONSIVE FOOTER------------ */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .redsocial img {
+    margin-top: 2rem; } }
+
 /* -------------------------RESPONSIVE VIDEOS--------- */
-@media screen and (min-width:140px) and (max-width: 320px){ 
-    .containervideo iframe{
+@media screen and (min-width: 140px) and (max-width: 320px) {
+  .containervideo iframe {
     margin-top: 25px;
     height: 300px;
     width: 300px;
-    object-fit: cover;
-    }
-    }
-    /* --------------RESPONSIVE DISCOGRAPHY------------------------*/
-@media screen and (min-width:140px) and (max-width: 320px){
-    .padrediscography img{
+    object-fit: cover; } }
+
+/* --------------RESPONSIVE DISCOGRAPHY------------------------*/
+@media screen and (min-width: 140px) and (max-width: 320px) {
+  .padrediscography img {
     margin-top: 25px;
     height: 200px;
     width: 200px;
-    object-fit: cover;
-    }
-}
-    @media screen and (min-width:321px) and (max-width: 480px){
-    .headerdisco nav ul{
+    object-fit: cover; } }
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .headerdisco nav ul {
     height: 20%;
-    width: 70%;
-    } 
-    .padrediscography img{
+    width: 70%; }
+  .padrediscography img {
     margin-top: 25px;
     height: 300px;
     width: 300px;
-    object-fit: cover;
-    }
-    } 
-    
-    /*-----------------------RESPONSIVE ABOUT------------------------*/
-    @media screen and (max-width:576px){
-    .integrante h3{
+    object-fit: cover; } }
+
+/*-----------------------RESPONSIVE ABOUT------------------------*/
+@media screen and (max-width: 576px) {
+  .integrante h3 {
     height: auto;
-    font-size: 15px;
-    }
-    }
+    font-size: 15px; } }
+
 /* -----------RESPONSIVE TOUR DATES----------- */
-    @media screen and (min-width: 320px) and (max-width:768px){
-    .item{
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .item {
     width: 100%;
-    height: auto;
-    }
-    }
-    @media screen and (max-width:420px){
-        .item{
-        font-size: 20px;
-        height: 15rem;
-        }
-        }
-    
+    height: auto; } }
+
+@media screen and (max-width: 420px) {
+  .item {
+    font-size: 20px;
+    height: 15rem; } }
