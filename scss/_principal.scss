@@ -97,7 +97,7 @@ text-align: right;
         }
     }
 .tabla{
-    background-color: #E8E8E6;
+    background-color: map-get($estilos, fondo);
     text-align: center;
     font-size: 30px;
     margin-top: 10rem;
@@ -118,14 +118,9 @@ h2{
     color: $titulos;
     }
     .boton{
-        border: 1px solid black;
-        color: #d8dee9;
-        background-color: $backgroundGeneral;
-        font-family: 'Permanent Marker', cursive; 
+        @extend .botonfooter;
         font-size: 30px;
-        margin-top: 25px;
         margin-bottom: 25px;
-        font-weight: 900;
     }
 }
 /* -------------------------------------FOOTER--------------------- */
@@ -169,8 +164,7 @@ input{
     text-align: center;
 }
 .botonfooter{
-    @extend .boton;
-    margin-top: 15px;
+margin-top: 15px;
 }
 } 
 .redsocial{

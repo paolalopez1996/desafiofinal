@@ -3,14 +3,35 @@ $colorParaParrafos: #b3abab;
 $titulos: #d00000;
 $backgroundGeneral: #14B2B8;
 
+
+/*---MIXIN---*/
 @mixin tamaño {
     width: 100px;
     height: 100px;
     
-}
+};
 @mixin flexbox {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     
+};
+
+/*----MAPA------*/
+
+$disco: (
+    filauno: #d00000,
+    filados: #b3abab,
+);
+@each $filas, $color in $disco {
+    .#{$filas}{
+        border: 5px 8px 5px  $color;
+    } 
+    
 }
+
+/*----MAP GET ------*/
+$estilos: (
+    centro: center,
+    fondo: #E8E8E6,
+);

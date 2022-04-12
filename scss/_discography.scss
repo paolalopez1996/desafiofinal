@@ -1,23 +1,23 @@
-   /*---------------------DISCOGRAPHY---------------*/       
+   /*---------------------DISCOGRAPHY---------------*/ 
+   @import "utilities";  
    .padrediscography{
       @include flexbox;
+      background-color: map-get($estilos, fondo);
       justify-content: space-evenly;
       width: 100%;
       height: auto;
       margin-bottom: 5rem;
+      padding: 2rem;
    h2{
       font-family: 'Permanent Marker', cursive; 
-      border: 4px black  solid;
-      border-style: dashed;
       border-radius: 2%;
-      color:white;
+      color: $titulos;
       text-align: center;
       padding: 5px;
-      margin: 5px;
+      margin-top: 5px;
    }
    img{
       box-shadow: 5px 8px 5px  #6a040f;
-      margin-top: 25px;
       margin-right: 10px;
       height: 500px;
       width: 500px;
@@ -25,5 +25,10 @@
    }
    .disco{
       margin-bottom: 8rem;
+      padding: 2rem;
+      .spotify{
+      color: green;
       }
+   }
+      
    }
