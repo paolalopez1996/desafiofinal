@@ -20,33 +20,32 @@ body {
   body a {
     color: black;
     text-decoration: none; }
+  body a:hover {
+    color: #b7094c; }
 
 /*--------------------------NAV-------------------------------------*/
-nav {
-  height: 10rem; }
-
-.imagenprincipal img {
-  filter: brightness(30%);
-  object-fit: cover; }
-  .imagenprincipal img:hover {
-    filter: brightness(100%); }
+.header {
+  background-image: url(../imagenes/fondooprueba.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header .navbar {
+    background-color: transparent !important; }
+    .header .navbar a {
+      color: black; }
+    .header .navbar .nav-link {
+      color: #e5e5e5; }
 
 .titulopropio {
-  font-weight: 800;
-  font-size: 20px;
-  color: #b3abab; }
+  font-size: 20px; }
 
 .menupropio {
-  text-align: right; }
+  margin-left: 3rem; }
   .menupropio a {
+    margin-left: 1rem;
     font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-    margin-right: 10px; }
-
-.navbar-nav a {
-  border-radius: 5%;
-  font-family: 'Permanent Marker', cursive; }
+    font-size: 25px;
+    text-align: center; }
 
 /*-----CUERPO DEL INDEX------*/
 .parrafoindex {
@@ -54,16 +53,8 @@ nav {
   .parrafoindex .parrafoprincipal {
     text-align: center;
     font-size: 30px;
+    margin-top: 1rem;
     color: #b3abab; }
-    .parrafoindex .parrafoprincipal h2 {
-      margin-top: 3rem;
-      color: #6a040f;
-      border-bottom: 2px solid gray;
-      height: 5rem;
-      text-align: center;
-      font-size: 35px; }
-      .parrafoindex .parrafoprincipal h2:hover {
-        background-color: #b3abab; }
 
 .otroparrafoprincipal {
   margin-top: 3rem;
@@ -373,13 +364,6 @@ h1 {
 /*-----------------------------------------responsive--------------------*/
 /* --------------------------RESPONSIVE INDEX---------------------------------- */
 @media screen and (max-width: 980px) {
-  .titulopropio {
-    visibility: hidden; }
-  nav {
-    height: 25rem; }
-  .barranavpropio {
-    height: 24rem;
-    margin-top: 1px; }
   .tabla {
     font-size: 20px;
     color: white;
@@ -393,6 +377,8 @@ h1 {
     margin-left: 0%; } }
 
 @media screen and (max-width: 576px) {
+  .header {
+    background-position-x: 50%; }
   .parrafoprincipal {
     height: auto; }
   .otroparrafoprincipal img {
@@ -408,11 +394,7 @@ h1 {
 @media screen and (min-width: 300px) and (max-width: 450px) {
   .parrafoprincipal {
     height: auto; }
-    .parrafoprincipal h2 {
-      margin-top: 0;
-      font-size: 10px; }
     .parrafoprincipal p {
-      margin-top: 2rem;
       font-size: 14px; } }
 
 @media screen and (min-width: 270px) and (max-width: 451px) {

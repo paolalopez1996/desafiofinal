@@ -13,55 +13,58 @@ a{
 color: black;
 text-decoration: none;
 }
+a:hover{
+    color: #b7094c;
+}
 }
 
 /*--------------------------NAV-------------------------------------*/
-nav{
-height: 10rem;
-}
-.imagenprincipal img{
-    filter: brightness(30%); 
-    object-fit: cover;
-    &:hover{
-        filter: brightness(100%);
+.header {
+    background-image: url(../imagenes/fondooprueba.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+.navbar {
+        background-color: transparent !important;
+        a{
+            color: black;
+        }
+    .nav-link{
+        color: #e5e5e5;
     }
+}
 }
 .titulopropio {
-    font-weight: 800;
     font-size: 20px;
-    color: $colorParaParrafos;
 }
 .menupropio{
-text-align: right;
+    margin-left: 3rem;
     a{
+    margin-left: 1rem;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
-    margin-right: 10px;
     }
 }
-.navbar-nav a{
-    border-radius: 5%;
-    font-family: 'Permanent Marker', cursive;
-    }
+
 /*-----CUERPO DEL INDEX------*/
+// .imagenprincipal img{
+//     filter: brightness(30%); 
+//     object-fit: contain;
+//     background-size: contain;
+//     min-height: 100vh;
+//     &:hover{
+//     filter: brightness(100%);
+// }
+// }
 .parrafoindex{
     height: auto;
 .parrafoprincipal{
     text-align:center;
     font-size: 30px;
+    margin-top: 1rem;
     color: $colorParaParrafos;
-    h2{
-        margin-top: 3rem;
-        color: #6a040f;
-        border-bottom: 2px solid gray;
-        height: 5rem;
-        text-align: center;
-        font-size: 35px;
-        &:hover{
-            background-color: $colorParaParrafos;
-        }
-    }
     }
 }
 .otroparrafoprincipal{
