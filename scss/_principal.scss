@@ -49,13 +49,19 @@ a:hover{
 .parrafoindex{
     height: auto;
 .parrafoprincipal{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+    width: 92%;
     text-align:center;
     font-size: 30px;
     margin-top: 1rem;
+    padding: 10px;
+    margin-left: 20px;
     color: $colorParaParrafos;
     }
 }
 .otroparrafoprincipal{
+    background-color: map-get($estilos, fondo);
     @include flexbox;
     justify-content: space-evenly;
     margin-top: 5rem;
@@ -64,34 +70,39 @@ a:hover{
     box-sizing: border-box;
     text-align: center;
     iframe{
+        padding: 8px;
         margin-top: 10px;
         width: 400px;
         height: 450px;
     }
     img{
         padding: 1rem;
+        margin: 6px;
         border-radius: 10%;
-        width: 500px;
-        height: 500px; 
+        width: 450px;
+        height: 450px; 
         }
 }
 .linkalbum{
     width: 100%;
-    margin-left: 2rem;
+    background-color: map-get($estilos, fondo);
     a img{
-    background-color:  #b3abab;
-    @include tamaño;
+    width: 80px;
+    height: 80px;
+    background-color:  #b7094c;
     border-radius: 15%;
-    padding: 15px;
-    margin-top: 5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 4rem;
     margin-right: 5rem;
+    margin-left: 50px;
     &:hover{
         background-color: $backgroundGeneral;
         }
         }
         p{
-            margin-top: 2rem;
-        text-align: center;;
+        margin-top: 2rem;
+        text-align: center;
         font-size: 30px;
         color:#b7094c;;
         }
@@ -116,7 +127,9 @@ a:hover{
     tr{
     height: 7rem;
     color: #343a40;
+    font-family:'Courier New', Courier, monospace;
     &:hover{
+        font-weight: 800;
         background-color: $backgroundGeneral;
             }
         th{
@@ -154,100 +167,6 @@ h2{
         height: 8rem;
     }
 }
-
-@media screen  and (min-width: 560px) and (max-width:768px){
-    .news_img{
-        min-width: 100%;
-        max-width: 100%;
-        padding: 0;
-    }
-    .news_info{
-        padding-right: 0;
-    }
-    .news{
-        padding: 2rem;
-        
-    }
-}
-@media screen  and (min-width: 280px) and (max-width:560px){
-.news_img{
-    display: none;
-}
-.news{
-    text-align: center;
-    flex-direction: column;
-    .news_info{
-        text-align: center;
-        padding-right: 0;
-        padding-left: 50px;
-        margin-right: 0;
-        .news_info_titulo{
-           font-size: 14px;
-            height: 8rem;
-        }
-    }
-}
-
-}
-@media screen  and  (max-width:960px){
-    .latest-news_title h2{
-        font-size: 40px;
-    }
-    .news{
-        flex-direction: column;
-        text-align: center;
-        padding-left: 15px;
-        .news_img{
-            justify-content: center;
-            align-items: center;
-            margin-left: 9rem;
-            width: 100%;
-        }
-        .news_info_titulo{
-            font-size: 20px;
-        }
-        .news__button{
-            justify-content: center;
-        }
-        
-    }
-}
-@media screen  and (max-width:780px) {
-    .news{
-    .news_img{
-        margin-left: 5rem;
-    
-    }
-   
-}
-}
-@media screen  and (max-width:690px) {
-    .latest-news_title h2{
-        font-size: 30px;
-    }
-    .news{
-    .news_img{
-        margin-left: 1rem;
-    }
-}
-}
-@media screen  and (max-width:620px){
-    .news{
-        .news_img{
-            margin-left: 0;
-        }
-    }
-}
-@media screen  and (max-width:420px){
-    .news{
-        .news_info{
-            text-align: center;
-        }
-    .news_info_titulo{
-        font-size: 14px;
-    }
-}
-}
 .news{
     width: 100%;
     max-width: 98rem;
@@ -271,24 +190,29 @@ h2{
             display: block;
         }
         .news__button{
+            font-family: 'Courier New', Courier, monospace;
             background-color: $titulos;
             display: inline-block;
-            padding: 9px;
+            padding: 10px;
             letter-spacing: 2px;
             font-size: 15px;
             border-radius: 6px;
         }
     }
     .news_info{
+        font-family:'Courier New', Courier, monospace;
         padding-right: 35px;
         padding-top: 2.5rem;
         height: auto;
         .news_info_titulo{
+            text-transform: uppercase;
+            font-weight: 800;
             height: 4rem;
             font-size: 25px;
             color: $titulos;
         }
         .news_text{
+            font-weight: 800;
             text-align: left;
             font-size: 20px;
         }
