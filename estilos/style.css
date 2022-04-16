@@ -12,7 +12,8 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Permanent Marker', cursive;
@@ -29,25 +30,21 @@ body {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover; }
-  .header .navbar {
-    background-color: transparent !important; }
-    .header .navbar a {
-      color: black; }
-    .header .navbar .nav-link {
-      color: #e5e5e5; }
+  .header .navbar a {
+    color: #B74C5C; }
+  .header .navbar .nav-link {
+    color: #e5e5e5; }
 
 .titulopropio {
   font-size: 20px; }
 
 .menupropio {
-  margin-left: 3rem; }
+  margin-left: 1rem; }
   .menupropio a {
-    margin-left: 1rem;
     font-weight: 500;
     font-size: 25px;
     text-align: center; }
 
-/*-----CUERPO DEL INDEX------*/
 .parrafoindex {
   height: auto; }
   .parrafoindex .parrafoprincipal {
@@ -57,25 +54,30 @@ body {
     color: #b3abab; }
 
 .otroparrafoprincipal {
-  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5rem;
   width: 100%;
   height: auto;
   box-sizing: border-box;
   text-align: center; }
+  .otroparrafoprincipal iframe {
+    margin-top: 10px;
+    width: 400px;
+    height: 450px; }
   .otroparrafoprincipal img {
     padding: 1rem;
     border-radius: 10%;
     width: 500px;
     height: 500px; }
-  .otroparrafoprincipal p {
-    font-size: 20px;
-    color: #b7094c; }
 
 .linkalbum {
   width: 100%;
   margin-left: 2rem; }
   .linkalbum a img {
-    background-color: #14B2B8;
+    background-color: #b3abab;
     width: 100px;
     height: 100px;
     border-radius: 15%;
@@ -83,7 +85,22 @@ body {
     margin-top: 5rem;
     margin-right: 5rem; }
     .linkalbum a img:hover {
-      background-color: #b3abab; }
+      background-color: #14B2B8; }
+  .linkalbum p {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 30px;
+    color: #b7094c; }
+
+.videoindex {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .videoindex iframe {
+    width: 90%;
+    height: 42rem; }
 
 .tabla {
   background-color: #E8E8E6;
@@ -105,6 +122,124 @@ body {
   .tabla .boton {
     font-size: 30px;
     margin-bottom: 25px; }
+
+/*-------NEWS------------*/
+.latest-news {
+  height: auto;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.latest-news_title {
+  height: 15rem;
+  letter-spacing: 5px;
+  color: #b7094c;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 50px; }
+  .latest-news_title h2 {
+    font-size: 45px;
+    height: 8rem; }
+
+@media screen and (min-width: 560px) and (max-width: 768px) {
+  .news_img {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0; }
+  .news_info {
+    padding-right: 0; }
+  .news {
+    padding: 2rem; } }
+
+@media screen and (min-width: 280px) and (max-width: 560px) {
+  .news_img {
+    display: none; }
+  .news {
+    text-align: center;
+    flex-direction: column; }
+    .news .news_info {
+      text-align: center;
+      padding-right: 0;
+      padding-left: 50px;
+      margin-right: 0; }
+      .news .news_info .news_info_titulo {
+        font-size: 14px;
+        height: 8rem; } }
+
+@media screen and (max-width: 960px) {
+  .latest-news_title h2 {
+    font-size: 40px; }
+  .news {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15px; }
+    .news .news_img {
+      justify-content: center;
+      align-items: center;
+      margin-left: 9rem;
+      width: 100%; }
+    .news .news_info_titulo {
+      font-size: 20px; }
+    .news .news__button {
+      justify-content: center; } }
+
+@media screen and (max-width: 780px) {
+  .news .news_img {
+    margin-left: 5rem; } }
+
+@media screen and (max-width: 690px) {
+  .latest-news_title h2 {
+    font-size: 30px; }
+  .news .news_img {
+    margin-left: 1rem; } }
+
+@media screen and (max-width: 620px) {
+  .news .news_img {
+    margin-left: 0; } }
+
+@media screen and (max-width: 420px) {
+  .news .news_info {
+    text-align: center; }
+  .news .news_info_titulo {
+    font-size: 14px; } }
+
+.news {
+  width: 100%;
+  max-width: 98rem;
+  height: 100%;
+  display: flex;
+  border-radius: 16px;
+  background-color: #e5e5e5;
+  margin-bottom: 50px; }
+  .news .news_img {
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    padding: 40px;
+    position: relative; }
+    .news .news_img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      display: block; }
+    .news .news_img .news__button {
+      background-color: #d00000;
+      display: inline-block;
+      padding: 9px;
+      letter-spacing: 2px;
+      font-size: 15px;
+      border-radius: 6px; }
+  .news .news_info {
+    padding-right: 35px;
+    padding-top: 2.5rem;
+    height: auto; }
+    .news .news_info .news_info_titulo {
+      height: 4rem;
+      font-size: 25px;
+      color: #d00000; }
+    .news .news_info .news_text {
+      text-align: left;
+      font-size: 20px; }
 
 /* -------------------------------------FOOTER--------------------- */
 .footer {
@@ -199,10 +334,6 @@ h1 {
   animation: flash;
   animation-duration: 1s; }
 
-.containervideo iframe:hover {
-  animation: pulse;
-  animation-duration: 1s; }
-
 /* ----------------------TOUR DATES----------------------------*/
 .tours {
   margin-bottom: 5rem;
@@ -228,13 +359,14 @@ h1 {
     width: 100%;
     height: 8rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     box-sizing: border-box;
     padding-top: 2rem;
     margin-top: 5rem; }
     .tours .item:hover {
       background-color: #6a040f; }
     .tours .item button {
+      font-size: 10px;
       flex-direction: column;
       color: white;
       align-items: center;
@@ -250,17 +382,19 @@ h1 {
 
 /*--------------------------------SECCION PHOTOS---------------------*/
 .container {
-  height: auto;
-  max-width: 80%;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  background-color: #E8E8E6; }
-  .container .frase {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    text-align: right;
-    color: #d00000;
-    margin-top: 1rem; }
+  width: 100%; }
+
+.carousel {
+  position: relative; }
+  .carousel img {
+    padding: 2rem; }
+
+.carousel__center {
+  margin: 0 auto; }
+
+@media screen and (max-width: 760px) {
+  .carousel {
+    width: 90%; } }
 
 /*--------------------------------------- SECCION VIDEOS-----------------*/
 .containervideo {
@@ -276,14 +410,14 @@ h1 {
   .containervideo h2 {
     font-family: 'Permanent Marker', cursive;
     color: #b7094c;
-    font-size: 34px;
+    font-size: 50px;
     height: 8rem;
     margin-top: 2rem; }
   .containervideo iframe {
     margin-right: 2rem;
     margin-top: 1rem;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     box-shadow: 5px 5px 1px 2px #14B2B8; }
   .containervideo .orchestral, .containervideo .recent {
     box-sizing: border-box;
@@ -333,7 +467,8 @@ h1 {
 
 /*-------------ABOUT------------------*/
 .aboutpadre {
-  height: auto; }
+  height: auto;
+  margin-top: 5rem; }
   .aboutpadre .integrante {
     color: #d8dee9;
     padding: 10px;
@@ -389,7 +524,12 @@ h1 {
     width: 60px;
     height: 60px;
     margin-top: 40px;
-    margin-left: 3rem; } }
+    margin-left: 3rem; }
+  .linkalbum p {
+    text-align: left;
+    font-size: 20px; }
+  .latestalbum {
+    display: block; } }
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
   .parrafoprincipal {
@@ -404,13 +544,76 @@ h1 {
       margin-top: 2rem;
       font-size: 25px; } }
 
+/*------INDEX NEWS---------------*/
+@media screen and (min-width: 560px) and (max-width: 768px) {
+  .news_img {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0; }
+  .news_info {
+    padding-right: 0; }
+  .news {
+    padding: 2rem; } }
+
+@media screen and (min-width: 280px) and (max-width: 560px) {
+  .news_img {
+    display: none; }
+  .news {
+    text-align: center;
+    flex-direction: column; }
+    .news .news_info {
+      text-align: center;
+      padding-right: 0;
+      padding-left: 50px;
+      margin-right: 0; }
+      .news .news_info .news_info_titulo {
+        font-size: 14px;
+        height: 8rem; } }
+
+@media screen and (max-width: 960px) {
+  .latest-news_title h2 {
+    font-size: 40px; }
+  .news {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15px; }
+    .news .news_img {
+      justify-content: center;
+      align-items: center;
+      margin-left: 9rem;
+      width: 100%; }
+    .news .news_info_titulo {
+      font-size: 20px; }
+    .news .news__button {
+      justify-content: center; } }
+
+@media screen and (max-width: 780px) {
+  .news .news_img {
+    margin-left: 5rem; } }
+
+@media screen and (max-width: 690px) {
+  .latest-news_title h2 {
+    font-size: 30px; }
+  .news .news_img {
+    margin-left: 1rem; } }
+
+@media screen and (max-width: 620px) {
+  .news .news_img {
+    margin-left: 0; } }
+
+@media screen and (max-width: 420px) {
+  .news .news_info {
+    text-align: center; }
+  .news .news_info_titulo {
+    font-size: 14px; } }
+
 /* ---------RESPONSIVE FOOTER------------ */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .redsocial img {
     margin-top: 2rem; } }
 
 /*------RESPONSIVE PHOTOS--------*/
-@media screen and (min-width: 140px) and (max-width: 390px) {
+@media screen and (max-width: 760px) {
   .frase {
     font-size: 10px; } }
 
@@ -421,6 +624,10 @@ h1 {
     height: 250px;
     width: 250px;
     object-fit: cover; } }
+
+@media screen and (max-width: 390px) {
+  .containervideo h2 {
+    font-size: 30px; } }
 
 /* --------------RESPONSIVE DISCOGRAPHY------------------------*/
 @media screen and (min-width: 140px) and (max-width: 320px) {
@@ -461,12 +668,12 @@ h1 {
     font-size: 15px; } }
 
 /* -----------RESPONSIVE TOUR DATES----------- */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .item {
-    width: 100%;
-    height: auto; } }
+@media screen and (max-width: 850px) {
+  .tours .item {
+    font-size: 15px;
+    width: 100%; } }
 
-@media screen and (max-width: 420px) {
-  .item {
-    font-size: 20px;
-    height: 15rem; } }
+@media screen and (max-width: 380px) {
+  .tours .item {
+    font-size: 10px;
+    width: 100%; } }

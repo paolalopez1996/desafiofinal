@@ -1,14 +1,20 @@
 /*--------------------------------SECCION PHOTOS---------------------*/
-.container {
-    height: auto;
-    max-width: 80%;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    background-color: #E8E8E6; 
-    .frase {
-      font-family: 'Permanent Marker', cursive;
-      font-size: 20px;
-      text-align: right;
-      color: #d00000;
-      margin-top: 1rem; }
+ .container{
+  width: 100%;
+}
+.carousel{
+  position: relative;
+  img{
+    padding: 2rem;
   }
+
+}
+.carousel__center{
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 760px){
+ .carousel{
+   width: 90%;
+ }
+}

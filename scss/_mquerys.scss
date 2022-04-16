@@ -1,8 +1,6 @@
  /*-----------------------------------------responsive--------------------*/
       /* --------------------------RESPONSIVE INDEX---------------------------------- */
     @media screen and (max-width:980px){
-        
-        
         .tabla{
             font-size: 20px;
             color: white;
@@ -20,8 +18,8 @@
         }
         @media screen and (max-width:576px){
             .header{
-                 background-position-x: 50%;
-               }
+                background-position-x: 50%;
+            }
         .parrafoprincipal{
             height: auto;
         }
@@ -30,20 +28,30 @@
             width: 200px;
             height: 200px;
         }
-        .linkalbum a img{
-            width: 60px;
-            height: 60px;
-            margin-top: 40px;
-            margin-left: 3rem;
+        .linkalbum {
+            a img{
+                width: 60px;
+                height: 60px;
+                margin-top: 40px;
+                margin-left: 3rem;
+                }
+                p{
+                    
+                    text-align: left;
+                    font-size: 20px;
+            }
         }
+        
+        .latestalbum{
+            display: block;
+        }
+    
     }
 @media screen  and (min-width: 300px) and (max-width:450px){
 .parrafoprincipal{
     height: auto;
     p{
-        // margin-top: 2rem;
-        // height: 12rem;
-        font-size: 14px;
+    font-size: 14px;
     }
 }
 }
@@ -55,7 +63,99 @@
     margin-top: 2rem;
     font-size: 25px;
     }
-  }
+}
+}
+/*------INDEX NEWS---------------*/
+@media screen  and (min-width: 560px) and (max-width:768px){
+    .news_img{
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .news_info{
+        padding-right: 0;
+    }
+    .news{
+        padding: 2rem;
+        
+    }
+}
+@media screen  and (min-width: 280px) and (max-width:560px){
+.news_img{
+    display: none;
+}
+.news{
+    text-align: center;
+    flex-direction: column;
+    .news_info{
+        text-align: center;
+        padding-right: 0;
+        padding-left: 50px;
+        margin-right: 0;
+        .news_info_titulo{
+            font-size: 14px;
+            height: 8rem;
+        }
+    }
+}
+
+}
+@media screen  and  (max-width:960px){
+    .latest-news_title h2{
+        font-size: 40px;
+    }
+    .news{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 15px;
+        .news_img{
+            justify-content: center;
+            align-items: center;
+            margin-left: 9rem;
+            width: 100%;
+        }
+        .news_info_titulo{
+            font-size: 20px;
+        }
+        .news__button{
+            justify-content: center;
+        }
+        
+    }
+}
+@media screen  and (max-width:780px) {
+    .news{
+    .news_img{
+        margin-left: 5rem;
+    }
+}
+}
+@media screen  and (max-width:690px) {
+    .latest-news_title h2{
+        font-size: 30px;
+    }
+    .news{
+    .news_img{
+        margin-left: 1rem;
+    }
+}
+}
+@media screen  and (max-width:620px){
+    .news{
+        .news_img{
+            margin-left: 0;
+        }
+    }
+}
+@media screen  and (max-width:420px){
+    .news{
+        .news_info{
+            text-align: center;
+        }
+    .news_info_titulo{
+        font-size: 14px;
+    }
+}
 }
        /* ---------RESPONSIVE FOOTER------------ */
         @media screen and (min-width: 320px) and (max-width:768px){
@@ -64,7 +164,7 @@
         }
         }
         /*------RESPONSIVE PHOTOS--------*/
-        @media screen and (min-width:140px) and (max-width: 390px){
+        @media screen and (max-width: 760px){
             .frase{
                 font-size: 10px;
             }
@@ -82,7 +182,13 @@
             object-fit: cover;
         }
         }
-        
+        @media screen and (max-width: 390px){
+            .containervideo{
+                h2{
+                    font-size: 30px;
+                }
+            }
+        }
         /* --------------RESPONSIVE DISCOGRAPHY------------------------*/
     @media screen and (min-width:140px) and (max-width: 320px){
         .padrediscography{
@@ -139,17 +245,22 @@
         }
         }
     /* -----------RESPONSIVE TOUR DATES----------- */
-        @media screen and (min-width: 320px) and (max-width:768px){
-        .item{
-            width: 100%;
-            height: auto;
-        }
-        }
-        @media screen and (max-width:420px){
-            .item{
-                font-size: 20px;
-                height: 15rem;
-            }
-            }
+     
+            @media screen and (max-width:850px){
+                .tours {
+                    .item{
+                        font-size: 15px;
+                    width: 100%;
+                    }
+                }
+                }
+                @media screen and (max-width:380px){
+                    .tours {
+                        .item{
+                            font-size: 10px;
+                        width: 100%;
+                        }
+                    }
+                    }
         
     
