@@ -24,11 +24,22 @@
       object-fit: cover;
    }
    .disco{
+      margin-top: 12px;
       margin-bottom: 8rem;
       padding: 2rem;
       .spotify{
       color: green;
       }
+   }
+   .musictitulo{
+      width: 100%;
+      h3{
+         font-size: 50px;
+         padding: 5px;
+         text-align: center;
+         color: $titulos;
+      }
+      
    }
       
    }

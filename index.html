@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- NAV -->
-    <header class="header">
+    <header class="header" id="head">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid barranavpropio">
             <a class="navbar-brand titulopropio" href="./index.html">Nothing but thieves</a>
@@ -57,6 +57,52 @@
             </p>
             </div>
         </div>
+        <!-- CAROUSEL -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide w-xs-90 w-sm-75 w-lg-75 w-xl-50 carousel__center"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+            <div class="carousel-inner">
+            <div class="carousel-item ">
+                <img src="./imagenes/carrusel/banda3carrusel (1)-min.jpg" class="d-block w-100 mx-auto" class="img-fluid" alt="Nothing but thieves">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/carrusel/banda5carrusel-min.jpg" class="d-block w-100 mx-auto" class="img-fluid" alt="Nothing but thieves">
+            </div>
+            <div class="carousel-item ">
+                <img src="./imagenes/carrusel/nbtgruitarrist (1)-min.jpg" class="d-block w-100 mx-auto" class="img-fluid" alt="Joe Langridge-Brown">
+            </div>
+            <div class="carousel-item active">
+                <img src="./imagenes/carrusel/nbtconcertcarrusel-min.jpg" class="d-block w-100 mx-auto" class="img-fluid" alt="Nothing but thieves concert">
+            </div>
+            <div class="carousel-item ">
+                <img src="./imagenes/carrusel/concertconnor (1)-min.jpg" class="d-block w-100 mx-auto" class="img-fluid" alt="Conor Manson">
+            </div>
+            <div class="carousel-item ">
+                <img src="./imagenes/carrusel/nbtin-min.jpg" class="d-block w-100 mx-auto" class="img-fluid" alt="Nothing but thieves">
+            </div>
+            <div class="carousel-item ">
+                <img src="./imagenes/carrusel/nbtsombra-min.jpg" class="d-block w-100 mx-auto" class="img-fluid" alt="Nothing but thieves">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div> 
+        <!-- FIN DE CAROUSEL -->
         <div class="row">
             <div class="col-12 otroparrafoprincipal ">
             <img src="./imagenes/albummoralpaniccomplete.webp" class="img-fluid" alt="moral manic album">
@@ -74,7 +120,7 @@
     <div class="videoindex">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/d6YHpd0nhoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-                    <!-- SEGUNDA SECCION INDEX: TOURS -->
+    <!-- SEGUNDA SECCION INDEX: TOURS -->
     <div class =" container-fluid tabla text-center">
         <h2>TOUR DATES</h2>
         <div class="row">
@@ -155,14 +201,17 @@
             </div>
                 <div class="news_info">
                     <h2 class="news_info_titulo">Conversations: Nothing But Thieves</h2>
-                    <p class="news_text"> an special conversation with the guys about their new Album "Moral Panic II", and how their music keeps getting more and more impactful as the years go by. </p>
+                    <p class="news_text"> In conversation with Boys By Girls. About Moral Panic I and II, the band’s ambitions in a post-pandemic world, and just the joy of us all being in the same space again </p>
                     <div class="news__button">
                     <button type="button" class="btn btn-danger">Read More</button>
                     </div>
                 </div>
         </div>
     </div>
-
+    <div class="container boton_goback">
+        <button type="button" class="btn btn-secondary"><a href="#head">go back</a></button>
+    
+    </div>
 
     <!-- FOOTER -->
     <div class="container-fluid footer">

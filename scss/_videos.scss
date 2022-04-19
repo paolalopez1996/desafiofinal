@@ -1,7 +1,6 @@
 /*--------------------------------------- SECCION VIDEOS-----------------*/
 .containervideo {
-    background-color: #6a040f;
-    margin: 0;
+    margin-top: 40px;
     padding: 0;
     @include flexbox;
     justify-content: space-evenly;
@@ -9,7 +8,7 @@
     width: 100%; 
     h2 {
       font-family: 'Permanent Marker', cursive;
-      color: #b7094c;
+      color: $titulos;
       font-size: 50px;
       height: 8rem;
       margin-top: 2rem; }
@@ -19,13 +18,49 @@
       height: 400px;
       width: 400px;
       box-shadow: 5px 5px 1px 2px $backgroundGeneral;
+      transition: transform 0.3s ease-in-out;
     }
-    .orchestral, .recent {
+    .orchestral, .recent, .inconcert {
+      transition: transform 0.3s ease-in-out;
       box-sizing: border-box;
       padding: 1rem;
       margin-bottom: 10rem;
       width: 100%;
-      background-color: map-get($estilos, fondo); }
+    }
+  }
+
+  .orchestral{
+    width: 100%;
+    background-image: url(../imagenes/videos/imposibleor-min.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    iframe:hover{
+      filter: opacity(0.9);
+      transform: scale(1.04);
+    }
+ 
+      }
+
+  .inconcert{
+    background-image: url(../imagenes/videos/Nothing_but_thieves-min.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    iframe:hover{
+      filter: opacity(0.9);
+      transform: scale(1.04);
+    }
+  }
+  .recent{
+    background-image: url(../imagenes/videos/mosrecent-min.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    iframe:hover{
+      filter: opacity(0.9);
+      transform: scale(1.04);
+    }
   }
   
   
