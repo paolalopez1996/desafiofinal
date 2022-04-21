@@ -17,6 +17,7 @@
 
 /*--------------collage-----*/
 .collage_title{
+  background-position: 10%;
   text-align: center;
   height: 12rem;
   h2{
@@ -74,31 +75,4 @@ grid-column: span 2;
   grid-column: span 2;
   grid-row: span 2;
 }
-@media only screen and (min-width: 560px) and (max-width: 768px){
-  .grid-container{
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .grid-item:nth-child(8){
-      grid-column: span 3;
-      grid-row: span 1;
-  }
-  .grid-item:nth-child(7){
-    grid-column: span 3;
-    
-}
-.grid-item:nth-child(10){
-  grid-column: span 4;
-  
-}
-}
-@media only screen and (min-width: 280px) and (max-width: 560px){
-.grid-container{
-  grid-template-columns: 1fr;
-}
 
-.grid-item:nth-child(n+1){
-  grid-column: span 2;
-  grid-row: span 1;
-}
-
-}

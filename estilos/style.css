@@ -59,7 +59,9 @@ body {
     color: #b3abab; }
 
 .otroparrafoprincipal {
-  background-color: #E8E8E6;
+  border-radius: 20px;
+  opacity: 0.9;
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -67,27 +69,40 @@ body {
   margin-top: 5rem;
   width: 100%;
   height: auto;
+  border: 2px solid black;
+  border-style: dashed;
   box-sizing: border-box;
   text-align: center; }
   .otroparrafoprincipal iframe {
-    padding: 8px;
-    margin-top: 10px;
-    width: 400px;
-    height: 450px; }
-  .otroparrafoprincipal img {
+    transition: transform 0.3s ease-in-out;
     padding: 1rem;
-    margin: 6px;
+    margin: 10px;
+    width: 300px;
+    height: 350px; }
+    .otroparrafoprincipal iframe:hover {
+      filter: opacity(0.9);
+      transform: scale(1.04); }
+  .otroparrafoprincipal img {
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem;
+    margin: 10px;
     border-radius: 10%;
-    width: 450px;
-    height: 450px; }
+    width: 350px;
+    height: 350px; }
+    .otroparrafoprincipal img:hover {
+      filter: opacity(0.9);
+      transform: scale(1.04); }
 
 .linkalbum {
   width: 100%;
-  background-color: #E8E8E6; }
+  background-color: #E8E8E6;
+  border: 2px solid black;
+  border-style: dashed;
+  margin-top: 10px; }
   .linkalbum a img {
     width: 80px;
     height: 80px;
-    background-color: #b7094c;
+    background-color: #E8E8E6;
     border-radius: 15%;
     padding: 10px;
     margin-bottom: 10px;
@@ -95,11 +110,12 @@ body {
     margin-right: 5rem;
     margin-left: 50px; }
     .linkalbum a img:hover {
-      background-color: #ffff6d; }
+      background-color: #b7094c; }
   .linkalbum p {
+    font-family: 'Courier New', Courier, monospace;
     margin-top: 2rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     color: #b7094c; }
 
 .videoindex {
@@ -127,6 +143,7 @@ body {
     .tabla tr th {
       color: #b7094c; }
   .tabla h2 {
+    padding-top: 1rem;
     text-align: center;
     height: 6rem;
     font-size: 55px;
@@ -300,6 +317,9 @@ h1 {
   animation-duration: 1s; }
 
 /* ----------------------TOUR DATES----------------------------*/
+.headerpaginas .navbar a {
+  color: #B74C5C; }
+
 .tours {
   margin-bottom: 5rem;
   color: #d8dee9;
@@ -345,6 +365,15 @@ h1 {
   height: 40rem;
   margin-left: -20px; }
 
+.boton_goback {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px; }
+
 /*--------------------------------SECCION PHOTOS---------------------*/
 /*---MIXIN---*/
 /*----MAPA------*/
@@ -368,6 +397,7 @@ h1 {
 
 /*--------------collage-----*/
 .collage_title {
+  background-position: 10%;
   text-align: center;
   height: 12rem; }
   .collage_title h2 {
@@ -422,24 +452,6 @@ h1 {
   grid-column: span 2;
   grid-row: span 2; }
 
-@media only screen and (min-width: 560px) and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr); }
-  .grid-item:nth-child(8) {
-    grid-column: span 3;
-    grid-row: span 1; }
-  .grid-item:nth-child(7) {
-    grid-column: span 3; }
-  .grid-item:nth-child(10) {
-    grid-column: span 4; } }
-
-@media only screen and (min-width: 280px) and (max-width: 560px) {
-  .grid-container {
-    grid-template-columns: 1fr; }
-  .grid-item:nth-child(n+1) {
-    grid-column: span 2;
-    grid-row: span 1; } }
-
 /*--------------------------------------- SECCION VIDEOS-----------------*/
 .containervideo {
   margin-top: 40px;
@@ -453,8 +465,8 @@ h1 {
   .containervideo h2 {
     font-family: 'Permanent Marker', cursive;
     color: #b7094c;
-    font-size: 50px;
-    height: 8rem;
+    font-size: 40px;
+    height: 10rem;
     margin-top: 2rem; }
   .containervideo iframe {
     margin-right: 2rem;
@@ -623,6 +635,9 @@ h1 {
     margin-top: 20px;
     width: 200px;
     height: 200px; }
+  .otroparrafoprincipal iframe {
+    width: 300px;
+    height: 300px; }
   .linkalbum a img {
     width: 60px;
     height: 60px;
@@ -757,9 +772,9 @@ h1 {
     width: 250px;
     object-fit: cover; } }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .containervideo h2 {
-    font-size: 30px; } }
+    font-size: 25px; } }
 
 /* --------------RESPONSIVE DISCOGRAPHY------------------------*/
 @media screen and (min-width: 140px) and (max-width: 320px) {

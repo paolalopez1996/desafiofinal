@@ -1,4 +1,12 @@
 /* ----------------------TOUR DATES----------------------------*/
+.headerpaginas{
+    .navbar {
+        a{
+            color: #B74C5C;
+        }
+    }
+}
+
 .tours {
     margin-bottom: 5rem;
     color: #d8dee9;
@@ -49,4 +57,11 @@
     object-fit: cover;  
     height: 40rem;
     margin-left: -20px;
+    }
+    .boton_goback{
+        text-align: center;
+        @include flexbox;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
     }
