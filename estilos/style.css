@@ -57,6 +57,10 @@ body {
     padding: 10px;
     margin-left: 20px;
     color: #b3abab; }
+    .parrafoindex .parrafoprincipal .boldletter {
+      color: #e63946; }
+    .parrafoindex .parrafoprincipal #fontphrase {
+      background-color: #343a40; }
 
 .otroparrafoprincipal {
   border-radius: 20px;
@@ -94,10 +98,16 @@ body {
       transform: scale(1.04); }
 
 .linkalbum {
-  width: 100%;
-  background-color: #E8E8E6;
-  border: 2px solid black;
-  border-style: dashed;
+  width: 50%;
+  margin-left: 380px;
+  background-image: url(../imagenes/pexels-todd-trapani-1198828.jpg);
+  background-position: 80% 20%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px; }
   .linkalbum a img {
     width: 80px;
@@ -113,7 +123,8 @@ body {
       background-color: #b7094c; }
   .linkalbum p {
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 2rem;
+    font-weight: 900;
+    margin-top: 1rem;
     text-align: center;
     font-size: 50px;
     color: #b7094c; }
@@ -153,6 +164,9 @@ body {
     margin-bottom: 25px; }
 
 /*-------NEWS------------*/
+.boldletter {
+  color: #e63946; }
+
 .latest-news {
   height: auto;
   margin-right: 20px;
@@ -222,6 +236,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 12px; }
+  .boton_goback .btn {
+    background-color: yellow; }
 
 /* -------------------------------------FOOTER--------------------- */
 .footer {
@@ -327,7 +343,7 @@ h1 {
   height: auto;
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
@@ -339,24 +355,33 @@ h1 {
     margin: 2rem 1px; }
     .tours h1:hover {
       color: #6a040f; }
+  .tours .block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
   .tours .item {
+    flex-direction: row;
     word-spacing: 1rem;
     width: 100%;
-    height: 8.5rem;
+    height: 10rem;
     text-align: center;
     font-size: 20px;
     box-sizing: border-box;
     padding-top: 2rem;
-    margin-top: 5rem; }
+    margin-top: 50px; }
     .tours .item:hover {
       background-color: #6a040f; }
     .tours .item button {
+      width: 200px;
       font-size: 10px;
-      flex-direction: column;
-      color: white;
+      color: #4cc9f0;
       align-items: center;
       justify-content: center;
-      text-align: center; }
+      text-align: center;
+      margin-top: 20px; }
       .tours .item button:hover {
         background-color: #343030; }
 
@@ -452,8 +477,12 @@ h1 {
   grid-column: span 2;
   grid-row: span 2; }
 
+.grid-item:nth-child(12) {
+  grid-column: span 2; }
+
 /*--------------------------------------- SECCION VIDEOS-----------------*/
 .containervideo {
+  text-align: center;
   margin-top: 40px;
   padding: 0;
   display: flex;
@@ -574,22 +603,29 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 10px;
     color: #d8dee9;
     padding: 10px;
     box-sizing: border-box; }
+    .aboutpadre .integrante .negrita {
+      font-weight: 900;
+      color: #b7094c; }
     .aboutpadre .integrante h3 {
       color: #b7094c;
-      height: 4rem;
+      height: 2rem;
       font-size: 20px;
-      margin-top: 1rem; }
+      margin-top: 5px; }
+    .aboutpadre .integrante h4 {
+      color: #b7094c;
+      font-size: 20px;
+      height: 3rem; }
     .aboutpadre .integrante p {
       padding: 10px;
       font-family: 'Space Mono', monospace;
       font-weight: 800;
       font-size: 20px;
-      margin-top: 10px;
+      margin-top: 5px;
       color: #9a9494; }
     .aboutpadre .integrante img {
       border-radius: 10%;
@@ -614,6 +650,15 @@ h1 {
 
 /*-----------------------------------------responsive--------------------*/
 /* --------------------------RESPONSIVE INDEX---------------------------------- */
+@media screen and (max-width: 1260px) {
+  .linkalbum {
+    margin-left: 260px; } }
+
+@media screen and (max-width: 880px) {
+  .linkalbum {
+    width: 100%;
+    margin-left: 0; } }
+
 @media screen and (max-width: 980px) {
   .tabla {
     font-size: 20px;
@@ -784,6 +829,7 @@ h1 {
     object-fit: cover; }
   .padrediscography .disco {
     margin: 0;
+    margin-bottom: 2px;
     width: 100%; }
     .padrediscography .disco h2 {
       font-size: 15px; } }
@@ -797,7 +843,8 @@ h1 {
     width: 400px;
     object-fit: cover; }
   .padrediscography .disco {
-    width: 100%; } }
+    width: 100%;
+    margin-bottom: 2px; } }
 
 @media screen and (min-width: 481px) and (max-width: 850px) {
   .padrediscography img {
@@ -806,7 +853,8 @@ h1 {
     margin: 0;
     object-fit: cover; }
     .padrediscography img .disco {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 2px; } }
 
 @media screen and (min-width: 280px) and (max-width: 450px) {
   .musictitulo {
@@ -824,9 +872,17 @@ h1 {
 @media screen and (max-width: 850px) {
   .tours .item {
     font-size: 15px;
-    width: 100%; } }
+    width: 100%;
+    margin-top: 10px; }
+    .tours .item .btn {
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center; } }
 
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 280px) and (max-width: 850px) {
   .tours .item {
-    font-size: 10px;
+    font-size: 12px;
     width: 100%; } }

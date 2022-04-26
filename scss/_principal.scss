@@ -58,6 +58,12 @@ a:hover{
     padding: 10px;
     margin-left: 20px;
     color: $colorParaParrafos;
+    .boldletter{
+        color: #e63946;
+    }
+    #fontphrase{
+        background-color: #343a40;
+    }
     }
 }
 .otroparrafoprincipal{
@@ -98,10 +104,16 @@ a:hover{
         }
 }
 .linkalbum{
-    width: 100%;
-    background-color: map-get($estilos, fondo);
-    border: 2px solid black;
-    border-style: dashed;
+    width: 50%;
+    margin-left: 380px;
+    background-image: url(../imagenes/pexels-todd-trapani-1198828.jpg);
+    background-position: 80% 20%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
     a img{
     width: 80px;
@@ -119,7 +131,9 @@ a:hover{
         }
         p{
         font-family:'Courier New', Courier, monospace;
-        margin-top: 2rem;
+        font-weight: 900;
+        margin-top: 1rem;
+    
         text-align: center;
         font-size: 50px;
         color:#b7094c;;
@@ -168,6 +182,9 @@ h2{
     }
 }
 /*-------NEWS------------*/
+.boldletter{
+    color: #e63946;
+}
 .latest-news{
     height: auto;
     margin-right: 20px;
@@ -246,6 +263,9 @@ h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 12px;
+    .btn{
+        background-color: yellow;
+    }
 }
 /* -------------------------------------FOOTER--------------------- */
 .footer{ 

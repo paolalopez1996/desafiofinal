@@ -1,5 +1,17 @@
  /*-----------------------------------------responsive--------------------*/
       /* --------------------------RESPONSIVE INDEX---------------------------------- */
+      @media screen and (max-width:1260px){
+        .linkalbum{
+            margin-left: 260px;
+        }
+
+      }
+      @media screen and (max-width:880px){
+        .linkalbum{
+            width: 100%;
+            margin-left: 0;
+        }
+      }
     @media screen and (max-width:980px){
         .tabla{
             font-size: 20px;
@@ -14,6 +26,8 @@
             width: 100%;
             margin-left: 0%;
         }
+       
+       
         }
         @media screen and (max-width:576px){
             .header{
@@ -240,6 +254,7 @@
             }
             .disco{
                 margin: 0;
+                margin-bottom: 2px;
                 width: 100%;
                 h2{
                 font-size: 15px;
@@ -262,6 +277,7 @@
         }
         .disco{
             width: 100%;
+            margin-bottom: 2px;
         }
         }
         } 
@@ -273,6 +289,7 @@
                 object-fit: cover;
                 .disco{
                     width: 100%;
+                    margin-bottom: 2px;
                 }
             }
 
@@ -295,21 +312,30 @@
         }
     /* -----------RESPONSIVE TOUR DATES----------- */
      
-            @media screen and (max-width:850px){
-                .tours {
-                    .item{
-                        font-size: 15px;
-                    width: 100%;
-                    }
+    @media screen and (max-width:850px){
+        .tours {
+            .item{
+                font-size: 15px;
+                width: 100%;
+                margin-top: 10px;
+                .btn{
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;   
+                }
+            }
+        }
+    }
+                @media screen and (min-width:280px) and (max-width: 850px){
+        .tours {
+            .item{
+                font-size: 12px;
+                width: 100%;
                 }
                 }
-                @media screen and (max-width:380px){
-                    .tours {
-                        .item{
-                            font-size: 10px;
-                        width: 100%;
-                        }
-                    }
-                    }
+                }
         
     
